@@ -1,0 +1,6 @@
+inputSpec: https://developer.ebay.com/api-docs/master/buy/browse/openapi/3/buy_browse_v1_oas3.yaml
+invokerPackage: Ebay
+modelPackage: Ebay\Model\Buy\Browse
+apiPackage: Ebay\Api\Buy\Browse
+packageName: uapl/ebay-openapi
+generatorName: php

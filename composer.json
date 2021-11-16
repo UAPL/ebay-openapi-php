@@ -1,0 +1,34 @@
+{
+    "name": "uapl/ebay-openapi-client",
+    "description": "OpenAPI Client for Ebay's new REST APIs",
+    "keywords": [
+        "ebay",
+        "rest"
+    ],
+    "homepage": "https://openapi-generator.tech",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "A.J. Brown",
+            "email": "aj@ajbrown.org"
+        }
+    ],
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^7.3",
+        "guzzlehttp/psr7": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0 || ^9.0",
+        "friendsofphp/php-cs-fixer": "^2.12"
+    },
+    "autoload": {
+        "psr-4": { "Ebay\\" : "lib/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Ebay\\Test\\" : "test/" }
+    }
+}

@@ -1,0 +1,6 @@
+inputSpec: https://developer.ebay.com/api-docs/master/buy/deal/openapi/3/buy_deal_v1_oas3.yaml
+invokerPackage: Ebay
+modelPackage: Ebay\Model\Buy\Deal
+apiPackage: Ebay\Api\Buy\Deal
+packageName: uapl/ebay-openapi
+generatorName: php

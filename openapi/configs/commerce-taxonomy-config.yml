@@ -1,0 +1,6 @@
+inputSpec: https://developer.ebay.com/api-docs/master/commerce/taxonomy/openapi/3/commerce_taxonomy_v1_oas3.json
+invokerPackage: Ebay
+modelPackage: Ebay\Model\Commerce\Taxonomy
+apiPackage: Ebay\Api\Commerce\Taxonomy
+packageName: uapl/ebay-openapi
+generatorName: php
