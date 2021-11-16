@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Order;
+namespace Ebay\Model\Buy\Order;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,7 +60,7 @@ class Promotion implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'discount' => '\Ebay\Ebay\Model\Buy\Order\Amount',
+        'discount' => '\Ebay\Model\Buy\Order\Amount',
         'message' => 'string',
         'promotion_type' => 'string'
     ];
@@ -221,7 +221,7 @@ class Promotion implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets discount
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Amount|null
+     * @return \Ebay\Model\Buy\Order\Amount|null
      */
     public function getDiscount()
     {
@@ -231,7 +231,7 @@ class Promotion implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets discount
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Amount|null $discount discount
+     * @param \Ebay\Model\Buy\Order\Amount|null $discount discount
      *
      * @return self
      */

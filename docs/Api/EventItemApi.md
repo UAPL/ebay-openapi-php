@@ -10,7 +10,7 @@ Method | HTTP request | Description
 ## `getEventItems()`
 
 ```php
-getEventItems($event_ids, $x_ebay_c_marketplace_id, $category_ids, $delivery_country, $limit, $offset): \Ebay\Ebay\Model\Buy\Deal\EventItemSearchResponse
+getEventItems($event_ids, $x_ebay_c_marketplace_id, $category_ids, $delivery_country, $limit, $offset): \Ebay\Model\Buy\Deal\EventItemSearchResponse
 ```
 
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Buy\Deal\EventItemSearchResponse**](../Model/EventItemSearchResponse.md)
+[**\Ebay\Model\Buy\Deal\EventItemSearchResponse**](../Model/EventItemSearchResponse.md)
 
 ### Authorization
 

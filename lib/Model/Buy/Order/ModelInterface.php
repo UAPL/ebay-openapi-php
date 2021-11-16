@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  Ebay\Ebay\Model\Buy\Order
+ * @package  Ebay\Model\Buy\Order
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,12 +26,12 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Order;
+namespace Ebay\Model\Buy\Order;
 
 /**
  * Interface abstracting model access.
  *
- * @package Ebay\Ebay\Model\Buy\Order
+ * @package Ebay\Model\Buy\Order
  * @author  OpenAPI Generator team
  */
 interface ModelInterface

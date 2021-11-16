@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Api\Buy\Deal;
+namespace Ebay\Api\Buy\Deal;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -123,7 +123,7 @@ class EventApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Deal\Event
+     * @return \Ebay\Model\Buy\Deal\Event
      */
     public function getEvent($x_ebay_c_marketplace_id, $event_id)
     {
@@ -139,7 +139,7 @@ class EventApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Deal\Event, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Deal\Event, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEventWithHttpInfo($x_ebay_c_marketplace_id, $event_id)
     {
@@ -182,20 +182,20 @@ class EventApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Deal\Event' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Deal\Event' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Deal\Event', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Deal\Event', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Deal\Event';
+            $returnType = '\Ebay\Model\Buy\Deal\Event';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -213,7 +213,7 @@ class EventApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Deal\Event',
+                        '\Ebay\Model\Buy\Deal\Event',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -253,7 +253,7 @@ class EventApi
      */
     public function getEventAsyncWithHttpInfo($x_ebay_c_marketplace_id, $event_id)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Deal\Event';
+        $returnType = '\Ebay\Model\Buy\Deal\Event';
         $request = $this->getEventRequest($x_ebay_c_marketplace_id, $event_id);
 
         return $this->client
@@ -406,7 +406,7 @@ class EventApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Deal\EventSearchResponse
+     * @return \Ebay\Model\Buy\Deal\EventSearchResponse
      */
     public function getEvents($x_ebay_c_marketplace_id, $limit = null, $offset = null)
     {
@@ -423,7 +423,7 @@ class EventApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Deal\EventSearchResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Deal\EventSearchResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getEventsWithHttpInfo($x_ebay_c_marketplace_id, $limit = null, $offset = null)
     {
@@ -466,20 +466,20 @@ class EventApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Deal\EventSearchResponse' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Deal\EventSearchResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Deal\EventSearchResponse', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Deal\EventSearchResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Deal\EventSearchResponse';
+            $returnType = '\Ebay\Model\Buy\Deal\EventSearchResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -497,7 +497,7 @@ class EventApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Deal\EventSearchResponse',
+                        '\Ebay\Model\Buy\Deal\EventSearchResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -539,7 +539,7 @@ class EventApi
      */
     public function getEventsAsyncWithHttpInfo($x_ebay_c_marketplace_id, $limit = null, $offset = null)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Deal\EventSearchResponse';
+        $returnType = '\Ebay\Model\Buy\Deal\EventSearchResponse';
         $request = $this->getEventsRequest($x_ebay_c_marketplace_id, $limit, $offset);
 
         return $this->client

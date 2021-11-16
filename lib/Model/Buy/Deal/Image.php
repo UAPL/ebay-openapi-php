@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Deal;
+namespace Ebay\Model\Buy\Deal;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;

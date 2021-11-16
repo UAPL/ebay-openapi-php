@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Feed;
+namespace Ebay\Model\Buy\Feed;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -59,7 +59,7 @@ class ItemPriorityResponse implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'item_delta' => '\Ebay\Ebay\Model\Buy\Feed\ItemPriority[]'
+        'item_delta' => '\Ebay\Model\Buy\Feed\ItemPriority[]'
     ];
 
     /**
@@ -208,7 +208,7 @@ class ItemPriorityResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets item_delta
      *
-     * @return \Ebay\Ebay\Model\Buy\Feed\ItemPriority[]|null
+     * @return \Ebay\Model\Buy\Feed\ItemPriority[]|null
      */
     public function getItemDelta()
     {
@@ -218,7 +218,7 @@ class ItemPriorityResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets item_delta
      *
-     * @param \Ebay\Ebay\Model\Buy\Feed\ItemPriority[]|null $item_delta The container for the array of items returned by the <b>getItemPriorityFeed</b> method. The data in the file is tab separated and the first row is the header, which labels the columns and indicates the order of the values on each line. The header labels match the fields that are described in the <a href=\"/api-docs/buy/feed/resources/item/methods/getItemPriorityFeed#h3-response-fields\">Response fields</a> section.
+     * @param \Ebay\Model\Buy\Feed\ItemPriority[]|null $item_delta The container for the array of items returned by the <b>getItemPriorityFeed</b> method. The data in the file is tab separated and the first row is the header, which labels the columns and indicates the order of the values on each line. The header labels match the fields that are described in the <a href=\"/api-docs/buy/feed/resources/item/methods/getItemPriorityFeed#h3-response-fields\">Response fields</a> section.
      *
      * @return self
      */

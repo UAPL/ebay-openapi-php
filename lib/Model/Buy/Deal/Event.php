@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Deal;
+namespace Ebay\Model\Buy\Deal;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,15 +60,15 @@ class Event implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'applicable_coupons' => '\Ebay\Ebay\Model\Buy\Deal\Coupon[]',
+        'applicable_coupons' => '\Ebay\Model\Buy\Deal\Coupon[]',
         'description' => 'string',
         'end_date' => 'string',
         'event_affiliate_web_url' => 'string',
         'event_id' => 'string',
         'event_web_url' => 'string',
-        'images' => '\Ebay\Ebay\Model\Buy\Deal\Image[]',
+        'images' => '\Ebay\Model\Buy\Deal\Image[]',
         'start_date' => 'string',
-        'terms' => '\Ebay\Ebay\Model\Buy\Deal\Terms',
+        'terms' => '\Ebay\Model\Buy\Deal\Terms',
         'title' => 'string'
     ];
 
@@ -263,7 +263,7 @@ class Event implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets applicable_coupons
      *
-     * @return \Ebay\Ebay\Model\Buy\Deal\Coupon[]|null
+     * @return \Ebay\Model\Buy\Deal\Coupon[]|null
      */
     public function getApplicableCoupons()
     {
@@ -273,7 +273,7 @@ class Event implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets applicable_coupons
      *
-     * @param \Ebay\Ebay\Model\Buy\Deal\Coupon[]|null $applicable_coupons A list of coupons associated with the event.
+     * @param \Ebay\Model\Buy\Deal\Coupon[]|null $applicable_coupons A list of coupons associated with the event.
      *
      * @return self
      */
@@ -407,7 +407,7 @@ class Event implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets images
      *
-     * @return \Ebay\Ebay\Model\Buy\Deal\Image[]|null
+     * @return \Ebay\Model\Buy\Deal\Image[]|null
      */
     public function getImages()
     {
@@ -417,7 +417,7 @@ class Event implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets images
      *
-     * @param \Ebay\Ebay\Model\Buy\Deal\Image[]|null $images The images for the event.
+     * @param \Ebay\Model\Buy\Deal\Image[]|null $images The images for the event.
      *
      * @return self
      */
@@ -455,7 +455,7 @@ class Event implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets terms
      *
-     * @return \Ebay\Ebay\Model\Buy\Deal\Terms|null
+     * @return \Ebay\Model\Buy\Deal\Terms|null
      */
     public function getTerms()
     {
@@ -465,7 +465,7 @@ class Event implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets terms
      *
-     * @param \Ebay\Ebay\Model\Buy\Deal\Terms|null $terms terms
+     * @param \Ebay\Model\Buy\Deal\Terms|null $terms terms
      *
      * @return self
      */

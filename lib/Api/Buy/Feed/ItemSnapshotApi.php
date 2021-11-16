@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Api\Buy\Feed;
+namespace Ebay\Api\Buy\Feed;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -126,7 +126,7 @@ class ItemSnapshotApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Feed\ItemSnapshotResponse|\Ebay\Ebay\Model\Buy\Feed\ItemSnapshotResponse
+     * @return \Ebay\Model\Buy\Feed\ItemSnapshotResponse|\Ebay\Model\Buy\Feed\ItemSnapshotResponse
      */
     public function getItemSnapshotFeed($accept, $x_ebay_c_marketplace_id, $range, $category_id, $snapshot_date)
     {
@@ -145,7 +145,7 @@ class ItemSnapshotApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Feed\ItemSnapshotResponse|\Ebay\Ebay\Model\Buy\Feed\ItemSnapshotResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Feed\ItemSnapshotResponse|\Ebay\Model\Buy\Feed\ItemSnapshotResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getItemSnapshotFeedWithHttpInfo($accept, $x_ebay_c_marketplace_id, $range, $category_id, $snapshot_date)
     {
@@ -188,32 +188,32 @@ class ItemSnapshotApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Feed\ItemSnapshotResponse' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Feed\ItemSnapshotResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Feed\ItemSnapshotResponse', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Feed\ItemSnapshotResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 206:
-                    if ('\Ebay\Ebay\Model\Buy\Feed\ItemSnapshotResponse' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Feed\ItemSnapshotResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Feed\ItemSnapshotResponse', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Feed\ItemSnapshotResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Feed\ItemSnapshotResponse';
+            $returnType = '\Ebay\Model\Buy\Feed\ItemSnapshotResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -231,7 +231,7 @@ class ItemSnapshotApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Feed\ItemSnapshotResponse',
+                        '\Ebay\Model\Buy\Feed\ItemSnapshotResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -239,7 +239,7 @@ class ItemSnapshotApi
                 case 206:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Feed\ItemSnapshotResponse',
+                        '\Ebay\Model\Buy\Feed\ItemSnapshotResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -285,7 +285,7 @@ class ItemSnapshotApi
      */
     public function getItemSnapshotFeedAsyncWithHttpInfo($accept, $x_ebay_c_marketplace_id, $range, $category_id, $snapshot_date)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Feed\ItemSnapshotResponse';
+        $returnType = '\Ebay\Model\Buy\Feed\ItemSnapshotResponse';
         $request = $this->getItemSnapshotFeedRequest($accept, $x_ebay_c_marketplace_id, $range, $category_id, $snapshot_date);
 
         return $this->client

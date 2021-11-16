@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,7 +60,7 @@ class CompatibilityPayload implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'compatibility_properties' => '\Ebay\Ebay\Model\Buy\Browse\AttributeNameValue[]'
+        'compatibility_properties' => '\Ebay\Model\Buy\Browse\AttributeNameValue[]'
     ];
 
     /**
@@ -209,7 +209,7 @@ class CompatibilityPayload implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets compatibility_properties
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\AttributeNameValue[]|null
+     * @return \Ebay\Model\Buy\Browse\AttributeNameValue[]|null
      */
     public function getCompatibilityProperties()
     {
@@ -219,7 +219,7 @@ class CompatibilityPayload implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets compatibility_properties
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\AttributeNameValue[]|null $compatibility_properties An array of attribute name/value pairs used to define a specific product. For example: If you wanted to specify a specific car, one of the name/value pairs would be <br /><code>\"name\" : \"Year\", <br />\"value\" : \"2019\"</code>  <p> For a list of the attributes required for cars and trucks and motorcycles see <a href=\"/api-docs/buy/static/api-browse.html#Check\">Check compatibility</a> in the Buy Integration Guide.</p>
+     * @param \Ebay\Model\Buy\Browse\AttributeNameValue[]|null $compatibility_properties An array of attribute name/value pairs used to define a specific product. For example: If you wanted to specify a specific car, one of the name/value pairs would be <br /><code>\"name\" : \"Year\", <br />\"value\" : \"2019\"</code>  <p> For a list of the attributes required for cars and trucks and motorcycles see <a href=\"/api-docs/buy/static/api-browse.html#Check\">Check compatibility</a> in the Buy Integration Guide.</p>
      *
      * @return self
      */

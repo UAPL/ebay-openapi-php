@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Commerce\Taxonomy;
+namespace Ebay\Model\Commerce\Taxonomy;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,7 +60,7 @@ class GetCompatibilityPropertyValuesResponse implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'compatibility_property_values' => '\Ebay\Ebay\Model\Commerce\Taxonomy\CompatibilityPropertyValue[]'
+        'compatibility_property_values' => '\Ebay\Model\Commerce\Taxonomy\CompatibilityPropertyValue[]'
     ];
 
     /**
@@ -209,7 +209,7 @@ class GetCompatibilityPropertyValuesResponse implements ModelInterface, ArrayAcc
     /**
      * Gets compatibility_property_values
      *
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\CompatibilityPropertyValue[]|null
+     * @return \Ebay\Model\Commerce\Taxonomy\CompatibilityPropertyValue[]|null
      */
     public function getCompatibilityPropertyValues()
     {
@@ -219,7 +219,7 @@ class GetCompatibilityPropertyValuesResponse implements ModelInterface, ArrayAcc
     /**
      * Sets compatibility_property_values
      *
-     * @param \Ebay\Ebay\Model\Commerce\Taxonomy\CompatibilityPropertyValue[]|null $compatibility_property_values This array contains all compatible vehicle property values that match the specified eBay marketplace, specified eBay category, and filters in the request. If the compatibility_property parameter value in the request is 'Trim', each value returned in each value field will be a different vehicle trim, applicable to any filters that are set in the filter query parameter of the request, and also based on the eBay marketplace and category specified in the call request.
+     * @param \Ebay\Model\Commerce\Taxonomy\CompatibilityPropertyValue[]|null $compatibility_property_values This array contains all compatible vehicle property values that match the specified eBay marketplace, specified eBay category, and filters in the request. If the compatibility_property parameter value in the request is 'Trim', each value returned in each value field will be a different vehicle trim, applicable to any filters that are set in the filter query parameter of the request, and also based on the eBay marketplace and category specified in the call request.
      *
      * @return self
      */

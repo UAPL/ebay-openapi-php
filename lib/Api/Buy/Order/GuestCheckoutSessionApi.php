@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Api\Buy\Order;
+namespace Ebay\Api\Buy\Order;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -120,11 +120,11 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\CouponRequest $coupon_request The container for the fields used to apply a coupon to a guest checkout session. (optional)
+     * @param  \Ebay\Model\Buy\Order\CouponRequest $coupon_request The container for the fields used to apply a coupon to a guest checkout session. (optional)
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2
+     * @return \Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2
      */
     public function applyGuestCoupon($checkout_session_id, $x_ebay_c_marketplace_id, $coupon_request = null)
     {
@@ -137,11 +137,11 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\CouponRequest $coupon_request The container for the fields used to apply a coupon to a guest checkout session. (optional)
+     * @param  \Ebay\Model\Buy\Order\CouponRequest $coupon_request The container for the fields used to apply a coupon to a guest checkout session. (optional)
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function applyGuestCouponWithHttpInfo($checkout_session_id, $x_ebay_c_marketplace_id, $coupon_request = null)
     {
@@ -184,20 +184,20 @@ class GuestCheckoutSessionApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
+            $returnType = '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -215,7 +215,7 @@ class GuestCheckoutSessionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2',
+                        '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -230,7 +230,7 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\CouponRequest $coupon_request The container for the fields used to apply a coupon to a guest checkout session. (optional)
+     * @param  \Ebay\Model\Buy\Order\CouponRequest $coupon_request The container for the fields used to apply a coupon to a guest checkout session. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -250,14 +250,14 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\CouponRequest $coupon_request The container for the fields used to apply a coupon to a guest checkout session. (optional)
+     * @param  \Ebay\Model\Buy\Order\CouponRequest $coupon_request The container for the fields used to apply a coupon to a guest checkout session. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function applyGuestCouponAsyncWithHttpInfo($checkout_session_id, $x_ebay_c_marketplace_id, $coupon_request = null)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
+        $returnType = '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
         $request = $this->applyGuestCouponRequest($checkout_session_id, $x_ebay_c_marketplace_id, $coupon_request);
 
         return $this->client
@@ -298,7 +298,7 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\CouponRequest $coupon_request The container for the fields used to apply a coupon to a guest checkout session. (optional)
+     * @param  \Ebay\Model\Buy\Order\CouponRequest $coupon_request The container for the fields used to apply a coupon to a guest checkout session. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -416,7 +416,7 @@ class GuestCheckoutSessionApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2
+     * @return \Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2
      */
     public function getGuestCheckoutSession($checkout_session_id, $x_ebay_c_marketplace_id)
     {
@@ -432,7 +432,7 @@ class GuestCheckoutSessionApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function getGuestCheckoutSessionWithHttpInfo($checkout_session_id, $x_ebay_c_marketplace_id)
     {
@@ -475,20 +475,20 @@ class GuestCheckoutSessionApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
+            $returnType = '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -506,7 +506,7 @@ class GuestCheckoutSessionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2',
+                        '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -546,7 +546,7 @@ class GuestCheckoutSessionApi
      */
     public function getGuestCheckoutSessionAsyncWithHttpInfo($checkout_session_id, $x_ebay_c_marketplace_id)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
+        $returnType = '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
         $request = $this->getGuestCheckoutSessionRequest($checkout_session_id, $x_ebay_c_marketplace_id);
 
         return $this->client
@@ -695,11 +695,11 @@ class GuestCheckoutSessionApi
      *
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
      * @param  string $x_ebay_c_enduserctx A header that is used to specify the &lt;b&gt;affiliateCampaignId&lt;/b&gt;, and optionally the &lt;b&gt;affiliateReferenceId&lt;/b&gt;, to enable revenue sharing when the buyer purchases items.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;font color&#x3D;\&quot;006600\&quot;&gt;&lt;b&gt;TIP:&lt;/b&gt;&lt;/font&gt; See &lt;a href&#x3D;\&quot;/api-docs/buy/static/api-browse.html#Headers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Request headers&lt;/a&gt; in the Buying Integration Guide for more information.&lt;/span&gt; (optional)
-     * @param  \Ebay\Ebay\Model\Buy\Order\CreateGuestCheckoutSessionRequestV2 $create_guest_checkout_session_request_v2 The container for the fields used by the &lt;b&gt;initiateGuestCheckoutSession&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\CreateGuestCheckoutSessionRequestV2 $create_guest_checkout_session_request_v2 The container for the fields used by the &lt;b&gt;initiateGuestCheckoutSession&lt;/b&gt; method. (optional)
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2
+     * @return \Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2
      */
     public function initiateGuestCheckoutSession($x_ebay_c_marketplace_id, $x_ebay_c_enduserctx = null, $create_guest_checkout_session_request_v2 = null)
     {
@@ -712,11 +712,11 @@ class GuestCheckoutSessionApi
      *
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
      * @param  string $x_ebay_c_enduserctx A header that is used to specify the &lt;b&gt;affiliateCampaignId&lt;/b&gt;, and optionally the &lt;b&gt;affiliateReferenceId&lt;/b&gt;, to enable revenue sharing when the buyer purchases items.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;font color&#x3D;\&quot;006600\&quot;&gt;&lt;b&gt;TIP:&lt;/b&gt;&lt;/font&gt; See &lt;a href&#x3D;\&quot;/api-docs/buy/static/api-browse.html#Headers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Request headers&lt;/a&gt; in the Buying Integration Guide for more information.&lt;/span&gt; (optional)
-     * @param  \Ebay\Ebay\Model\Buy\Order\CreateGuestCheckoutSessionRequestV2 $create_guest_checkout_session_request_v2 The container for the fields used by the &lt;b&gt;initiateGuestCheckoutSession&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\CreateGuestCheckoutSessionRequestV2 $create_guest_checkout_session_request_v2 The container for the fields used by the &lt;b&gt;initiateGuestCheckoutSession&lt;/b&gt; method. (optional)
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function initiateGuestCheckoutSessionWithHttpInfo($x_ebay_c_marketplace_id, $x_ebay_c_enduserctx = null, $create_guest_checkout_session_request_v2 = null)
     {
@@ -759,20 +759,20 @@ class GuestCheckoutSessionApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
+            $returnType = '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -790,7 +790,7 @@ class GuestCheckoutSessionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2',
+                        '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -805,7 +805,7 @@ class GuestCheckoutSessionApi
      *
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
      * @param  string $x_ebay_c_enduserctx A header that is used to specify the &lt;b&gt;affiliateCampaignId&lt;/b&gt;, and optionally the &lt;b&gt;affiliateReferenceId&lt;/b&gt;, to enable revenue sharing when the buyer purchases items.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;font color&#x3D;\&quot;006600\&quot;&gt;&lt;b&gt;TIP:&lt;/b&gt;&lt;/font&gt; See &lt;a href&#x3D;\&quot;/api-docs/buy/static/api-browse.html#Headers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Request headers&lt;/a&gt; in the Buying Integration Guide for more information.&lt;/span&gt; (optional)
-     * @param  \Ebay\Ebay\Model\Buy\Order\CreateGuestCheckoutSessionRequestV2 $create_guest_checkout_session_request_v2 The container for the fields used by the &lt;b&gt;initiateGuestCheckoutSession&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\CreateGuestCheckoutSessionRequestV2 $create_guest_checkout_session_request_v2 The container for the fields used by the &lt;b&gt;initiateGuestCheckoutSession&lt;/b&gt; method. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -825,14 +825,14 @@ class GuestCheckoutSessionApi
      *
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
      * @param  string $x_ebay_c_enduserctx A header that is used to specify the &lt;b&gt;affiliateCampaignId&lt;/b&gt;, and optionally the &lt;b&gt;affiliateReferenceId&lt;/b&gt;, to enable revenue sharing when the buyer purchases items.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;font color&#x3D;\&quot;006600\&quot;&gt;&lt;b&gt;TIP:&lt;/b&gt;&lt;/font&gt; See &lt;a href&#x3D;\&quot;/api-docs/buy/static/api-browse.html#Headers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Request headers&lt;/a&gt; in the Buying Integration Guide for more information.&lt;/span&gt; (optional)
-     * @param  \Ebay\Ebay\Model\Buy\Order\CreateGuestCheckoutSessionRequestV2 $create_guest_checkout_session_request_v2 The container for the fields used by the &lt;b&gt;initiateGuestCheckoutSession&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\CreateGuestCheckoutSessionRequestV2 $create_guest_checkout_session_request_v2 The container for the fields used by the &lt;b&gt;initiateGuestCheckoutSession&lt;/b&gt; method. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function initiateGuestCheckoutSessionAsyncWithHttpInfo($x_ebay_c_marketplace_id, $x_ebay_c_enduserctx = null, $create_guest_checkout_session_request_v2 = null)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
+        $returnType = '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
         $request = $this->initiateGuestCheckoutSessionRequest($x_ebay_c_marketplace_id, $x_ebay_c_enduserctx, $create_guest_checkout_session_request_v2);
 
         return $this->client
@@ -873,7 +873,7 @@ class GuestCheckoutSessionApi
      *
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
      * @param  string $x_ebay_c_enduserctx A header that is used to specify the &lt;b&gt;affiliateCampaignId&lt;/b&gt;, and optionally the &lt;b&gt;affiliateReferenceId&lt;/b&gt;, to enable revenue sharing when the buyer purchases items.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;font color&#x3D;\&quot;006600\&quot;&gt;&lt;b&gt;TIP:&lt;/b&gt;&lt;/font&gt; See &lt;a href&#x3D;\&quot;/api-docs/buy/static/api-browse.html#Headers\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Request headers&lt;/a&gt; in the Buying Integration Guide for more information.&lt;/span&gt; (optional)
-     * @param  \Ebay\Ebay\Model\Buy\Order\CreateGuestCheckoutSessionRequestV2 $create_guest_checkout_session_request_v2 The container for the fields used by the &lt;b&gt;initiateGuestCheckoutSession&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\CreateGuestCheckoutSessionRequestV2 $create_guest_checkout_session_request_v2 The container for the fields used by the &lt;b&gt;initiateGuestCheckoutSession&lt;/b&gt; method. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -978,11 +978,11 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\CouponRequest $coupon_request The container for the fields used by the &lt;b&gt;removeGuestCoupon&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\CouponRequest $coupon_request The container for the fields used by the &lt;b&gt;removeGuestCoupon&lt;/b&gt; method. (optional)
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2
+     * @return \Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2
      */
     public function removeGuestCoupon($checkout_session_id, $x_ebay_c_marketplace_id, $coupon_request = null)
     {
@@ -995,11 +995,11 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\CouponRequest $coupon_request The container for the fields used by the &lt;b&gt;removeGuestCoupon&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\CouponRequest $coupon_request The container for the fields used by the &lt;b&gt;removeGuestCoupon&lt;/b&gt; method. (optional)
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function removeGuestCouponWithHttpInfo($checkout_session_id, $x_ebay_c_marketplace_id, $coupon_request = null)
     {
@@ -1042,20 +1042,20 @@ class GuestCheckoutSessionApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
+            $returnType = '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1073,7 +1073,7 @@ class GuestCheckoutSessionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2',
+                        '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1088,7 +1088,7 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\CouponRequest $coupon_request The container for the fields used by the &lt;b&gt;removeGuestCoupon&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\CouponRequest $coupon_request The container for the fields used by the &lt;b&gt;removeGuestCoupon&lt;/b&gt; method. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1108,14 +1108,14 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\CouponRequest $coupon_request The container for the fields used by the &lt;b&gt;removeGuestCoupon&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\CouponRequest $coupon_request The container for the fields used by the &lt;b&gt;removeGuestCoupon&lt;/b&gt; method. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function removeGuestCouponAsyncWithHttpInfo($checkout_session_id, $x_ebay_c_marketplace_id, $coupon_request = null)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
+        $returnType = '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
         $request = $this->removeGuestCouponRequest($checkout_session_id, $x_ebay_c_marketplace_id, $coupon_request);
 
         return $this->client
@@ -1156,7 +1156,7 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\CouponRequest $coupon_request The container for the fields used by the &lt;b&gt;removeGuestCoupon&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\CouponRequest $coupon_request The container for the fields used by the &lt;b&gt;removeGuestCoupon&lt;/b&gt; method. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1271,11 +1271,11 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\UpdateQuantity $update_quantity The container for the fields used by the &lt;b&gt;updateGuestQuantity&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\UpdateQuantity $update_quantity The container for the fields used by the &lt;b&gt;updateGuestQuantity&lt;/b&gt; method. (optional)
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2
+     * @return \Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2
      */
     public function updateGuestQuantity($checkout_session_id, $x_ebay_c_marketplace_id, $update_quantity = null)
     {
@@ -1288,11 +1288,11 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\UpdateQuantity $update_quantity The container for the fields used by the &lt;b&gt;updateGuestQuantity&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\UpdateQuantity $update_quantity The container for the fields used by the &lt;b&gt;updateGuestQuantity&lt;/b&gt; method. (optional)
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateGuestQuantityWithHttpInfo($checkout_session_id, $x_ebay_c_marketplace_id, $update_quantity = null)
     {
@@ -1335,20 +1335,20 @@ class GuestCheckoutSessionApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
+            $returnType = '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1366,7 +1366,7 @@ class GuestCheckoutSessionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2',
+                        '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1381,7 +1381,7 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\UpdateQuantity $update_quantity The container for the fields used by the &lt;b&gt;updateGuestQuantity&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\UpdateQuantity $update_quantity The container for the fields used by the &lt;b&gt;updateGuestQuantity&lt;/b&gt; method. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1401,14 +1401,14 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\UpdateQuantity $update_quantity The container for the fields used by the &lt;b&gt;updateGuestQuantity&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\UpdateQuantity $update_quantity The container for the fields used by the &lt;b&gt;updateGuestQuantity&lt;/b&gt; method. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateGuestQuantityAsyncWithHttpInfo($checkout_session_id, $x_ebay_c_marketplace_id, $update_quantity = null)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
+        $returnType = '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
         $request = $this->updateGuestQuantityRequest($checkout_session_id, $x_ebay_c_marketplace_id, $update_quantity);
 
         return $this->client
@@ -1449,7 +1449,7 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\UpdateQuantity $update_quantity The container for the fields used by the &lt;b&gt;updateGuestQuantity&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\UpdateQuantity $update_quantity The container for the fields used by the &lt;b&gt;updateGuestQuantity&lt;/b&gt; method. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1564,11 +1564,11 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\ShippingAddressImpl $shipping_address_impl The container for the fields used by the &lt;b&gt;updateGuestShippingAddress&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\ShippingAddressImpl $shipping_address_impl The container for the fields used by the &lt;b&gt;updateGuestShippingAddress&lt;/b&gt; method. (optional)
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2
+     * @return \Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2
      */
     public function updateGuestShippingAddress($checkout_session_id, $x_ebay_c_marketplace_id, $shipping_address_impl = null)
     {
@@ -1581,11 +1581,11 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\ShippingAddressImpl $shipping_address_impl The container for the fields used by the &lt;b&gt;updateGuestShippingAddress&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\ShippingAddressImpl $shipping_address_impl The container for the fields used by the &lt;b&gt;updateGuestShippingAddress&lt;/b&gt; method. (optional)
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateGuestShippingAddressWithHttpInfo($checkout_session_id, $x_ebay_c_marketplace_id, $shipping_address_impl = null)
     {
@@ -1628,20 +1628,20 @@ class GuestCheckoutSessionApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
+            $returnType = '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1659,7 +1659,7 @@ class GuestCheckoutSessionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2',
+                        '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1674,7 +1674,7 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\ShippingAddressImpl $shipping_address_impl The container for the fields used by the &lt;b&gt;updateGuestShippingAddress&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\ShippingAddressImpl $shipping_address_impl The container for the fields used by the &lt;b&gt;updateGuestShippingAddress&lt;/b&gt; method. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1694,14 +1694,14 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\ShippingAddressImpl $shipping_address_impl The container for the fields used by the &lt;b&gt;updateGuestShippingAddress&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\ShippingAddressImpl $shipping_address_impl The container for the fields used by the &lt;b&gt;updateGuestShippingAddress&lt;/b&gt; method. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateGuestShippingAddressAsyncWithHttpInfo($checkout_session_id, $x_ebay_c_marketplace_id, $shipping_address_impl = null)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
+        $returnType = '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
         $request = $this->updateGuestShippingAddressRequest($checkout_session_id, $x_ebay_c_marketplace_id, $shipping_address_impl);
 
         return $this->client
@@ -1742,7 +1742,7 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\ShippingAddressImpl $shipping_address_impl The container for the fields used by the &lt;b&gt;updateGuestShippingAddress&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\ShippingAddressImpl $shipping_address_impl The container for the fields used by the &lt;b&gt;updateGuestShippingAddress&lt;/b&gt; method. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1857,11 +1857,11 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\UpdateShippingOption $update_shipping_option The container for the fields used by the &lt;b&gt;updateGuestShippingOption&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\UpdateShippingOption $update_shipping_option The container for the fields used by the &lt;b&gt;updateGuestShippingOption&lt;/b&gt; method. (optional)
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2
+     * @return \Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2
      */
     public function updateGuestShippingOption($checkout_session_id, $x_ebay_c_marketplace_id, $update_shipping_option = null)
     {
@@ -1874,11 +1874,11 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\UpdateShippingOption $update_shipping_option The container for the fields used by the &lt;b&gt;updateGuestShippingOption&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\UpdateShippingOption $update_shipping_option The container for the fields used by the &lt;b&gt;updateGuestShippingOption&lt;/b&gt; method. (optional)
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateGuestShippingOptionWithHttpInfo($checkout_session_id, $x_ebay_c_marketplace_id, $update_shipping_option = null)
     {
@@ -1921,20 +1921,20 @@ class GuestCheckoutSessionApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
+            $returnType = '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1952,7 +1952,7 @@ class GuestCheckoutSessionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2',
+                        '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1967,7 +1967,7 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\UpdateShippingOption $update_shipping_option The container for the fields used by the &lt;b&gt;updateGuestShippingOption&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\UpdateShippingOption $update_shipping_option The container for the fields used by the &lt;b&gt;updateGuestShippingOption&lt;/b&gt; method. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1987,14 +1987,14 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\UpdateShippingOption $update_shipping_option The container for the fields used by the &lt;b&gt;updateGuestShippingOption&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\UpdateShippingOption $update_shipping_option The container for the fields used by the &lt;b&gt;updateGuestShippingOption&lt;/b&gt; method. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateGuestShippingOptionAsyncWithHttpInfo($checkout_session_id, $x_ebay_c_marketplace_id, $update_shipping_option = null)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
+        $returnType = '\Ebay\Model\Buy\Order\GuestCheckoutSessionResponseV2';
         $request = $this->updateGuestShippingOptionRequest($checkout_session_id, $x_ebay_c_marketplace_id, $update_shipping_option);
 
         return $this->client
@@ -2035,7 +2035,7 @@ class GuestCheckoutSessionApi
      *
      * @param  string $checkout_session_id The eBay-assigned session ID, for a specific eBay marketplace, that is returned by the &lt;b&gt; initiateGuestCheckoutSession&lt;/b&gt; method.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; When using this ID, the X-EBAY-C-MARKETPLACE-ID value and developer App ID must be the same as that used when this guest checkout session was created. See &lt;a href&#x3D;\&quot;/api-docs/buy/order/overview.html#checkout-restriction\&quot;&gt;Checkout session restrictions&lt;/a&gt; in the Buy Integration Guide for details.&lt;/span&gt; (required)
      * @param  string $x_ebay_c_marketplace_id A header that identifies the user&#39;s business context and is specified using a marketplace ID value.&lt;br /&gt;&lt;br /&gt;&lt;span class&#x3D;\&quot;tablenote\&quot;&gt;&lt;b&gt;Note:&lt;/b&gt; This header does &lt;i&gt;not&lt;/i&gt; indicate a language preference or consumer location.&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;See &lt;a href&#x3D;\&quot;/api-docs/static/rest-request-components.html#marketpl\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Marketplace ID values&lt;/a&gt; for a list of supported values. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Order\UpdateShippingOption $update_shipping_option The container for the fields used by the &lt;b&gt;updateGuestShippingOption&lt;/b&gt; method. (optional)
+     * @param  \Ebay\Model\Buy\Order\UpdateShippingOption $update_shipping_option The container for the fields used by the &lt;b&gt;updateGuestShippingOption&lt;/b&gt; method. (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

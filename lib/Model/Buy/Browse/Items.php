@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,9 +60,9 @@ class Items implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\Ebay\Ebay\Model\Buy\Browse\CoreItem[]',
+        'items' => '\Ebay\Model\Buy\Browse\CoreItem[]',
         'total' => 'int',
-        'warnings' => '\Ebay\Ebay\Model\Buy\Browse\Error[]'
+        'warnings' => '\Ebay\Model\Buy\Browse\Error[]'
     ];
 
     /**
@@ -221,7 +221,7 @@ class Items implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets items
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\CoreItem[]|null
+     * @return \Ebay\Model\Buy\Browse\CoreItem[]|null
      */
     public function getItems()
     {
@@ -231,7 +231,7 @@ class Items implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets items
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\CoreItem[]|null $items An arraylist of all the items.
+     * @param \Ebay\Model\Buy\Browse\CoreItem[]|null $items An arraylist of all the items.
      *
      * @return self
      */
@@ -269,7 +269,7 @@ class Items implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets warnings
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Error[]|null
+     * @return \Ebay\Model\Buy\Browse\Error[]|null
      */
     public function getWarnings()
     {
@@ -279,7 +279,7 @@ class Items implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets warnings
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Error[]|null $warnings An array of warning messages. These types of errors do not prevent the method from executing but should be checked.
+     * @param \Ebay\Model\Buy\Browse\Error[]|null $warnings An array of warning messages. These types of errors do not prevent the method from executing but should be checked.
      *
      * @return self
      */

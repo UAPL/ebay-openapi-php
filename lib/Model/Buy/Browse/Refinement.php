@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,10 +60,10 @@ class Refinement implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'aspect_distributions' => '\Ebay\Ebay\Model\Buy\Browse\AspectDistribution[]',
-        'buying_option_distributions' => '\Ebay\Ebay\Model\Buy\Browse\BuyingOptionDistribution[]',
-        'category_distributions' => '\Ebay\Ebay\Model\Buy\Browse\CategoryDistribution[]',
-        'condition_distributions' => '\Ebay\Ebay\Model\Buy\Browse\ConditionDistribution[]',
+        'aspect_distributions' => '\Ebay\Model\Buy\Browse\AspectDistribution[]',
+        'buying_option_distributions' => '\Ebay\Model\Buy\Browse\BuyingOptionDistribution[]',
+        'category_distributions' => '\Ebay\Model\Buy\Browse\CategoryDistribution[]',
+        'condition_distributions' => '\Ebay\Model\Buy\Browse\ConditionDistribution[]',
         'dominant_category_id' => 'string'
     ];
 
@@ -233,7 +233,7 @@ class Refinement implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets aspect_distributions
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\AspectDistribution[]|null
+     * @return \Ebay\Model\Buy\Browse\AspectDistribution[]|null
      */
     public function getAspectDistributions()
     {
@@ -243,7 +243,7 @@ class Refinement implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets aspect_distributions
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\AspectDistribution[]|null $aspect_distributions An array of containers for the all the aspect refinements.
+     * @param \Ebay\Model\Buy\Browse\AspectDistribution[]|null $aspect_distributions An array of containers for the all the aspect refinements.
      *
      * @return self
      */
@@ -257,7 +257,7 @@ class Refinement implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets buying_option_distributions
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\BuyingOptionDistribution[]|null
+     * @return \Ebay\Model\Buy\Browse\BuyingOptionDistribution[]|null
      */
     public function getBuyingOptionDistributions()
     {
@@ -267,7 +267,7 @@ class Refinement implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets buying_option_distributions
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\BuyingOptionDistribution[]|null $buying_option_distributions An array of containers for the all the buying option refinements.
+     * @param \Ebay\Model\Buy\Browse\BuyingOptionDistribution[]|null $buying_option_distributions An array of containers for the all the buying option refinements.
      *
      * @return self
      */
@@ -281,7 +281,7 @@ class Refinement implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets category_distributions
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\CategoryDistribution[]|null
+     * @return \Ebay\Model\Buy\Browse\CategoryDistribution[]|null
      */
     public function getCategoryDistributions()
     {
@@ -291,7 +291,7 @@ class Refinement implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets category_distributions
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\CategoryDistribution[]|null $category_distributions An array of containers for the all the category refinements.
+     * @param \Ebay\Model\Buy\Browse\CategoryDistribution[]|null $category_distributions An array of containers for the all the category refinements.
      *
      * @return self
      */
@@ -305,7 +305,7 @@ class Refinement implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets condition_distributions
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ConditionDistribution[]|null
+     * @return \Ebay\Model\Buy\Browse\ConditionDistribution[]|null
      */
     public function getConditionDistributions()
     {
@@ -315,7 +315,7 @@ class Refinement implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets condition_distributions
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ConditionDistribution[]|null $condition_distributions An array of containers for the all the condition refinements.
+     * @param \Ebay\Model\Buy\Browse\ConditionDistribution[]|null $condition_distributions An array of containers for the all the condition refinements.
      *
      * @return self
      */

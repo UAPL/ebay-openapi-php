@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Api\Buy\Browse;
+namespace Ebay\Api\Buy\Browse;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -118,11 +118,11 @@ class ShoppingCartApi
     /**
      * Operation addItem
      *
-     * @param  \Ebay\Ebay\Model\Buy\Browse\AddCartItemInput $add_cart_item_input add_cart_item_input (optional)
+     * @param  \Ebay\Model\Buy\Browse\AddCartItemInput $add_cart_item_input add_cart_item_input (optional)
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse
+     * @return \Ebay\Model\Buy\Browse\RemoteShopcartResponse
      */
     public function addItem($add_cart_item_input = null)
     {
@@ -133,11 +133,11 @@ class ShoppingCartApi
     /**
      * Operation addItemWithHttpInfo
      *
-     * @param  \Ebay\Ebay\Model\Buy\Browse\AddCartItemInput $add_cart_item_input (optional)
+     * @param  \Ebay\Model\Buy\Browse\AddCartItemInput $add_cart_item_input (optional)
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Browse\RemoteShopcartResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function addItemWithHttpInfo($add_cart_item_input = null)
     {
@@ -180,20 +180,20 @@ class ShoppingCartApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Browse\RemoteShopcartResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Browse\RemoteShopcartResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse';
+            $returnType = '\Ebay\Model\Buy\Browse\RemoteShopcartResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -211,7 +211,7 @@ class ShoppingCartApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse',
+                        '\Ebay\Model\Buy\Browse\RemoteShopcartResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -224,7 +224,7 @@ class ShoppingCartApi
     /**
      * Operation addItemAsync
      *
-     * @param  \Ebay\Ebay\Model\Buy\Browse\AddCartItemInput $add_cart_item_input (optional)
+     * @param  \Ebay\Model\Buy\Browse\AddCartItemInput $add_cart_item_input (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -242,14 +242,14 @@ class ShoppingCartApi
     /**
      * Operation addItemAsyncWithHttpInfo
      *
-     * @param  \Ebay\Ebay\Model\Buy\Browse\AddCartItemInput $add_cart_item_input (optional)
+     * @param  \Ebay\Model\Buy\Browse\AddCartItemInput $add_cart_item_input (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function addItemAsyncWithHttpInfo($add_cart_item_input = null)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse';
+        $returnType = '\Ebay\Model\Buy\Browse\RemoteShopcartResponse';
         $request = $this->addItemRequest($add_cart_item_input);
 
         return $this->client
@@ -288,7 +288,7 @@ class ShoppingCartApi
     /**
      * Create request for operation 'addItem'
      *
-     * @param  \Ebay\Ebay\Model\Buy\Browse\AddCartItemInput $add_cart_item_input (optional)
+     * @param  \Ebay\Model\Buy\Browse\AddCartItemInput $add_cart_item_input (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -384,7 +384,7 @@ class ShoppingCartApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse
+     * @return \Ebay\Model\Buy\Browse\RemoteShopcartResponse
      */
     public function getShoppingCart()
     {
@@ -398,7 +398,7 @@ class ShoppingCartApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Browse\RemoteShopcartResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getShoppingCartWithHttpInfo()
     {
@@ -441,20 +441,20 @@ class ShoppingCartApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Browse\RemoteShopcartResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Browse\RemoteShopcartResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse';
+            $returnType = '\Ebay\Model\Buy\Browse\RemoteShopcartResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -472,7 +472,7 @@ class ShoppingCartApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse',
+                        '\Ebay\Model\Buy\Browse\RemoteShopcartResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -508,7 +508,7 @@ class ShoppingCartApi
      */
     public function getShoppingCartAsyncWithHttpInfo()
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse';
+        $returnType = '\Ebay\Model\Buy\Browse\RemoteShopcartResponse';
         $request = $this->getShoppingCartRequest();
 
         return $this->client
@@ -633,11 +633,11 @@ class ShoppingCartApi
     /**
      * Operation removeItem
      *
-     * @param  \Ebay\Ebay\Model\Buy\Browse\RemoveCartItemInput $remove_cart_item_input remove_cart_item_input (optional)
+     * @param  \Ebay\Model\Buy\Browse\RemoveCartItemInput $remove_cart_item_input remove_cart_item_input (optional)
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse
+     * @return \Ebay\Model\Buy\Browse\RemoteShopcartResponse
      */
     public function removeItem($remove_cart_item_input = null)
     {
@@ -648,11 +648,11 @@ class ShoppingCartApi
     /**
      * Operation removeItemWithHttpInfo
      *
-     * @param  \Ebay\Ebay\Model\Buy\Browse\RemoveCartItemInput $remove_cart_item_input (optional)
+     * @param  \Ebay\Model\Buy\Browse\RemoveCartItemInput $remove_cart_item_input (optional)
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Browse\RemoteShopcartResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function removeItemWithHttpInfo($remove_cart_item_input = null)
     {
@@ -695,20 +695,20 @@ class ShoppingCartApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Browse\RemoteShopcartResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Browse\RemoteShopcartResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse';
+            $returnType = '\Ebay\Model\Buy\Browse\RemoteShopcartResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -726,7 +726,7 @@ class ShoppingCartApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse',
+                        '\Ebay\Model\Buy\Browse\RemoteShopcartResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -739,7 +739,7 @@ class ShoppingCartApi
     /**
      * Operation removeItemAsync
      *
-     * @param  \Ebay\Ebay\Model\Buy\Browse\RemoveCartItemInput $remove_cart_item_input (optional)
+     * @param  \Ebay\Model\Buy\Browse\RemoveCartItemInput $remove_cart_item_input (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -757,14 +757,14 @@ class ShoppingCartApi
     /**
      * Operation removeItemAsyncWithHttpInfo
      *
-     * @param  \Ebay\Ebay\Model\Buy\Browse\RemoveCartItemInput $remove_cart_item_input (optional)
+     * @param  \Ebay\Model\Buy\Browse\RemoveCartItemInput $remove_cart_item_input (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function removeItemAsyncWithHttpInfo($remove_cart_item_input = null)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse';
+        $returnType = '\Ebay\Model\Buy\Browse\RemoteShopcartResponse';
         $request = $this->removeItemRequest($remove_cart_item_input);
 
         return $this->client
@@ -803,7 +803,7 @@ class ShoppingCartApi
     /**
      * Create request for operation 'removeItem'
      *
-     * @param  \Ebay\Ebay\Model\Buy\Browse\RemoveCartItemInput $remove_cart_item_input (optional)
+     * @param  \Ebay\Model\Buy\Browse\RemoveCartItemInput $remove_cart_item_input (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -896,11 +896,11 @@ class ShoppingCartApi
     /**
      * Operation updateQuantity
      *
-     * @param  \Ebay\Ebay\Model\Buy\Browse\UpdateCartItemInput $update_cart_item_input update_cart_item_input (optional)
+     * @param  \Ebay\Model\Buy\Browse\UpdateCartItemInput $update_cart_item_input update_cart_item_input (optional)
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse
+     * @return \Ebay\Model\Buy\Browse\RemoteShopcartResponse
      */
     public function updateQuantity($update_cart_item_input = null)
     {
@@ -911,11 +911,11 @@ class ShoppingCartApi
     /**
      * Operation updateQuantityWithHttpInfo
      *
-     * @param  \Ebay\Ebay\Model\Buy\Browse\UpdateCartItemInput $update_cart_item_input (optional)
+     * @param  \Ebay\Model\Buy\Browse\UpdateCartItemInput $update_cart_item_input (optional)
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Browse\RemoteShopcartResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function updateQuantityWithHttpInfo($update_cart_item_input = null)
     {
@@ -958,20 +958,20 @@ class ShoppingCartApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Browse\RemoteShopcartResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Browse\RemoteShopcartResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse';
+            $returnType = '\Ebay\Model\Buy\Browse\RemoteShopcartResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -989,7 +989,7 @@ class ShoppingCartApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse',
+                        '\Ebay\Model\Buy\Browse\RemoteShopcartResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1002,7 +1002,7 @@ class ShoppingCartApi
     /**
      * Operation updateQuantityAsync
      *
-     * @param  \Ebay\Ebay\Model\Buy\Browse\UpdateCartItemInput $update_cart_item_input (optional)
+     * @param  \Ebay\Model\Buy\Browse\UpdateCartItemInput $update_cart_item_input (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1020,14 +1020,14 @@ class ShoppingCartApi
     /**
      * Operation updateQuantityAsyncWithHttpInfo
      *
-     * @param  \Ebay\Ebay\Model\Buy\Browse\UpdateCartItemInput $update_cart_item_input (optional)
+     * @param  \Ebay\Model\Buy\Browse\UpdateCartItemInput $update_cart_item_input (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function updateQuantityAsyncWithHttpInfo($update_cart_item_input = null)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse';
+        $returnType = '\Ebay\Model\Buy\Browse\RemoteShopcartResponse';
         $request = $this->updateQuantityRequest($update_cart_item_input);
 
         return $this->client
@@ -1066,7 +1066,7 @@ class ShoppingCartApi
     /**
      * Create request for operation 'updateQuantity'
      *
-     * @param  \Ebay\Ebay\Model\Buy\Browse\UpdateCartItemInput $update_cart_item_input (optional)
+     * @param  \Ebay\Model\Buy\Browse\UpdateCartItemInput $update_cart_item_input (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

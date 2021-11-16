@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Deal;
+namespace Ebay\Model\Buy\Deal;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,9 +60,9 @@ class MarketingPrice implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'discount_amount' => '\Ebay\Ebay\Model\Buy\Deal\Amount',
+        'discount_amount' => '\Ebay\Model\Buy\Deal\Amount',
         'discount_percentage' => 'string',
-        'original_price' => '\Ebay\Ebay\Model\Buy\Deal\Amount',
+        'original_price' => '\Ebay\Model\Buy\Deal\Amount',
         'price_treatment' => 'string'
     ];
 
@@ -227,7 +227,7 @@ class MarketingPrice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets discount_amount
      *
-     * @return \Ebay\Ebay\Model\Buy\Deal\Amount|null
+     * @return \Ebay\Model\Buy\Deal\Amount|null
      */
     public function getDiscountAmount()
     {
@@ -237,7 +237,7 @@ class MarketingPrice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets discount_amount
      *
-     * @param \Ebay\Ebay\Model\Buy\Deal\Amount|null $discount_amount discount_amount
+     * @param \Ebay\Model\Buy\Deal\Amount|null $discount_amount discount_amount
      *
      * @return self
      */
@@ -275,7 +275,7 @@ class MarketingPrice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets original_price
      *
-     * @return \Ebay\Ebay\Model\Buy\Deal\Amount|null
+     * @return \Ebay\Model\Buy\Deal\Amount|null
      */
     public function getOriginalPrice()
     {
@@ -285,7 +285,7 @@ class MarketingPrice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets original_price
      *
-     * @param \Ebay\Ebay\Model\Buy\Deal\Amount|null $original_price original_price
+     * @param \Ebay\Model\Buy\Deal\Amount|null $original_price original_price
      *
      * @return self
      */

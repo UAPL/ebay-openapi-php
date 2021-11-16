@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Commerce\Taxonomy;
+namespace Ebay\Model\Commerce\Taxonomy;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -61,7 +61,7 @@ class AspectValue implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'localized_value' => 'string',
-        'value_constraints' => '\Ebay\Ebay\Model\Commerce\Taxonomy\ValueConstraint[]'
+        'value_constraints' => '\Ebay\Model\Commerce\Taxonomy\ValueConstraint[]'
     ];
 
     /**
@@ -239,7 +239,7 @@ class AspectValue implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets value_constraints
      *
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\ValueConstraint[]|null
+     * @return \Ebay\Model\Commerce\Taxonomy\ValueConstraint[]|null
      */
     public function getValueConstraints()
     {
@@ -249,7 +249,7 @@ class AspectValue implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets value_constraints
      *
-     * @param \Ebay\Ebay\Model\Commerce\Taxonomy\ValueConstraint[]|null $value_constraints Not returned if the value of the localizedValue field can always be selected for this aspect of the specified category. Contains a list of the dependencies that identify when the value of the localizedValue field is available for the current aspect. Each dependency specifies the values of another aspect of the same category (a control aspect), for which the current value of the current aspect can also be selected by the seller. Example: A shirt is available in three sizes and three colors, but only the Small and Medium sizes come in Green. Thus for the Color aspect, the value Green is constrained by its dependency on Size (the control aspect). Only when the Size aspect value is Small or Medium, can the Color aspect value of Green be selected by the seller.
+     * @param \Ebay\Model\Commerce\Taxonomy\ValueConstraint[]|null $value_constraints Not returned if the value of the localizedValue field can always be selected for this aspect of the specified category. Contains a list of the dependencies that identify when the value of the localizedValue field is available for the current aspect. Each dependency specifies the values of another aspect of the same category (a control aspect), for which the current value of the current aspect can also be selected by the seller. Example: A shirt is available in three sizes and three colors, but only the Small and Medium sizes come in Green. Thus for the Color aspect, the value Green is constrained by its dependency on Size (the control aspect). Only when the Size aspect value is Small or Medium, can the Color aspect value of Green be selected by the seller.
      *
      * @return self
      */

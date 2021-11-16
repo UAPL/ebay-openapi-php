@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -63,7 +63,7 @@ class SellerDetail implements ModelInterface, ArrayAccess, \JsonSerializable
         'feedback_percentage' => 'string',
         'feedback_score' => 'int',
         'seller_account_type' => 'string',
-        'seller_legal_info' => '\Ebay\Ebay\Model\Buy\Browse\SellerLegalInfo',
+        'seller_legal_info' => '\Ebay\Model\Buy\Browse\SellerLegalInfo',
         'username' => 'string'
     ];
 
@@ -305,7 +305,7 @@ class SellerDetail implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets seller_legal_info
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\SellerLegalInfo|null
+     * @return \Ebay\Model\Buy\Browse\SellerLegalInfo|null
      */
     public function getSellerLegalInfo()
     {
@@ -315,7 +315,7 @@ class SellerDetail implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets seller_legal_info
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\SellerLegalInfo|null $seller_legal_info seller_legal_info
+     * @param \Ebay\Model\Buy\Browse\SellerLegalInfo|null $seller_legal_info seller_legal_info
      *
      * @return self
      */

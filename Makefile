@@ -1,5 +1,5 @@
 
-openapi:
+openapi-classes:
 	openapi-generator batch -- \
 		openapi/configs/buy-browse-config.yml \
 		openapi/configs/buy-feed-config.yml \

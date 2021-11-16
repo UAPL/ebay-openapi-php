@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**category_subtree_node** | [**\Ebay\Ebay\Model\Commerce\Taxonomy\CategoryTreeNode**](CategoryTreeNode.md) |  | [optional]
+**category_subtree_node** | [**\Ebay\Model\Commerce\Taxonomy\CategoryTreeNode**](CategoryTreeNode.md) |  | [optional]
 **category_tree_id** | **string** | The unique identifier of the eBay category tree to which this subtree belongs. | [optional]
 **category_tree_version** | **string** | The version of the category tree identified by categoryTreeId. It&#39;s a good idea to cache this value for comparison so you can determine if this category tree has been modified in subsequent calls. | [optional]
 

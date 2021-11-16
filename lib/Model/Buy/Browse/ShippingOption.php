@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,19 +60,19 @@ class ShippingOption implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'additional_shipping_cost_per_unit' => '\Ebay\Ebay\Model\Buy\Browse\ConvertedAmount',
+        'additional_shipping_cost_per_unit' => '\Ebay\Model\Buy\Browse\ConvertedAmount',
         'cut_off_date_used_for_estimate' => 'string',
         'fulfilled_through' => 'string',
         'guaranteed_delivery' => 'bool',
-        'import_charges' => '\Ebay\Ebay\Model\Buy\Browse\ConvertedAmount',
+        'import_charges' => '\Ebay\Model\Buy\Browse\ConvertedAmount',
         'max_estimated_delivery_date' => 'string',
         'min_estimated_delivery_date' => 'string',
         'quantity_used_for_estimate' => 'int',
         'shipping_carrier_code' => 'string',
-        'shipping_cost' => '\Ebay\Ebay\Model\Buy\Browse\ConvertedAmount',
+        'shipping_cost' => '\Ebay\Model\Buy\Browse\ConvertedAmount',
         'shipping_cost_type' => 'string',
         'shipping_service_code' => 'string',
-        'ship_to_location_used_for_estimate' => '\Ebay\Ebay\Model\Buy\Browse\ShipToLocation',
+        'ship_to_location_used_for_estimate' => '\Ebay\Model\Buy\Browse\ShipToLocation',
         'trademark_symbol' => 'string',
         'type' => 'string'
     ];
@@ -293,7 +293,7 @@ class ShippingOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets additional_shipping_cost_per_unit
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null
+     * @return \Ebay\Model\Buy\Browse\ConvertedAmount|null
      */
     public function getAdditionalShippingCostPerUnit()
     {
@@ -303,7 +303,7 @@ class ShippingOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets additional_shipping_cost_per_unit
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null $additional_shipping_cost_per_unit additional_shipping_cost_per_unit
+     * @param \Ebay\Model\Buy\Browse\ConvertedAmount|null $additional_shipping_cost_per_unit additional_shipping_cost_per_unit
      *
      * @return self
      */
@@ -389,7 +389,7 @@ class ShippingOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets import_charges
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null
+     * @return \Ebay\Model\Buy\Browse\ConvertedAmount|null
      */
     public function getImportCharges()
     {
@@ -399,7 +399,7 @@ class ShippingOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets import_charges
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null $import_charges import_charges
+     * @param \Ebay\Model\Buy\Browse\ConvertedAmount|null $import_charges import_charges
      *
      * @return self
      */
@@ -509,7 +509,7 @@ class ShippingOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shipping_cost
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null
+     * @return \Ebay\Model\Buy\Browse\ConvertedAmount|null
      */
     public function getShippingCost()
     {
@@ -519,7 +519,7 @@ class ShippingOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shipping_cost
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null $shipping_cost shipping_cost
+     * @param \Ebay\Model\Buy\Browse\ConvertedAmount|null $shipping_cost shipping_cost
      *
      * @return self
      */
@@ -581,7 +581,7 @@ class ShippingOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets ship_to_location_used_for_estimate
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ShipToLocation|null
+     * @return \Ebay\Model\Buy\Browse\ShipToLocation|null
      */
     public function getShipToLocationUsedForEstimate()
     {
@@ -591,7 +591,7 @@ class ShippingOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets ship_to_location_used_for_estimate
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ShipToLocation|null $ship_to_location_used_for_estimate ship_to_location_used_for_estimate
+     * @param \Ebay\Model\Buy\Browse\ShipToLocation|null $ship_to_location_used_for_estimate ship_to_location_used_for_estimate
      *
      * @return self
      */

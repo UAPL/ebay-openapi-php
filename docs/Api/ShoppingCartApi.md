@@ -13,7 +13,7 @@ Method | HTTP request | Description
 ## `addItem()`
 
 ```php
-addItem($add_cart_item_input): \Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse
+addItem($add_cart_item_input): \Ebay\Model\Buy\Browse\RemoteShopcartResponse
 ```
 
 
@@ -40,7 +40,7 @@ $apiInstance = new Ebay\Api\ShoppingCartApi(
     new GuzzleHttp\Client(),
     $config
 );
-$add_cart_item_input = new \Ebay\Ebay\Model\Buy\Browse\AddCartItemInput(); // \Ebay\Ebay\Model\Buy\Browse\AddCartItemInput
+$add_cart_item_input = new \Ebay\Model\Buy\Browse\AddCartItemInput(); // \Ebay\Model\Buy\Browse\AddCartItemInput
 
 try {
     $result = $apiInstance->addItem($add_cart_item_input);
@@ -54,11 +54,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **add_cart_item_input** | [**\Ebay\Ebay\Model\Buy\Browse\AddCartItemInput**](../Model/AddCartItemInput.md)|  | [optional]
+ **add_cart_item_input** | [**\Ebay\Model\Buy\Browse\AddCartItemInput**](../Model/AddCartItemInput.md)|  | [optional]
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse**](../Model/RemoteShopcartResponse.md)
+[**\Ebay\Model\Buy\Browse\RemoteShopcartResponse**](../Model/RemoteShopcartResponse.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ Name | Type | Description  | Notes
 ## `getShoppingCart()`
 
 ```php
-getShoppingCart(): \Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse
+getShoppingCart(): \Ebay\Model\Buy\Browse\RemoteShopcartResponse
 ```
 
 
@@ -118,7 +118,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse**](../Model/RemoteShopcartResponse.md)
+[**\Ebay\Model\Buy\Browse\RemoteShopcartResponse**](../Model/RemoteShopcartResponse.md)
 
 ### Authorization
 
@@ -136,7 +136,7 @@ This endpoint does not need any parameter.
 ## `removeItem()`
 
 ```php
-removeItem($remove_cart_item_input): \Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse
+removeItem($remove_cart_item_input): \Ebay\Model\Buy\Browse\RemoteShopcartResponse
 ```
 
 
@@ -163,7 +163,7 @@ $apiInstance = new Ebay\Api\ShoppingCartApi(
     new GuzzleHttp\Client(),
     $config
 );
-$remove_cart_item_input = new \Ebay\Ebay\Model\Buy\Browse\RemoveCartItemInput(); // \Ebay\Ebay\Model\Buy\Browse\RemoveCartItemInput
+$remove_cart_item_input = new \Ebay\Model\Buy\Browse\RemoveCartItemInput(); // \Ebay\Model\Buy\Browse\RemoveCartItemInput
 
 try {
     $result = $apiInstance->removeItem($remove_cart_item_input);
@@ -177,11 +177,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **remove_cart_item_input** | [**\Ebay\Ebay\Model\Buy\Browse\RemoveCartItemInput**](../Model/RemoveCartItemInput.md)|  | [optional]
+ **remove_cart_item_input** | [**\Ebay\Model\Buy\Browse\RemoveCartItemInput**](../Model/RemoveCartItemInput.md)|  | [optional]
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse**](../Model/RemoteShopcartResponse.md)
+[**\Ebay\Model\Buy\Browse\RemoteShopcartResponse**](../Model/RemoteShopcartResponse.md)
 
 ### Authorization
 
@@ -199,7 +199,7 @@ Name | Type | Description  | Notes
 ## `updateQuantity()`
 
 ```php
-updateQuantity($update_cart_item_input): \Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse
+updateQuantity($update_cart_item_input): \Ebay\Model\Buy\Browse\RemoteShopcartResponse
 ```
 
 
@@ -226,7 +226,7 @@ $apiInstance = new Ebay\Api\ShoppingCartApi(
     new GuzzleHttp\Client(),
     $config
 );
-$update_cart_item_input = new \Ebay\Ebay\Model\Buy\Browse\UpdateCartItemInput(); // \Ebay\Ebay\Model\Buy\Browse\UpdateCartItemInput
+$update_cart_item_input = new \Ebay\Model\Buy\Browse\UpdateCartItemInput(); // \Ebay\Model\Buy\Browse\UpdateCartItemInput
 
 try {
     $result = $apiInstance->updateQuantity($update_cart_item_input);
@@ -240,11 +240,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **update_cart_item_input** | [**\Ebay\Ebay\Model\Buy\Browse\UpdateCartItemInput**](../Model/UpdateCartItemInput.md)|  | [optional]
+ **update_cart_item_input** | [**\Ebay\Model\Buy\Browse\UpdateCartItemInput**](../Model/UpdateCartItemInput.md)|  | [optional]
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Buy\Browse\RemoteShopcartResponse**](../Model/RemoteShopcartResponse.md)
+[**\Ebay\Model\Buy\Browse\RemoteShopcartResponse**](../Model/RemoteShopcartResponse.md)
 
 ### Authorization
 

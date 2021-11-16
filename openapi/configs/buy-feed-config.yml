@@ -1,6 +1,4 @@
+'!include': 'common.yml'
 inputSpec: https://developer.ebay.com/api-docs/master/buy/feed/openapi/3/buy_feed_v1_beta_oas3.yaml
-invokerPackage: Ebay
-modelPackage: Ebay\Model\Buy\Feed
-apiPackage: Ebay\Api\Buy\Feed
-packageName: uapl/ebay-openapi
-generatorName: php
+modelPackage: Model\Buy\Feed
+apiPackage: Api\Buy\Feed

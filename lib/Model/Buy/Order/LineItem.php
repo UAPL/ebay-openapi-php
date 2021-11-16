@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Order;
+namespace Ebay\Model\Buy\Order;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,18 +60,18 @@ class LineItem implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'authenticity_verification' => '\Ebay\Ebay\Model\Buy\Order\AuthenticityVerificationProgram',
-        'base_unit_price' => '\Ebay\Ebay\Model\Buy\Order\Amount',
-        'fees' => '\Ebay\Ebay\Model\Buy\Order\Fee[]',
-        'image' => '\Ebay\Ebay\Model\Buy\Order\Image',
+        'authenticity_verification' => '\Ebay\Model\Buy\Order\AuthenticityVerificationProgram',
+        'base_unit_price' => '\Ebay\Model\Buy\Order\Amount',
+        'fees' => '\Ebay\Model\Buy\Order\Fee[]',
+        'image' => '\Ebay\Model\Buy\Order\Image',
         'item_id' => 'string',
         'line_item_id' => 'string',
-        'net_price' => '\Ebay\Ebay\Model\Buy\Order\Amount',
-        'promotions' => '\Ebay\Ebay\Model\Buy\Order\Promotion[]',
+        'net_price' => '\Ebay\Model\Buy\Order\Amount',
+        'promotions' => '\Ebay\Model\Buy\Order\Promotion[]',
         'quantity' => 'int',
-        'seller' => '\Ebay\Ebay\Model\Buy\Order\Seller',
-        'shipping_options' => '\Ebay\Ebay\Model\Buy\Order\ShippingOption[]',
-        'tax_details' => '\Ebay\Ebay\Model\Buy\Order\TaxDetail[]',
+        'seller' => '\Ebay\Model\Buy\Order\Seller',
+        'shipping_options' => '\Ebay\Model\Buy\Order\ShippingOption[]',
+        'tax_details' => '\Ebay\Model\Buy\Order\TaxDetail[]',
         'title' => 'string'
     ];
 
@@ -281,7 +281,7 @@ class LineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets authenticity_verification
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\AuthenticityVerificationProgram|null
+     * @return \Ebay\Model\Buy\Order\AuthenticityVerificationProgram|null
      */
     public function getAuthenticityVerification()
     {
@@ -291,7 +291,7 @@ class LineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets authenticity_verification
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\AuthenticityVerificationProgram|null $authenticity_verification authenticity_verification
+     * @param \Ebay\Model\Buy\Order\AuthenticityVerificationProgram|null $authenticity_verification authenticity_verification
      *
      * @return self
      */
@@ -305,7 +305,7 @@ class LineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets base_unit_price
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Amount|null
+     * @return \Ebay\Model\Buy\Order\Amount|null
      */
     public function getBaseUnitPrice()
     {
@@ -315,7 +315,7 @@ class LineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets base_unit_price
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Amount|null $base_unit_price base_unit_price
+     * @param \Ebay\Model\Buy\Order\Amount|null $base_unit_price base_unit_price
      *
      * @return self
      */
@@ -329,7 +329,7 @@ class LineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets fees
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Fee[]|null
+     * @return \Ebay\Model\Buy\Order\Fee[]|null
      */
     public function getFees()
     {
@@ -339,7 +339,7 @@ class LineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets fees
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Fee[]|null $fees A breakdown of the fees applicable to the line item.
+     * @param \Ebay\Model\Buy\Order\Fee[]|null $fees A breakdown of the fees applicable to the line item.
      *
      * @return self
      */
@@ -353,7 +353,7 @@ class LineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets image
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Image|null
+     * @return \Ebay\Model\Buy\Order\Image|null
      */
     public function getImage()
     {
@@ -363,7 +363,7 @@ class LineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets image
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Image|null $image image
+     * @param \Ebay\Model\Buy\Order\Image|null $image image
      *
      * @return self
      */
@@ -425,7 +425,7 @@ class LineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets net_price
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Amount|null
+     * @return \Ebay\Model\Buy\Order\Amount|null
      */
     public function getNetPrice()
     {
@@ -435,7 +435,7 @@ class LineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets net_price
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Amount|null $net_price net_price
+     * @param \Ebay\Model\Buy\Order\Amount|null $net_price net_price
      *
      * @return self
      */
@@ -449,7 +449,7 @@ class LineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets promotions
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Promotion[]|null
+     * @return \Ebay\Model\Buy\Order\Promotion[]|null
      */
     public function getPromotions()
     {
@@ -459,7 +459,7 @@ class LineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets promotions
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Promotion[]|null $promotions An array of promotions applied to the line item.
+     * @param \Ebay\Model\Buy\Order\Promotion[]|null $promotions An array of promotions applied to the line item.
      *
      * @return self
      */
@@ -497,7 +497,7 @@ class LineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets seller
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Seller|null
+     * @return \Ebay\Model\Buy\Order\Seller|null
      */
     public function getSeller()
     {
@@ -507,7 +507,7 @@ class LineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets seller
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Seller|null $seller seller
+     * @param \Ebay\Model\Buy\Order\Seller|null $seller seller
      *
      * @return self
      */
@@ -521,7 +521,7 @@ class LineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shipping_options
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\ShippingOption[]|null
+     * @return \Ebay\Model\Buy\Order\ShippingOption[]|null
      */
     public function getShippingOptions()
     {
@@ -531,7 +531,7 @@ class LineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shipping_options
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\ShippingOption[]|null $shipping_options An array of shipping options that are available for the line item. By default, the first one will be selected.<br /><br /><span class=\"tablenote\"><b>Note:</b> The <b>updateGuestShippingOption</b> method can be used to change the shipping option.</span>
+     * @param \Ebay\Model\Buy\Order\ShippingOption[]|null $shipping_options An array of shipping options that are available for the line item. By default, the first one will be selected.<br /><br /><span class=\"tablenote\"><b>Note:</b> The <b>updateGuestShippingOption</b> method can be used to change the shipping option.</span>
      *
      * @return self
      */
@@ -545,7 +545,7 @@ class LineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tax_details
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\TaxDetail[]|null
+     * @return \Ebay\Model\Buy\Order\TaxDetail[]|null
      */
     public function getTaxDetails()
     {
@@ -555,7 +555,7 @@ class LineItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tax_details
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\TaxDetail[]|null $tax_details A container that returns the tax information for the line item.
+     * @param \Ebay\Model\Buy\Order\TaxDetail[]|null $tax_details A container that returns the tax information for the line item.
      *
      * @return self
      */

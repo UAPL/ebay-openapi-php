@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,16 +60,16 @@ class SearchPagedCollection implements ModelInterface, ArrayAccess, \JsonSeriali
       * @var string[]
       */
     protected static $openAPITypes = [
-        'auto_corrections' => '\Ebay\Ebay\Model\Buy\Browse\AutoCorrections',
+        'auto_corrections' => '\Ebay\Model\Buy\Browse\AutoCorrections',
         'href' => 'string',
-        'item_summaries' => '\Ebay\Ebay\Model\Buy\Browse\ItemSummary[]',
+        'item_summaries' => '\Ebay\Model\Buy\Browse\ItemSummary[]',
         'limit' => 'int',
         'next' => 'string',
         'offset' => 'int',
         'prev' => 'string',
-        'refinement' => '\Ebay\Ebay\Model\Buy\Browse\Refinement',
+        'refinement' => '\Ebay\Model\Buy\Browse\Refinement',
         'total' => 'int',
-        'warnings' => '\Ebay\Ebay\Model\Buy\Browse\Error[]'
+        'warnings' => '\Ebay\Model\Buy\Browse\Error[]'
     ];
 
     /**
@@ -263,7 +263,7 @@ class SearchPagedCollection implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets auto_corrections
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\AutoCorrections|null
+     * @return \Ebay\Model\Buy\Browse\AutoCorrections|null
      */
     public function getAutoCorrections()
     {
@@ -273,7 +273,7 @@ class SearchPagedCollection implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets auto_corrections
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\AutoCorrections|null $auto_corrections auto_corrections
+     * @param \Ebay\Model\Buy\Browse\AutoCorrections|null $auto_corrections auto_corrections
      *
      * @return self
      */
@@ -311,7 +311,7 @@ class SearchPagedCollection implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets item_summaries
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ItemSummary[]|null
+     * @return \Ebay\Model\Buy\Browse\ItemSummary[]|null
      */
     public function getItemSummaries()
     {
@@ -321,7 +321,7 @@ class SearchPagedCollection implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets item_summaries
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ItemSummary[]|null $item_summaries An array of the items on this page. The items are sorted according to the sorting method specified in the request.
+     * @param \Ebay\Model\Buy\Browse\ItemSummary[]|null $item_summaries An array of the items on this page. The items are sorted according to the sorting method specified in the request.
      *
      * @return self
      */
@@ -431,7 +431,7 @@ class SearchPagedCollection implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets refinement
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Refinement|null
+     * @return \Ebay\Model\Buy\Browse\Refinement|null
      */
     public function getRefinement()
     {
@@ -441,7 +441,7 @@ class SearchPagedCollection implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets refinement
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Refinement|null $refinement refinement
+     * @param \Ebay\Model\Buy\Browse\Refinement|null $refinement refinement
      *
      * @return self
      */
@@ -479,7 +479,7 @@ class SearchPagedCollection implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets warnings
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Error[]|null
+     * @return \Ebay\Model\Buy\Browse\Error[]|null
      */
     public function getWarnings()
     {
@@ -489,7 +489,7 @@ class SearchPagedCollection implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets warnings
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Error[]|null $warnings The container with all the warnings for the request.
+     * @param \Ebay\Model\Buy\Browse\Error[]|null $warnings The container with all the warnings for the request.
      *
      * @return self
      */

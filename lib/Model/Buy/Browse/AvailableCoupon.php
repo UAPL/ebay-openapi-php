@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -59,8 +59,8 @@ class AvailableCoupon implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'constraint' => '\Ebay\Ebay\Model\Buy\Browse\CouponConstraint',
-        'discount_amount' => '\Ebay\Ebay\Model\Buy\Browse\Amount',
+        'constraint' => '\Ebay\Model\Buy\Browse\CouponConstraint',
+        'discount_amount' => '\Ebay\Model\Buy\Browse\Amount',
         'discount_type' => 'string',
         'message' => 'string',
         'redemption_code' => 'string',
@@ -238,7 +238,7 @@ class AvailableCoupon implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets constraint
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\CouponConstraint|null
+     * @return \Ebay\Model\Buy\Browse\CouponConstraint|null
      */
     public function getConstraint()
     {
@@ -248,7 +248,7 @@ class AvailableCoupon implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets constraint
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\CouponConstraint|null $constraint constraint
+     * @param \Ebay\Model\Buy\Browse\CouponConstraint|null $constraint constraint
      *
      * @return self
      */
@@ -262,7 +262,7 @@ class AvailableCoupon implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets discount_amount
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Amount|null
+     * @return \Ebay\Model\Buy\Browse\Amount|null
      */
     public function getDiscountAmount()
     {
@@ -272,7 +272,7 @@ class AvailableCoupon implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets discount_amount
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Amount|null $discount_amount discount_amount
+     * @param \Ebay\Model\Buy\Browse\Amount|null $discount_amount discount_amount
      *
      * @return self
      */

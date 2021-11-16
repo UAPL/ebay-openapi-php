@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Feed;
+namespace Ebay\Model\Buy\Feed;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,7 +60,7 @@ class ItemResponse implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\Ebay\Ebay\Model\Buy\Feed\Item[]'
+        'items' => '\Ebay\Model\Buy\Feed\Item[]'
     ];
 
     /**
@@ -209,7 +209,7 @@ class ItemResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets items
      *
-     * @return \Ebay\Ebay\Model\Buy\Feed\Item[]|null
+     * @return \Ebay\Model\Buy\Feed\Item[]|null
      */
     public function getItems()
     {
@@ -219,7 +219,7 @@ class ItemResponse implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets items
      *
-     * @param \Ebay\Ebay\Model\Buy\Feed\Item[]|null $items The container for the array of items returned by the <b> getItemFeed</b> method. The data in the file is tab separated and the first row is the header, which labels the columns and indicates the order of the values on each line. The header labels match the fields that are described in the <a href=\"/api-docs/buy/feed/resources/item/methods/getItemFeed#h3-response-fields\">Response fields</a> section.
+     * @param \Ebay\Model\Buy\Feed\Item[]|null $items The container for the array of items returned by the <b> getItemFeed</b> method. The data in the file is tab separated and the first row is the header, which labels the columns and indicates the order of the values on each line. The header labels match the fields that are described in the <a href=\"/api-docs/buy/feed/resources/item/methods/getItemFeed#h3-response-fields\">Response fields</a> section.
      *
      * @return self
      */

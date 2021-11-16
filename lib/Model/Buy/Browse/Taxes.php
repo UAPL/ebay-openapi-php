@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -63,7 +63,7 @@ class Taxes implements ModelInterface, ArrayAccess, \JsonSerializable
         'ebay_collect_and_remit_tax' => 'bool',
         'included_in_price' => 'bool',
         'shipping_and_handling_taxed' => 'bool',
-        'tax_jurisdiction' => '\Ebay\Ebay\Model\Buy\Browse\TaxJurisdiction',
+        'tax_jurisdiction' => '\Ebay\Model\Buy\Browse\TaxJurisdiction',
         'tax_percentage' => 'string',
         'tax_type' => 'string'
     ];
@@ -311,7 +311,7 @@ class Taxes implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tax_jurisdiction
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\TaxJurisdiction|null
+     * @return \Ebay\Model\Buy\Browse\TaxJurisdiction|null
      */
     public function getTaxJurisdiction()
     {
@@ -321,7 +321,7 @@ class Taxes implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tax_jurisdiction
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\TaxJurisdiction|null $tax_jurisdiction tax_jurisdiction
+     * @param \Ebay\Model\Buy\Browse\TaxJurisdiction|null $tax_jurisdiction tax_jurisdiction
      *
      * @return self
      */

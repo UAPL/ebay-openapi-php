@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Order;
+namespace Ebay\Model\Buy\Order;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,12 +60,12 @@ class GuestCheckoutSessionResponseV2 implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'applied_coupons' => '\Ebay\Ebay\Model\Buy\Order\Coupon[]',
+        'applied_coupons' => '\Ebay\Model\Buy\Order\Coupon[]',
         'checkout_session_id' => 'string',
-        'line_items' => '\Ebay\Ebay\Model\Buy\Order\LineItem[]',
-        'pricing_summary' => '\Ebay\Ebay\Model\Buy\Order\PricingSummaryV2',
-        'shipping_address' => '\Ebay\Ebay\Model\Buy\Order\ShippingAddress',
-        'warnings' => '\Ebay\Ebay\Model\Buy\Order\Error[]'
+        'line_items' => '\Ebay\Model\Buy\Order\LineItem[]',
+        'pricing_summary' => '\Ebay\Model\Buy\Order\PricingSummaryV2',
+        'shipping_address' => '\Ebay\Model\Buy\Order\ShippingAddress',
+        'warnings' => '\Ebay\Model\Buy\Order\Error[]'
     ];
 
     /**
@@ -239,7 +239,7 @@ class GuestCheckoutSessionResponseV2 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets applied_coupons
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Coupon[]|null
+     * @return \Ebay\Model\Buy\Order\Coupon[]|null
      */
     public function getAppliedCoupons()
     {
@@ -249,7 +249,7 @@ class GuestCheckoutSessionResponseV2 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets applied_coupons
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Coupon[]|null $applied_coupons A container that returns the information for the coupons that were applied in the guest checkout session.
+     * @param \Ebay\Model\Buy\Order\Coupon[]|null $applied_coupons A container that returns the information for the coupons that were applied in the guest checkout session.
      *
      * @return self
      */
@@ -287,7 +287,7 @@ class GuestCheckoutSessionResponseV2 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets line_items
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\LineItem[]|null
+     * @return \Ebay\Model\Buy\Order\LineItem[]|null
      */
     public function getLineItems()
     {
@@ -297,7 +297,7 @@ class GuestCheckoutSessionResponseV2 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets line_items
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\LineItem[]|null $line_items An array of line items associated with the guest checkout session.
+     * @param \Ebay\Model\Buy\Order\LineItem[]|null $line_items An array of line items associated with the guest checkout session.
      *
      * @return self
      */
@@ -311,7 +311,7 @@ class GuestCheckoutSessionResponseV2 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets pricing_summary
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\PricingSummaryV2|null
+     * @return \Ebay\Model\Buy\Order\PricingSummaryV2|null
      */
     public function getPricingSummary()
     {
@@ -321,7 +321,7 @@ class GuestCheckoutSessionResponseV2 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets pricing_summary
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\PricingSummaryV2|null $pricing_summary pricing_summary
+     * @param \Ebay\Model\Buy\Order\PricingSummaryV2|null $pricing_summary pricing_summary
      *
      * @return self
      */
@@ -335,7 +335,7 @@ class GuestCheckoutSessionResponseV2 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets shipping_address
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\ShippingAddress|null
+     * @return \Ebay\Model\Buy\Order\ShippingAddress|null
      */
     public function getShippingAddress()
     {
@@ -345,7 +345,7 @@ class GuestCheckoutSessionResponseV2 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets shipping_address
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\ShippingAddress|null $shipping_address shipping_address
+     * @param \Ebay\Model\Buy\Order\ShippingAddress|null $shipping_address shipping_address
      *
      * @return self
      */
@@ -359,7 +359,7 @@ class GuestCheckoutSessionResponseV2 implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets warnings
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Error[]|null
+     * @return \Ebay\Model\Buy\Order\Error[]|null
      */
     public function getWarnings()
     {
@@ -369,7 +369,7 @@ class GuestCheckoutSessionResponseV2 implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets warnings
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Error[]|null $warnings An array of errors or warnings that were generated during the method processing.
+     * @param \Ebay\Model\Buy\Order\Error[]|null $warnings An array of errors or warnings that were generated during the method processing.
      *
      * @return self
      */

@@ -10,7 +10,7 @@ Method | HTTP request | Description
 ## `search()`
 
 ```php
-search($aspect_filter, $auto_correct, $category_ids, $charity_ids, $compatibility_filter, $epid, $fieldgroups, $filter, $gtin, $limit, $offset, $q, $sort): \Ebay\Ebay\Model\Buy\Browse\SearchPagedCollection
+search($aspect_filter, $auto_correct, $category_ids, $charity_ids, $compatibility_filter, $epid, $fieldgroups, $filter, $gtin, $limit, $offset, $q, $sort): \Ebay\Model\Buy\Browse\SearchPagedCollection
 ```
 
 
@@ -79,7 +79,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Buy\Browse\SearchPagedCollection**](../Model/SearchPagedCollection.md)
+[**\Ebay\Model\Buy\Browse\SearchPagedCollection**](../Model/SearchPagedCollection.md)
 
 ### Authorization
 

@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -61,7 +61,7 @@ class CompatibilityResponse implements ModelInterface, ArrayAccess, \JsonSeriali
       */
     protected static $openAPITypes = [
         'compatibility_status' => 'string',
-        'warnings' => '\Ebay\Ebay\Model\Buy\Browse\Error[]'
+        'warnings' => '\Ebay\Model\Buy\Browse\Error[]'
     ];
 
     /**
@@ -239,7 +239,7 @@ class CompatibilityResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets warnings
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Error[]|null
+     * @return \Ebay\Model\Buy\Browse\Error[]|null
      */
     public function getWarnings()
     {
@@ -249,7 +249,7 @@ class CompatibilityResponse implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets warnings
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Error[]|null $warnings An array of warning messages. These types of errors do not prevent the method from executing but should be checked.
+     * @param \Ebay\Model\Buy\Browse\Error[]|null $warnings An array of warning messages. These types of errors do not prevent the method from executing but should be checked.
      *
      * @return self
      */

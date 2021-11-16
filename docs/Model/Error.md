@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **long_message** | **string** | A detailed description of the condition that caused the error or warning, and information on what to do to correct the problem. | [optional]
 **message** | **string** | A description of the condition that caused the error or warning. | [optional]
 **output_ref_ids** | **string[]** | An array of reference IDs that identify the specific response elements most closely associated to the error or warning, if any. | [optional]
-**parameters** | [**\Ebay\Ebay\Model\Buy\Browse\ErrorParameter[]**](ErrorParameter.md) | An array of warning and error messages that return one or more variables contextual information about the error or warning. This is often the field or value that triggered the error or warning. | [optional]
+**parameters** | [**\Ebay\Model\Buy\Browse\ErrorParameter[]**](ErrorParameter.md) | An array of warning and error messages that return one or more variables contextual information about the error or warning. This is often the field or value that triggered the error or warning. | [optional]
 **subdomain** | **string** | The name of the subdomain in which the error or warning occurred. | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

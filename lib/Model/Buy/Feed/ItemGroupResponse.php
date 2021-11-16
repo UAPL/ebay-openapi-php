@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Feed;
+namespace Ebay\Model\Buy\Feed;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,7 +60,7 @@ class ItemGroupResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
       * @var string[]
       */
     protected static $openAPITypes = [
-        'item_groups' => '\Ebay\Ebay\Model\Buy\Feed\ItemGroup[]'
+        'item_groups' => '\Ebay\Model\Buy\Feed\ItemGroup[]'
     ];
 
     /**
@@ -209,7 +209,7 @@ class ItemGroupResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Gets item_groups
      *
-     * @return \Ebay\Ebay\Model\Buy\Feed\ItemGroup[]|null
+     * @return \Ebay\Model\Buy\Feed\ItemGroup[]|null
      */
     public function getItemGroups()
     {
@@ -219,7 +219,7 @@ class ItemGroupResponse implements ModelInterface, ArrayAccess, \JsonSerializabl
     /**
      * Sets item_groups
      *
-     * @param \Ebay\Ebay\Model\Buy\Feed\ItemGroup[]|null $item_groups The container for the array of items groups returned by the <b> getItemGroupFeed</b> method. The data in the file is tab separated and the first row is the header, which labels the columns and indicates the order of the values for each item. The header labels match the fields that are described in the <a href=\"/api-docs/buy/feed/resources/item_group/methods/getItemGroupFeed#h3-response-fields\">Response fields</a> section.
+     * @param \Ebay\Model\Buy\Feed\ItemGroup[]|null $item_groups The container for the array of items groups returned by the <b> getItemGroupFeed</b> method. The data in the file is tab separated and the first row is the header, which labels the columns and indicates the order of the values for each item. The header labels match the fields that are described in the <a href=\"/api-docs/buy/feed/resources/item_group/methods/getItemGroupFeed#h3-response-fields\">Response fields</a> section.
      *
      * @return self
      */

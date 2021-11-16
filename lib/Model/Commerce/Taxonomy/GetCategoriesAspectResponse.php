@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Commerce\Taxonomy;
+namespace Ebay\Model\Commerce\Taxonomy;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -61,7 +61,7 @@ class GetCategoriesAspectResponse implements ModelInterface, ArrayAccess, \JsonS
     protected static $openAPITypes = [
         'category_tree_id' => 'string',
         'category_tree_version' => 'string',
-        'category_aspects' => '\Ebay\Ebay\Model\Commerce\Taxonomy\CategoryAspect[]'
+        'category_aspects' => '\Ebay\Model\Commerce\Taxonomy\CategoryAspect[]'
     ];
 
     /**
@@ -268,7 +268,7 @@ class GetCategoriesAspectResponse implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets category_aspects
      *
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\CategoryAspect[]|null
+     * @return \Ebay\Model\Commerce\Taxonomy\CategoryAspect[]|null
      */
     public function getCategoryAspects()
     {
@@ -278,7 +278,7 @@ class GetCategoriesAspectResponse implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets category_aspects
      *
-     * @param \Ebay\Ebay\Model\Commerce\Taxonomy\CategoryAspect[]|null $category_aspects An array of aspects that are appropriate or necessary for accurately describing items in a particular leaf category.
+     * @param \Ebay\Model\Commerce\Taxonomy\CategoryAspect[]|null $category_aspects An array of aspects that are appropriate or necessary for accurately describing items in a particular leaf category.
      *
      * @return self
      */

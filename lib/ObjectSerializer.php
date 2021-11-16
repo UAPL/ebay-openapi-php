@@ -28,7 +28,7 @@
 
 namespace Ebay;
 
-use Ebay\Ebay\Model\Buy\Browse\ModelInterface;
+use Ebay\Model\Buy\Browse\ModelInterface;
 
 /**
  * ObjectSerializer Class Doc Comment

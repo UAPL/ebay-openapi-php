@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Deal;
+namespace Ebay\Model\Buy\Deal;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,7 +60,7 @@ class EventItemSearchResponse implements ModelInterface, ArrayAccess, \JsonSeria
       * @var string[]
       */
     protected static $openAPITypes = [
-        'event_items' => '\Ebay\Ebay\Model\Buy\Deal\EventItem[]',
+        'event_items' => '\Ebay\Model\Buy\Deal\EventItem[]',
         'href' => 'string',
         'limit' => 'int',
         'next' => 'string',
@@ -245,7 +245,7 @@ class EventItemSearchResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Gets event_items
      *
-     * @return \Ebay\Ebay\Model\Buy\Deal\EventItem[]|null
+     * @return \Ebay\Model\Buy\Deal\EventItem[]|null
      */
     public function getEventItems()
     {
@@ -255,7 +255,7 @@ class EventItemSearchResponse implements ModelInterface, ArrayAccess, \JsonSeria
     /**
      * Sets event_items
      *
-     * @param \Ebay\Ebay\Model\Buy\Deal\EventItem[]|null $event_items A list of event items that match the search criteria.
+     * @param \Ebay\Model\Buy\Deal\EventItem[]|null $event_items A list of event items that match the search criteria.
      *
      * @return self
      */

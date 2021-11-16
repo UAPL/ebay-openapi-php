@@ -10,7 +10,7 @@ Method | HTTP request | Description
 ## `getItemSnapshotFeed()`
 
 ```php
-getItemSnapshotFeed($accept, $x_ebay_c_marketplace_id, $range, $category_id, $snapshot_date): \Ebay\Ebay\Model\Buy\Feed\ItemSnapshotResponse
+getItemSnapshotFeed($accept, $x_ebay_c_marketplace_id, $range, $category_id, $snapshot_date): \Ebay\Model\Buy\Feed\ItemSnapshotResponse
 ```
 
 
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Buy\Feed\ItemSnapshotResponse**](../Model/ItemSnapshotResponse.md)
+[**\Ebay\Model\Buy\Feed\ItemSnapshotResponse**](../Model/ItemSnapshotResponse.md)
 
 ### Authorization
 

@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -65,7 +65,7 @@ class ItemReturnTerms implements ModelInterface, ArrayAccess, \JsonSerializable
         'restocking_fee_percentage' => 'string',
         'return_instructions' => 'string',
         'return_method' => 'string',
-        'return_period' => '\Ebay\Ebay\Model\Buy\Browse\TimeDuration',
+        'return_period' => '\Ebay\Model\Buy\Browse\TimeDuration',
         'returns_accepted' => 'bool',
         'return_shipping_cost_payer' => 'string'
     ];
@@ -371,7 +371,7 @@ class ItemReturnTerms implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets return_period
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\TimeDuration|null
+     * @return \Ebay\Model\Buy\Browse\TimeDuration|null
      */
     public function getReturnPeriod()
     {
@@ -381,7 +381,7 @@ class ItemReturnTerms implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets return_period
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\TimeDuration|null $return_period return_period
+     * @param \Ebay\Model\Buy\Browse\TimeDuration|null $return_period return_period
      *
      * @return self
      */

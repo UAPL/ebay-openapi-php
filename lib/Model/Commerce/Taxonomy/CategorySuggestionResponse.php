@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Commerce\Taxonomy;
+namespace Ebay\Model\Commerce\Taxonomy;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,7 +60,7 @@ class CategorySuggestionResponse implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'category_suggestions' => '\Ebay\Ebay\Model\Commerce\Taxonomy\CategorySuggestion[]',
+        'category_suggestions' => '\Ebay\Model\Commerce\Taxonomy\CategorySuggestion[]',
         'category_tree_id' => 'string',
         'category_tree_version' => 'string'
     ];
@@ -221,7 +221,7 @@ class CategorySuggestionResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets category_suggestions
      *
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\CategorySuggestion[]|null
+     * @return \Ebay\Model\Commerce\Taxonomy\CategorySuggestion[]|null
      */
     public function getCategorySuggestions()
     {
@@ -231,7 +231,7 @@ class CategorySuggestionResponse implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets category_suggestions
      *
-     * @param \Ebay\Ebay\Model\Commerce\Taxonomy\CategorySuggestion[]|null $category_suggestions Contains details about one or more suggested categories that correspond to the provided keywords. The array of suggested categories is sorted in order of eBay's confidence of the relevance of each category (the first category is the most relevant). Important: This call is not supported in the Sandbox environment. It will return a response payload in which the categoryName fields contain random or boilerplate text regardless of the query submitted.
+     * @param \Ebay\Model\Commerce\Taxonomy\CategorySuggestion[]|null $category_suggestions Contains details about one or more suggested categories that correspond to the provided keywords. The array of suggested categories is sorted in order of eBay's confidence of the relevance of each category (the first category is the most relevant). Important: This call is not supported in the Sandbox environment. It will return a response payload in which the categoryName fields contain random or boilerplate text regardless of the query submitted.
      *
      * @return self
      */

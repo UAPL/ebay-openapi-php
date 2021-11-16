@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,7 +60,7 @@ class PaymentMethod implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'payment_method_type' => 'string',
-        'payment_method_brands' => '\Ebay\Ebay\Model\Buy\Browse\PaymentMethodBrand[]',
+        'payment_method_brands' => '\Ebay\Model\Buy\Browse\PaymentMethodBrand[]',
         'payment_instructions' => 'string[]',
         'seller_instructions' => 'string[]'
     ];
@@ -250,7 +250,7 @@ class PaymentMethod implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets payment_method_brands
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\PaymentMethodBrand[]|null
+     * @return \Ebay\Model\Buy\Browse\PaymentMethodBrand[]|null
      */
     public function getPaymentMethodBrands()
     {
@@ -260,7 +260,7 @@ class PaymentMethod implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets payment_method_brands
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\PaymentMethodBrand[]|null $payment_method_brands The payment method brands, including the payment method brand type and logo image.
+     * @param \Ebay\Model\Buy\Browse\PaymentMethodBrand[]|null $payment_method_brands The payment method brands, including the payment method brand type and logo image.
      *
      * @return self
      */

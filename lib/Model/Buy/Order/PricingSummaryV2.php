@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Order;
+namespace Ebay\Model\Buy\Order;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,16 +60,16 @@ class PricingSummaryV2 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'additional_savings' => '\Ebay\Ebay\Model\Buy\Order\Amount',
-        'adjustment' => '\Ebay\Ebay\Model\Buy\Order\Adjustment',
-        'delivery_cost' => '\Ebay\Ebay\Model\Buy\Order\Amount',
-        'fee' => '\Ebay\Ebay\Model\Buy\Order\Amount',
-        'import_charges' => '\Ebay\Ebay\Model\Buy\Order\Amount',
-        'import_tax' => '\Ebay\Ebay\Model\Buy\Order\ImportTax',
-        'price_discount' => '\Ebay\Ebay\Model\Buy\Order\Amount',
-        'price_subtotal' => '\Ebay\Ebay\Model\Buy\Order\Amount',
-        'tax' => '\Ebay\Ebay\Model\Buy\Order\Amount',
-        'total' => '\Ebay\Ebay\Model\Buy\Order\Amount'
+        'additional_savings' => '\Ebay\Model\Buy\Order\Amount',
+        'adjustment' => '\Ebay\Model\Buy\Order\Adjustment',
+        'delivery_cost' => '\Ebay\Model\Buy\Order\Amount',
+        'fee' => '\Ebay\Model\Buy\Order\Amount',
+        'import_charges' => '\Ebay\Model\Buy\Order\Amount',
+        'import_tax' => '\Ebay\Model\Buy\Order\ImportTax',
+        'price_discount' => '\Ebay\Model\Buy\Order\Amount',
+        'price_subtotal' => '\Ebay\Model\Buy\Order\Amount',
+        'tax' => '\Ebay\Model\Buy\Order\Amount',
+        'total' => '\Ebay\Model\Buy\Order\Amount'
     ];
 
     /**
@@ -263,7 +263,7 @@ class PricingSummaryV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets additional_savings
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Amount|null
+     * @return \Ebay\Model\Buy\Order\Amount|null
      */
     public function getAdditionalSavings()
     {
@@ -273,7 +273,7 @@ class PricingSummaryV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets additional_savings
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Amount|null $additional_savings additional_savings
+     * @param \Ebay\Model\Buy\Order\Amount|null $additional_savings additional_savings
      *
      * @return self
      */
@@ -287,7 +287,7 @@ class PricingSummaryV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets adjustment
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Adjustment|null
+     * @return \Ebay\Model\Buy\Order\Adjustment|null
      */
     public function getAdjustment()
     {
@@ -297,7 +297,7 @@ class PricingSummaryV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets adjustment
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Adjustment|null $adjustment adjustment
+     * @param \Ebay\Model\Buy\Order\Adjustment|null $adjustment adjustment
      *
      * @return self
      */
@@ -311,7 +311,7 @@ class PricingSummaryV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets delivery_cost
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Amount|null
+     * @return \Ebay\Model\Buy\Order\Amount|null
      */
     public function getDeliveryCost()
     {
@@ -321,7 +321,7 @@ class PricingSummaryV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets delivery_cost
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Amount|null $delivery_cost delivery_cost
+     * @param \Ebay\Model\Buy\Order\Amount|null $delivery_cost delivery_cost
      *
      * @return self
      */
@@ -335,7 +335,7 @@ class PricingSummaryV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets fee
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Amount|null
+     * @return \Ebay\Model\Buy\Order\Amount|null
      */
     public function getFee()
     {
@@ -345,7 +345,7 @@ class PricingSummaryV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets fee
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Amount|null $fee fee
+     * @param \Ebay\Model\Buy\Order\Amount|null $fee fee
      *
      * @return self
      */
@@ -359,7 +359,7 @@ class PricingSummaryV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets import_charges
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Amount|null
+     * @return \Ebay\Model\Buy\Order\Amount|null
      */
     public function getImportCharges()
     {
@@ -369,7 +369,7 @@ class PricingSummaryV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets import_charges
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Amount|null $import_charges import_charges
+     * @param \Ebay\Model\Buy\Order\Amount|null $import_charges import_charges
      *
      * @return self
      */
@@ -383,7 +383,7 @@ class PricingSummaryV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets import_tax
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\ImportTax|null
+     * @return \Ebay\Model\Buy\Order\ImportTax|null
      */
     public function getImportTax()
     {
@@ -393,7 +393,7 @@ class PricingSummaryV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets import_tax
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\ImportTax|null $import_tax import_tax
+     * @param \Ebay\Model\Buy\Order\ImportTax|null $import_tax import_tax
      *
      * @return self
      */
@@ -407,7 +407,7 @@ class PricingSummaryV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets price_discount
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Amount|null
+     * @return \Ebay\Model\Buy\Order\Amount|null
      */
     public function getPriceDiscount()
     {
@@ -417,7 +417,7 @@ class PricingSummaryV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets price_discount
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Amount|null $price_discount price_discount
+     * @param \Ebay\Model\Buy\Order\Amount|null $price_discount price_discount
      *
      * @return self
      */
@@ -431,7 +431,7 @@ class PricingSummaryV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets price_subtotal
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Amount|null
+     * @return \Ebay\Model\Buy\Order\Amount|null
      */
     public function getPriceSubtotal()
     {
@@ -441,7 +441,7 @@ class PricingSummaryV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets price_subtotal
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Amount|null $price_subtotal price_subtotal
+     * @param \Ebay\Model\Buy\Order\Amount|null $price_subtotal price_subtotal
      *
      * @return self
      */
@@ -455,7 +455,7 @@ class PricingSummaryV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tax
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Amount|null
+     * @return \Ebay\Model\Buy\Order\Amount|null
      */
     public function getTax()
     {
@@ -465,7 +465,7 @@ class PricingSummaryV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tax
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Amount|null $tax tax
+     * @param \Ebay\Model\Buy\Order\Amount|null $tax tax
      *
      * @return self
      */
@@ -479,7 +479,7 @@ class PricingSummaryV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets total
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Amount|null
+     * @return \Ebay\Model\Buy\Order\Amount|null
      */
     public function getTotal()
     {
@@ -489,7 +489,7 @@ class PricingSummaryV2 implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets total
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Amount|null $total total
+     * @param \Ebay\Model\Buy\Order\Amount|null $total total
      *
      * @return self
      */

@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Commerce\Taxonomy;
+namespace Ebay\Model\Commerce\Taxonomy;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,9 +60,9 @@ class CategoryTreeNode implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'category' => '\Ebay\Ebay\Model\Commerce\Taxonomy\Category',
+        'category' => '\Ebay\Model\Commerce\Taxonomy\Category',
         'category_tree_node_level' => 'int',
-        'child_category_tree_nodes' => '\Ebay\Ebay\Model\Commerce\Taxonomy\CategoryTreeNode[]',
+        'child_category_tree_nodes' => '\Ebay\Model\Commerce\Taxonomy\CategoryTreeNode[]',
         'leaf_category_tree_node' => 'bool',
         'parent_category_tree_node_href' => 'string'
     ];
@@ -233,7 +233,7 @@ class CategoryTreeNode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets category
      *
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\Category|null
+     * @return \Ebay\Model\Commerce\Taxonomy\Category|null
      */
     public function getCategory()
     {
@@ -243,7 +243,7 @@ class CategoryTreeNode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets category
      *
-     * @param \Ebay\Ebay\Model\Commerce\Taxonomy\Category|null $category category
+     * @param \Ebay\Model\Commerce\Taxonomy\Category|null $category category
      *
      * @return self
      */
@@ -281,7 +281,7 @@ class CategoryTreeNode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets child_category_tree_nodes
      *
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\CategoryTreeNode[]|null
+     * @return \Ebay\Model\Commerce\Taxonomy\CategoryTreeNode[]|null
      */
     public function getChildCategoryTreeNodes()
     {
@@ -291,7 +291,7 @@ class CategoryTreeNode implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets child_category_tree_nodes
      *
-     * @param \Ebay\Ebay\Model\Commerce\Taxonomy\CategoryTreeNode[]|null $child_category_tree_nodes An array of one or more category tree nodes that are the immediate children of the current category tree node, as well as their children, recursively down to the leaf nodes. Returned only if the current category tree node is not a leaf node (the value of leafCategoryTreeNode is false).
+     * @param \Ebay\Model\Commerce\Taxonomy\CategoryTreeNode[]|null $child_category_tree_nodes An array of one or more category tree nodes that are the immediate children of the current category tree node, as well as their children, recursively down to the leaf nodes. Returned only if the current category tree node is not a leaf node (the value of leafCategoryTreeNode is false).
      *
      * @return self
      */

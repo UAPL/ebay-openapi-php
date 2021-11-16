@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -61,7 +61,7 @@ class ReviewRating implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'average_rating' => 'string',
-        'rating_histograms' => '\Ebay\Ebay\Model\Buy\Browse\RatingHistogram[]',
+        'rating_histograms' => '\Ebay\Model\Buy\Browse\RatingHistogram[]',
         'review_count' => 'int'
     ];
 
@@ -245,7 +245,7 @@ class ReviewRating implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets rating_histograms
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\RatingHistogram[]|null
+     * @return \Ebay\Model\Buy\Browse\RatingHistogram[]|null
      */
     public function getRatingHistograms()
     {
@@ -255,7 +255,7 @@ class ReviewRating implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets rating_histograms
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\RatingHistogram[]|null $rating_histograms An array of containers for the product rating histograms that shows the review counts and the product rating.
+     * @param \Ebay\Model\Buy\Browse\RatingHistogram[]|null $rating_histograms An array of containers for the product rating histograms that shows the review counts and the product rating.
      *
      * @return self
      */

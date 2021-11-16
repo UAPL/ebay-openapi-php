@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Order;
+namespace Ebay\Model\Buy\Order;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,7 +60,7 @@ class TaxJurisdiction implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'region' => '\Ebay\Ebay\Model\Buy\Order\Region',
+        'region' => '\Ebay\Model\Buy\Order\Region',
         'tax_jurisdiction_id' => 'string'
     ];
 
@@ -215,7 +215,7 @@ class TaxJurisdiction implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets region
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Region|null
+     * @return \Ebay\Model\Buy\Order\Region|null
      */
     public function getRegion()
     {
@@ -225,7 +225,7 @@ class TaxJurisdiction implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets region
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Region|null $region region
+     * @param \Ebay\Model\Buy\Order\Region|null $region region
      *
      * @return self
      */

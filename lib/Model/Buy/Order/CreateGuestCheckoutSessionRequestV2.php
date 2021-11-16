@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Order;
+namespace Ebay\Model\Buy\Order;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -61,8 +61,8 @@ class CreateGuestCheckoutSessionRequestV2 implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'contact_email' => 'string',
-        'line_item_inputs' => '\Ebay\Ebay\Model\Buy\Order\LineItemInput[]',
-        'shipping_address' => '\Ebay\Ebay\Model\Buy\Order\ShippingAddress'
+        'line_item_inputs' => '\Ebay\Model\Buy\Order\LineItemInput[]',
+        'shipping_address' => '\Ebay\Model\Buy\Order\ShippingAddress'
     ];
 
     /**
@@ -245,7 +245,7 @@ class CreateGuestCheckoutSessionRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Gets line_item_inputs
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\LineItemInput[]|null
+     * @return \Ebay\Model\Buy\Order\LineItemInput[]|null
      */
     public function getLineItemInputs()
     {
@@ -255,7 +255,7 @@ class CreateGuestCheckoutSessionRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Sets line_item_inputs
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\LineItemInput[]|null $line_item_inputs An array used to define the line item(s) and desired quantity for an eBay guest checkout session.<br /><br /><b>Maximum:</b> 10 line items
+     * @param \Ebay\Model\Buy\Order\LineItemInput[]|null $line_item_inputs An array used to define the line item(s) and desired quantity for an eBay guest checkout session.<br /><br /><b>Maximum:</b> 10 line items
      *
      * @return self
      */
@@ -269,7 +269,7 @@ class CreateGuestCheckoutSessionRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Gets shipping_address
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\ShippingAddress|null
+     * @return \Ebay\Model\Buy\Order\ShippingAddress|null
      */
     public function getShippingAddress()
     {
@@ -279,7 +279,7 @@ class CreateGuestCheckoutSessionRequestV2 implements ModelInterface, ArrayAccess
     /**
      * Sets shipping_address
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\ShippingAddress|null $shipping_address shipping_address
+     * @param \Ebay\Model\Buy\Order\ShippingAddress|null $shipping_address shipping_address
      *
      * @return self
      */

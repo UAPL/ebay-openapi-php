@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,7 +60,7 @@ class PaymentMethodBrand implements ModelInterface, ArrayAccess, \JsonSerializab
       */
     protected static $openAPITypes = [
         'payment_method_brand_type' => 'string',
-        'logo_image' => '\Ebay\Ebay\Model\Buy\Browse\Image'
+        'logo_image' => '\Ebay\Model\Buy\Browse\Image'
     ];
 
     /**
@@ -238,7 +238,7 @@ class PaymentMethodBrand implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets logo_image
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Image|null
+     * @return \Ebay\Model\Buy\Browse\Image|null
      */
     public function getLogoImage()
     {
@@ -248,7 +248,7 @@ class PaymentMethodBrand implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets logo_image
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Image|null $logo_image logo_image
+     * @param \Ebay\Model\Buy\Browse\Image|null $logo_image logo_image
      *
      * @return self
      */

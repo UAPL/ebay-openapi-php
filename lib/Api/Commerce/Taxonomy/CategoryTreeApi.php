@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Api\Commerce\Taxonomy;
+namespace Ebay\Api\Commerce\Taxonomy;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -124,7 +124,7 @@ class CategoryTreeApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\GetCategoriesAspectResponse
+     * @return \Ebay\Model\Commerce\Taxonomy\GetCategoriesAspectResponse
      */
     public function fetchItemAspects($category_tree_id)
     {
@@ -141,7 +141,7 @@ class CategoryTreeApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Commerce\Taxonomy\GetCategoriesAspectResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Commerce\Taxonomy\GetCategoriesAspectResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function fetchItemAspectsWithHttpInfo($category_tree_id)
     {
@@ -184,20 +184,20 @@ class CategoryTreeApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Commerce\Taxonomy\GetCategoriesAspectResponse' === '\SplFileObject') {
+                    if ('\Ebay\Model\Commerce\Taxonomy\GetCategoriesAspectResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Commerce\Taxonomy\GetCategoriesAspectResponse', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Commerce\Taxonomy\GetCategoriesAspectResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Commerce\Taxonomy\GetCategoriesAspectResponse';
+            $returnType = '\Ebay\Model\Commerce\Taxonomy\GetCategoriesAspectResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -215,7 +215,7 @@ class CategoryTreeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Commerce\Taxonomy\GetCategoriesAspectResponse',
+                        '\Ebay\Model\Commerce\Taxonomy\GetCategoriesAspectResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -257,7 +257,7 @@ class CategoryTreeApi
      */
     public function fetchItemAspectsAsyncWithHttpInfo($category_tree_id)
     {
-        $returnType = '\Ebay\Ebay\Model\Commerce\Taxonomy\GetCategoriesAspectResponse';
+        $returnType = '\Ebay\Model\Commerce\Taxonomy\GetCategoriesAspectResponse';
         $request = $this->fetchItemAspectsRequest($category_tree_id);
 
         return $this->client
@@ -400,7 +400,7 @@ class CategoryTreeApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\CategorySubtree
+     * @return \Ebay\Model\Commerce\Taxonomy\CategorySubtree
      */
     public function getCategorySubtree($category_id, $category_tree_id)
     {
@@ -418,7 +418,7 @@ class CategoryTreeApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Commerce\Taxonomy\CategorySubtree, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Commerce\Taxonomy\CategorySubtree, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCategorySubtreeWithHttpInfo($category_id, $category_tree_id)
     {
@@ -461,20 +461,20 @@ class CategoryTreeApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Commerce\Taxonomy\CategorySubtree' === '\SplFileObject') {
+                    if ('\Ebay\Model\Commerce\Taxonomy\CategorySubtree' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Commerce\Taxonomy\CategorySubtree', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Commerce\Taxonomy\CategorySubtree', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Commerce\Taxonomy\CategorySubtree';
+            $returnType = '\Ebay\Model\Commerce\Taxonomy\CategorySubtree';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -492,7 +492,7 @@ class CategoryTreeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Commerce\Taxonomy\CategorySubtree',
+                        '\Ebay\Model\Commerce\Taxonomy\CategorySubtree',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -536,7 +536,7 @@ class CategoryTreeApi
      */
     public function getCategorySubtreeAsyncWithHttpInfo($category_id, $category_tree_id)
     {
-        $returnType = '\Ebay\Ebay\Model\Commerce\Taxonomy\CategorySubtree';
+        $returnType = '\Ebay\Model\Commerce\Taxonomy\CategorySubtree';
         $request = $this->getCategorySubtreeRequest($category_id, $category_tree_id);
 
         return $this->client
@@ -697,7 +697,7 @@ class CategoryTreeApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\CategorySuggestionResponse
+     * @return \Ebay\Model\Commerce\Taxonomy\CategorySuggestionResponse
      */
     public function getCategorySuggestions($category_tree_id, $q)
     {
@@ -715,7 +715,7 @@ class CategoryTreeApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Commerce\Taxonomy\CategorySuggestionResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Commerce\Taxonomy\CategorySuggestionResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCategorySuggestionsWithHttpInfo($category_tree_id, $q)
     {
@@ -758,20 +758,20 @@ class CategoryTreeApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Commerce\Taxonomy\CategorySuggestionResponse' === '\SplFileObject') {
+                    if ('\Ebay\Model\Commerce\Taxonomy\CategorySuggestionResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Commerce\Taxonomy\CategorySuggestionResponse', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Commerce\Taxonomy\CategorySuggestionResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Commerce\Taxonomy\CategorySuggestionResponse';
+            $returnType = '\Ebay\Model\Commerce\Taxonomy\CategorySuggestionResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -789,7 +789,7 @@ class CategoryTreeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Commerce\Taxonomy\CategorySuggestionResponse',
+                        '\Ebay\Model\Commerce\Taxonomy\CategorySuggestionResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -833,7 +833,7 @@ class CategoryTreeApi
      */
     public function getCategorySuggestionsAsyncWithHttpInfo($category_tree_id, $q)
     {
-        $returnType = '\Ebay\Ebay\Model\Commerce\Taxonomy\CategorySuggestionResponse';
+        $returnType = '\Ebay\Model\Commerce\Taxonomy\CategorySuggestionResponse';
         $request = $this->getCategorySuggestionsRequest($category_tree_id, $q);
 
         return $this->client
@@ -993,7 +993,7 @@ class CategoryTreeApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\CategoryTree
+     * @return \Ebay\Model\Commerce\Taxonomy\CategoryTree
      */
     public function getCategoryTree($category_tree_id)
     {
@@ -1010,7 +1010,7 @@ class CategoryTreeApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Commerce\Taxonomy\CategoryTree, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Commerce\Taxonomy\CategoryTree, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCategoryTreeWithHttpInfo($category_tree_id)
     {
@@ -1053,20 +1053,20 @@ class CategoryTreeApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Commerce\Taxonomy\CategoryTree' === '\SplFileObject') {
+                    if ('\Ebay\Model\Commerce\Taxonomy\CategoryTree' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Commerce\Taxonomy\CategoryTree', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Commerce\Taxonomy\CategoryTree', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Commerce\Taxonomy\CategoryTree';
+            $returnType = '\Ebay\Model\Commerce\Taxonomy\CategoryTree';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1084,7 +1084,7 @@ class CategoryTreeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Commerce\Taxonomy\CategoryTree',
+                        '\Ebay\Model\Commerce\Taxonomy\CategoryTree',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1126,7 +1126,7 @@ class CategoryTreeApi
      */
     public function getCategoryTreeAsyncWithHttpInfo($category_tree_id)
     {
-        $returnType = '\Ebay\Ebay\Model\Commerce\Taxonomy\CategoryTree';
+        $returnType = '\Ebay\Model\Commerce\Taxonomy\CategoryTree';
         $request = $this->getCategoryTreeRequest($category_tree_id);
 
         return $this->client
@@ -1269,7 +1269,7 @@ class CategoryTreeApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\GetCompatibilityMetadataResponse
+     * @return \Ebay\Model\Commerce\Taxonomy\GetCompatibilityMetadataResponse
      */
     public function getCompatibilityProperties($category_tree_id, $category_id)
     {
@@ -1287,7 +1287,7 @@ class CategoryTreeApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Commerce\Taxonomy\GetCompatibilityMetadataResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Commerce\Taxonomy\GetCompatibilityMetadataResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCompatibilityPropertiesWithHttpInfo($category_tree_id, $category_id)
     {
@@ -1330,20 +1330,20 @@ class CategoryTreeApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Commerce\Taxonomy\GetCompatibilityMetadataResponse' === '\SplFileObject') {
+                    if ('\Ebay\Model\Commerce\Taxonomy\GetCompatibilityMetadataResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Commerce\Taxonomy\GetCompatibilityMetadataResponse', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Commerce\Taxonomy\GetCompatibilityMetadataResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Commerce\Taxonomy\GetCompatibilityMetadataResponse';
+            $returnType = '\Ebay\Model\Commerce\Taxonomy\GetCompatibilityMetadataResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1361,7 +1361,7 @@ class CategoryTreeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Commerce\Taxonomy\GetCompatibilityMetadataResponse',
+                        '\Ebay\Model\Commerce\Taxonomy\GetCompatibilityMetadataResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1405,7 +1405,7 @@ class CategoryTreeApi
      */
     public function getCompatibilityPropertiesAsyncWithHttpInfo($category_tree_id, $category_id)
     {
-        $returnType = '\Ebay\Ebay\Model\Commerce\Taxonomy\GetCompatibilityMetadataResponse';
+        $returnType = '\Ebay\Model\Commerce\Taxonomy\GetCompatibilityMetadataResponse';
         $request = $this->getCompatibilityPropertiesRequest($category_tree_id, $category_id);
 
         return $this->client
@@ -1568,7 +1568,7 @@ class CategoryTreeApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\GetCompatibilityPropertyValuesResponse
+     * @return \Ebay\Model\Commerce\Taxonomy\GetCompatibilityPropertyValuesResponse
      */
     public function getCompatibilityPropertyValues($category_tree_id, $compatibility_property, $category_id, $filter = null)
     {
@@ -1588,7 +1588,7 @@ class CategoryTreeApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Commerce\Taxonomy\GetCompatibilityPropertyValuesResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Commerce\Taxonomy\GetCompatibilityPropertyValuesResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getCompatibilityPropertyValuesWithHttpInfo($category_tree_id, $compatibility_property, $category_id, $filter = null)
     {
@@ -1631,20 +1631,20 @@ class CategoryTreeApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Commerce\Taxonomy\GetCompatibilityPropertyValuesResponse' === '\SplFileObject') {
+                    if ('\Ebay\Model\Commerce\Taxonomy\GetCompatibilityPropertyValuesResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Commerce\Taxonomy\GetCompatibilityPropertyValuesResponse', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Commerce\Taxonomy\GetCompatibilityPropertyValuesResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Commerce\Taxonomy\GetCompatibilityPropertyValuesResponse';
+            $returnType = '\Ebay\Model\Commerce\Taxonomy\GetCompatibilityPropertyValuesResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1662,7 +1662,7 @@ class CategoryTreeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Commerce\Taxonomy\GetCompatibilityPropertyValuesResponse',
+                        '\Ebay\Model\Commerce\Taxonomy\GetCompatibilityPropertyValuesResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1710,7 +1710,7 @@ class CategoryTreeApi
      */
     public function getCompatibilityPropertyValuesAsyncWithHttpInfo($category_tree_id, $compatibility_property, $category_id, $filter = null)
     {
-        $returnType = '\Ebay\Ebay\Model\Commerce\Taxonomy\GetCompatibilityPropertyValuesResponse';
+        $returnType = '\Ebay\Model\Commerce\Taxonomy\GetCompatibilityPropertyValuesResponse';
         $request = $this->getCompatibilityPropertyValuesRequest($category_tree_id, $compatibility_property, $category_id, $filter);
 
         return $this->client
@@ -1901,7 +1901,7 @@ class CategoryTreeApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\BaseCategoryTree
+     * @return \Ebay\Model\Commerce\Taxonomy\BaseCategoryTree
      */
     public function getDefaultCategoryTreeId($marketplace_id, $accept_language = null)
     {
@@ -1919,7 +1919,7 @@ class CategoryTreeApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Commerce\Taxonomy\BaseCategoryTree, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Commerce\Taxonomy\BaseCategoryTree, HTTP status code, HTTP response headers (array of strings)
      */
     public function getDefaultCategoryTreeIdWithHttpInfo($marketplace_id, $accept_language = null)
     {
@@ -1962,20 +1962,20 @@ class CategoryTreeApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Commerce\Taxonomy\BaseCategoryTree' === '\SplFileObject') {
+                    if ('\Ebay\Model\Commerce\Taxonomy\BaseCategoryTree' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Commerce\Taxonomy\BaseCategoryTree', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Commerce\Taxonomy\BaseCategoryTree', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Commerce\Taxonomy\BaseCategoryTree';
+            $returnType = '\Ebay\Model\Commerce\Taxonomy\BaseCategoryTree';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1993,7 +1993,7 @@ class CategoryTreeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Commerce\Taxonomy\BaseCategoryTree',
+                        '\Ebay\Model\Commerce\Taxonomy\BaseCategoryTree',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2037,7 +2037,7 @@ class CategoryTreeApi
      */
     public function getDefaultCategoryTreeIdAsyncWithHttpInfo($marketplace_id, $accept_language = null)
     {
-        $returnType = '\Ebay\Ebay\Model\Commerce\Taxonomy\BaseCategoryTree';
+        $returnType = '\Ebay\Model\Commerce\Taxonomy\BaseCategoryTree';
         $request = $this->getDefaultCategoryTreeIdRequest($marketplace_id, $accept_language);
 
         return $this->client
@@ -2186,7 +2186,7 @@ class CategoryTreeApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\AspectMetadata
+     * @return \Ebay\Model\Commerce\Taxonomy\AspectMetadata
      */
     public function getItemAspectsForCategory($category_id, $category_tree_id)
     {
@@ -2202,7 +2202,7 @@ class CategoryTreeApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Commerce\Taxonomy\AspectMetadata, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Commerce\Taxonomy\AspectMetadata, HTTP status code, HTTP response headers (array of strings)
      */
     public function getItemAspectsForCategoryWithHttpInfo($category_id, $category_tree_id)
     {
@@ -2245,20 +2245,20 @@ class CategoryTreeApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Commerce\Taxonomy\AspectMetadata' === '\SplFileObject') {
+                    if ('\Ebay\Model\Commerce\Taxonomy\AspectMetadata' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Commerce\Taxonomy\AspectMetadata', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Commerce\Taxonomy\AspectMetadata', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Commerce\Taxonomy\AspectMetadata';
+            $returnType = '\Ebay\Model\Commerce\Taxonomy\AspectMetadata';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2276,7 +2276,7 @@ class CategoryTreeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Commerce\Taxonomy\AspectMetadata',
+                        '\Ebay\Model\Commerce\Taxonomy\AspectMetadata',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2316,7 +2316,7 @@ class CategoryTreeApi
      */
     public function getItemAspectsForCategoryAsyncWithHttpInfo($category_id, $category_tree_id)
     {
-        $returnType = '\Ebay\Ebay\Model\Commerce\Taxonomy\AspectMetadata';
+        $returnType = '\Ebay\Model\Commerce\Taxonomy\AspectMetadata';
         $request = $this->getItemAspectsForCategoryRequest($category_id, $category_tree_id);
 
         return $this->client

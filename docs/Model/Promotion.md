@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**discount** | [**\Ebay\Ebay\Model\Buy\Order\Amount**](Amount.md) |  | [optional]
+**discount** | [**\Ebay\Model\Buy\Order\Amount**](Amount.md) |  | [optional]
 **message** | **string** | The text for the promotion title, which describes the promotion. | [optional]
 **promotion_type** | **string** | The kind of promotion. Some examples are: &lt;code&gt;SellerDiscountedPromotionalOffer&lt;/code&gt; and &lt;code&gt;COUPON&lt;/code&gt;. | [optional]
 

@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Commerce\Taxonomy;
+namespace Ebay\Model\Commerce\Taxonomy;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,7 +60,7 @@ class AspectMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'aspects' => '\Ebay\Ebay\Model\Commerce\Taxonomy\Aspect[]'
+        'aspects' => '\Ebay\Model\Commerce\Taxonomy\Aspect[]'
     ];
 
     /**
@@ -209,7 +209,7 @@ class AspectMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets aspects
      *
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\Aspect[]|null
+     * @return \Ebay\Model\Commerce\Taxonomy\Aspect[]|null
      */
     public function getAspects()
     {
@@ -219,7 +219,7 @@ class AspectMetadata implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets aspects
      *
-     * @param \Ebay\Ebay\Model\Commerce\Taxonomy\Aspect[]|null $aspects A list of item aspects (for example, color) that are appropriate or necessary for accurately describing items in a particular leaf category. Each category has a different set of aspects and different requirements for aspect values. Sellers are required or encouraged to provide one or more acceptable values for each aspect when offering an item in that category on eBay.
+     * @param \Ebay\Model\Commerce\Taxonomy\Aspect[]|null $aspects A list of item aspects (for example, color) that are appropriate or necessary for accurately describing items in a particular leaf category. Each category has a different set of aspects and different requirements for aspect values. Sellers are required or encouraged to provide one or more acceptable values for each aspect when offering an item in that category on eBay.
      *
      * @return self
      */

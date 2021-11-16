@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Commerce\Taxonomy;
+namespace Ebay\Model\Commerce\Taxonomy;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,8 +60,8 @@ class CategorySuggestion implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'category' => '\Ebay\Ebay\Model\Commerce\Taxonomy\Category',
-        'category_tree_node_ancestors' => '\Ebay\Ebay\Model\Commerce\Taxonomy\AncestorReference[]',
+        'category' => '\Ebay\Model\Commerce\Taxonomy\Category',
+        'category_tree_node_ancestors' => '\Ebay\Model\Commerce\Taxonomy\AncestorReference[]',
         'category_tree_node_level' => 'int',
         'relevancy' => 'string'
     ];
@@ -227,7 +227,7 @@ class CategorySuggestion implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets category
      *
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\Category|null
+     * @return \Ebay\Model\Commerce\Taxonomy\Category|null
      */
     public function getCategory()
     {
@@ -237,7 +237,7 @@ class CategorySuggestion implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets category
      *
-     * @param \Ebay\Ebay\Model\Commerce\Taxonomy\Category|null $category category
+     * @param \Ebay\Model\Commerce\Taxonomy\Category|null $category category
      *
      * @return self
      */
@@ -251,7 +251,7 @@ class CategorySuggestion implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets category_tree_node_ancestors
      *
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\AncestorReference[]|null
+     * @return \Ebay\Model\Commerce\Taxonomy\AncestorReference[]|null
      */
     public function getCategoryTreeNodeAncestors()
     {
@@ -261,7 +261,7 @@ class CategorySuggestion implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets category_tree_node_ancestors
      *
-     * @param \Ebay\Ebay\Model\Commerce\Taxonomy\AncestorReference[]|null $category_tree_node_ancestors An ordered list of category references that describes the location of the suggested category in the specified category tree. The list identifies the category's ancestry as a sequence of parent nodes, from the current node's immediate parent to the root node of the category tree. Note: The root node of a full default category tree includes categoryId and categoryName fields, but their values should not be relied upon. They provide no useful information for application development.
+     * @param \Ebay\Model\Commerce\Taxonomy\AncestorReference[]|null $category_tree_node_ancestors An ordered list of category references that describes the location of the suggested category in the specified category tree. The list identifies the category's ancestry as a sequence of parent nodes, from the current node's immediate parent to the root node of the category tree. Note: The root node of a full default category tree includes categoryId and categoryName fields, but their values should not be relied upon. They provide no useful information for application development.
      *
      * @return self
      */

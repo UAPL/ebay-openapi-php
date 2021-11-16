@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,7 +60,7 @@ class AspectDistribution implements ModelInterface, ArrayAccess, \JsonSerializab
       * @var string[]
       */
     protected static $openAPITypes = [
-        'aspect_value_distributions' => '\Ebay\Ebay\Model\Buy\Browse\AspectValueDistribution[]',
+        'aspect_value_distributions' => '\Ebay\Model\Buy\Browse\AspectValueDistribution[]',
         'localized_aspect_name' => 'string'
     ];
 
@@ -215,7 +215,7 @@ class AspectDistribution implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Gets aspect_value_distributions
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\AspectValueDistribution[]|null
+     * @return \Ebay\Model\Buy\Browse\AspectValueDistribution[]|null
      */
     public function getAspectValueDistributions()
     {
@@ -225,7 +225,7 @@ class AspectDistribution implements ModelInterface, ArrayAccess, \JsonSerializab
     /**
      * Sets aspect_value_distributions
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\AspectValueDistribution[]|null $aspect_value_distributions An array of containers for the various values of the aspect and the match count and a HATEOAS reference (<b> refinementHref</b>) for this aspect.
+     * @param \Ebay\Model\Buy\Browse\AspectValueDistribution[]|null $aspect_value_distributions An array of containers for the various values of the aspect and the match count and a HATEOAS reference (<b> refinementHref</b>) for this aspect.
      *
      * @return self
      */

@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Commerce\Taxonomy;
+namespace Ebay\Model\Commerce\Taxonomy;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,10 +60,10 @@ class Aspect implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'aspect_constraint' => '\Ebay\Ebay\Model\Commerce\Taxonomy\AspectConstraint',
-        'aspect_values' => '\Ebay\Ebay\Model\Commerce\Taxonomy\AspectValue[]',
+        'aspect_constraint' => '\Ebay\Model\Commerce\Taxonomy\AspectConstraint',
+        'aspect_values' => '\Ebay\Model\Commerce\Taxonomy\AspectValue[]',
         'localized_aspect_name' => 'string',
-        'relevance_indicator' => '\Ebay\Ebay\Model\Commerce\Taxonomy\RelevanceIndicator'
+        'relevance_indicator' => '\Ebay\Model\Commerce\Taxonomy\RelevanceIndicator'
     ];
 
     /**
@@ -227,7 +227,7 @@ class Aspect implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets aspect_constraint
      *
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\AspectConstraint|null
+     * @return \Ebay\Model\Commerce\Taxonomy\AspectConstraint|null
      */
     public function getAspectConstraint()
     {
@@ -237,7 +237,7 @@ class Aspect implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets aspect_constraint
      *
-     * @param \Ebay\Ebay\Model\Commerce\Taxonomy\AspectConstraint|null $aspect_constraint aspect_constraint
+     * @param \Ebay\Model\Commerce\Taxonomy\AspectConstraint|null $aspect_constraint aspect_constraint
      *
      * @return self
      */
@@ -251,7 +251,7 @@ class Aspect implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets aspect_values
      *
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\AspectValue[]|null
+     * @return \Ebay\Model\Commerce\Taxonomy\AspectValue[]|null
      */
     public function getAspectValues()
     {
@@ -261,7 +261,7 @@ class Aspect implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets aspect_values
      *
-     * @param \Ebay\Ebay\Model\Commerce\Taxonomy\AspectValue[]|null $aspect_values A list of valid values for this aspect (for example: Red, Green, and Blue), along with any constraints on those values.
+     * @param \Ebay\Model\Commerce\Taxonomy\AspectValue[]|null $aspect_values A list of valid values for this aspect (for example: Red, Green, and Blue), along with any constraints on those values.
      *
      * @return self
      */
@@ -299,7 +299,7 @@ class Aspect implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets relevance_indicator
      *
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\RelevanceIndicator|null
+     * @return \Ebay\Model\Commerce\Taxonomy\RelevanceIndicator|null
      */
     public function getRelevanceIndicator()
     {
@@ -309,7 +309,7 @@ class Aspect implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets relevance_indicator
      *
-     * @param \Ebay\Ebay\Model\Commerce\Taxonomy\RelevanceIndicator|null $relevance_indicator relevance_indicator
+     * @param \Ebay\Model\Commerce\Taxonomy\RelevanceIndicator|null $relevance_indicator relevance_indicator
      *
      * @return self
      */

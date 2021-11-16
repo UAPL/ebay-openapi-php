@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -68,9 +68,9 @@ class SellerLegalInfo implements ModelInterface, ArrayAccess, \JsonSerializable
         'name' => 'string',
         'phone' => 'string',
         'registration_number' => 'string',
-        'seller_provided_legal_address' => '\Ebay\Ebay\Model\Buy\Browse\LegalAddress',
+        'seller_provided_legal_address' => '\Ebay\Model\Buy\Browse\LegalAddress',
         'terms_of_service' => 'string',
-        'vat_details' => '\Ebay\Ebay\Model\Buy\Browse\VatDetail[]'
+        'vat_details' => '\Ebay\Model\Buy\Browse\VatDetail[]'
     ];
 
     /**
@@ -461,7 +461,7 @@ class SellerLegalInfo implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets seller_provided_legal_address
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\LegalAddress|null
+     * @return \Ebay\Model\Buy\Browse\LegalAddress|null
      */
     public function getSellerProvidedLegalAddress()
     {
@@ -471,7 +471,7 @@ class SellerLegalInfo implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets seller_provided_legal_address
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\LegalAddress|null $seller_provided_legal_address seller_provided_legal_address
+     * @param \Ebay\Model\Buy\Browse\LegalAddress|null $seller_provided_legal_address seller_provided_legal_address
      *
      * @return self
      */
@@ -509,7 +509,7 @@ class SellerLegalInfo implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets vat_details
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\VatDetail[]|null
+     * @return \Ebay\Model\Buy\Browse\VatDetail[]|null
      */
     public function getVatDetails()
     {
@@ -519,7 +519,7 @@ class SellerLegalInfo implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets vat_details
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\VatDetail[]|null $vat_details An array of the seller's VAT (value added tax) IDs and the issuing country. VAT is a tax added by some European countries.
+     * @param \Ebay\Model\Buy\Browse\VatDetail[]|null $vat_details An array of the seller's VAT (value added tax) IDs and the issuing country. VAT is a tax added by some European countries.
      *
      * @return self
      */

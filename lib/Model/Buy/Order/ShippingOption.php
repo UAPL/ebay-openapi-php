@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Order;
+namespace Ebay\Model\Buy\Order;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,9 +60,9 @@ class ShippingOption implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'base_delivery_cost' => '\Ebay\Ebay\Model\Buy\Order\Amount',
-        'delivery_discount' => '\Ebay\Ebay\Model\Buy\Order\Amount',
-        'import_charges' => '\Ebay\Ebay\Model\Buy\Order\Amount',
+        'base_delivery_cost' => '\Ebay\Model\Buy\Order\Amount',
+        'delivery_discount' => '\Ebay\Model\Buy\Order\Amount',
+        'import_charges' => '\Ebay\Model\Buy\Order\Amount',
         'max_estimated_delivery_date' => 'string',
         'min_estimated_delivery_date' => 'string',
         'selected' => 'bool',
@@ -257,7 +257,7 @@ class ShippingOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets base_delivery_cost
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Amount|null
+     * @return \Ebay\Model\Buy\Order\Amount|null
      */
     public function getBaseDeliveryCost()
     {
@@ -267,7 +267,7 @@ class ShippingOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets base_delivery_cost
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Amount|null $base_delivery_cost base_delivery_cost
+     * @param \Ebay\Model\Buy\Order\Amount|null $base_delivery_cost base_delivery_cost
      *
      * @return self
      */
@@ -281,7 +281,7 @@ class ShippingOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets delivery_discount
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Amount|null
+     * @return \Ebay\Model\Buy\Order\Amount|null
      */
     public function getDeliveryDiscount()
     {
@@ -291,7 +291,7 @@ class ShippingOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets delivery_discount
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Amount|null $delivery_discount delivery_discount
+     * @param \Ebay\Model\Buy\Order\Amount|null $delivery_discount delivery_discount
      *
      * @return self
      */
@@ -305,7 +305,7 @@ class ShippingOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets import_charges
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Amount|null
+     * @return \Ebay\Model\Buy\Order\Amount|null
      */
     public function getImportCharges()
     {
@@ -315,7 +315,7 @@ class ShippingOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets import_charges
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Amount|null $import_charges import_charges
+     * @param \Ebay\Model\Buy\Order\Amount|null $import_charges import_charges
      *
      * @return self
      */

@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Commerce\Taxonomy;
+namespace Ebay\Model\Commerce\Taxonomy;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,7 +60,7 @@ class CategorySubtree implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'category_subtree_node' => '\Ebay\Ebay\Model\Commerce\Taxonomy\CategoryTreeNode',
+        'category_subtree_node' => '\Ebay\Model\Commerce\Taxonomy\CategoryTreeNode',
         'category_tree_id' => 'string',
         'category_tree_version' => 'string'
     ];
@@ -221,7 +221,7 @@ class CategorySubtree implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets category_subtree_node
      *
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\CategoryTreeNode|null
+     * @return \Ebay\Model\Commerce\Taxonomy\CategoryTreeNode|null
      */
     public function getCategorySubtreeNode()
     {
@@ -231,7 +231,7 @@ class CategorySubtree implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets category_subtree_node
      *
-     * @param \Ebay\Ebay\Model\Commerce\Taxonomy\CategoryTreeNode|null $category_subtree_node category_subtree_node
+     * @param \Ebay\Model\Commerce\Taxonomy\CategoryTreeNode|null $category_subtree_node category_subtree_node
      *
      * @return self
      */

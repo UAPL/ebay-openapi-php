@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Order;
+namespace Ebay\Model\Buy\Order;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,14 +60,14 @@ class GuestPurchaseOrderV2 implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'line_items' => '\Ebay\Ebay\Model\Buy\Order\OrderLineItemV2[]',
-        'pricing_summary' => '\Ebay\Ebay\Model\Buy\Order\PricingSummary',
+        'line_items' => '\Ebay\Model\Buy\Order\OrderLineItemV2[]',
+        'pricing_summary' => '\Ebay\Model\Buy\Order\PricingSummary',
         'purchase_order_creation_date' => 'string',
         'purchase_order_id' => 'string',
         'purchase_order_payment_status' => 'string',
         'purchase_order_status' => 'string',
-        'refunded_amount' => '\Ebay\Ebay\Model\Buy\Order\Amount',
-        'warnings' => '\Ebay\Ebay\Model\Buy\Order\Error[]'
+        'refunded_amount' => '\Ebay\Model\Buy\Order\Amount',
+        'warnings' => '\Ebay\Model\Buy\Order\Error[]'
     ];
 
     /**
@@ -251,7 +251,7 @@ class GuestPurchaseOrderV2 implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets line_items
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\OrderLineItemV2[]|null
+     * @return \Ebay\Model\Buy\Order\OrderLineItemV2[]|null
      */
     public function getLineItems()
     {
@@ -261,7 +261,7 @@ class GuestPurchaseOrderV2 implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets line_items
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\OrderLineItemV2[]|null $line_items An array of line items in the order.
+     * @param \Ebay\Model\Buy\Order\OrderLineItemV2[]|null $line_items An array of line items in the order.
      *
      * @return self
      */
@@ -275,7 +275,7 @@ class GuestPurchaseOrderV2 implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets pricing_summary
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\PricingSummary|null
+     * @return \Ebay\Model\Buy\Order\PricingSummary|null
      */
     public function getPricingSummary()
     {
@@ -285,7 +285,7 @@ class GuestPurchaseOrderV2 implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets pricing_summary
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\PricingSummary|null $pricing_summary pricing_summary
+     * @param \Ebay\Model\Buy\Order\PricingSummary|null $pricing_summary pricing_summary
      *
      * @return self
      */
@@ -395,7 +395,7 @@ class GuestPurchaseOrderV2 implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets refunded_amount
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Amount|null
+     * @return \Ebay\Model\Buy\Order\Amount|null
      */
     public function getRefundedAmount()
     {
@@ -405,7 +405,7 @@ class GuestPurchaseOrderV2 implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets refunded_amount
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Amount|null $refunded_amount refunded_amount
+     * @param \Ebay\Model\Buy\Order\Amount|null $refunded_amount refunded_amount
      *
      * @return self
      */
@@ -419,7 +419,7 @@ class GuestPurchaseOrderV2 implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets warnings
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Error[]|null
+     * @return \Ebay\Model\Buy\Order\Error[]|null
      */
     public function getWarnings()
     {
@@ -429,7 +429,7 @@ class GuestPurchaseOrderV2 implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets warnings
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Error[]|null $warnings A container for any warning messages.
+     * @param \Ebay\Model\Buy\Order\Error[]|null $warnings A container for any warning messages.
      *
      * @return self
      */

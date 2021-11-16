@@ -10,7 +10,7 @@ Method | HTTP request | Description
 ## `getGuestPurchaseOrder()`
 
 ```php
-getGuestPurchaseOrder($purchase_order_id): \Ebay\Ebay\Model\Buy\Order\GuestPurchaseOrderV2
+getGuestPurchaseOrder($purchase_order_id): \Ebay\Model\Buy\Order\GuestPurchaseOrderV2
 ```
 
 
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Buy\Order\GuestPurchaseOrderV2**](../Model/GuestPurchaseOrderV2.md)
+[**\Ebay\Model\Buy\Order\GuestPurchaseOrderV2**](../Model/GuestPurchaseOrderV2.md)
 
 ### Authorization
 

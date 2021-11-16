@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Deal;
+namespace Ebay\Model\Buy\Deal;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -61,7 +61,7 @@ class Coupon implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'redemption_code' => 'string',
-        'terms' => '\Ebay\Ebay\Model\Buy\Deal\Terms'
+        'terms' => '\Ebay\Model\Buy\Deal\Terms'
     ];
 
     /**
@@ -239,7 +239,7 @@ class Coupon implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets terms
      *
-     * @return \Ebay\Ebay\Model\Buy\Deal\Terms|null
+     * @return \Ebay\Model\Buy\Deal\Terms|null
      */
     public function getTerms()
     {
@@ -249,7 +249,7 @@ class Coupon implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets terms
      *
-     * @param \Ebay\Ebay\Model\Buy\Deal\Terms|null $terms terms
+     * @param \Ebay\Model\Buy\Deal\Terms|null $terms terms
      *
      * @return self
      */

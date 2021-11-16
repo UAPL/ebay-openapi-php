@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Api\Buy\Feed;
+namespace Ebay\Api\Buy\Feed;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -126,7 +126,7 @@ class ItemPriorityApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Feed\ItemPriorityResponse|\Ebay\Ebay\Model\Buy\Feed\ItemPriorityResponse
+     * @return \Ebay\Model\Buy\Feed\ItemPriorityResponse|\Ebay\Model\Buy\Feed\ItemPriorityResponse
      */
     public function getItemPriorityFeed($accept, $x_ebay_c_marketplace_id, $range, $category_id, $date)
     {
@@ -145,7 +145,7 @@ class ItemPriorityApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Feed\ItemPriorityResponse|\Ebay\Ebay\Model\Buy\Feed\ItemPriorityResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Feed\ItemPriorityResponse|\Ebay\Model\Buy\Feed\ItemPriorityResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getItemPriorityFeedWithHttpInfo($accept, $x_ebay_c_marketplace_id, $range, $category_id, $date)
     {
@@ -188,32 +188,32 @@ class ItemPriorityApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Feed\ItemPriorityResponse' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Feed\ItemPriorityResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Feed\ItemPriorityResponse', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Feed\ItemPriorityResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 206:
-                    if ('\Ebay\Ebay\Model\Buy\Feed\ItemPriorityResponse' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Feed\ItemPriorityResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Feed\ItemPriorityResponse', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Feed\ItemPriorityResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Feed\ItemPriorityResponse';
+            $returnType = '\Ebay\Model\Buy\Feed\ItemPriorityResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -231,7 +231,7 @@ class ItemPriorityApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Feed\ItemPriorityResponse',
+                        '\Ebay\Model\Buy\Feed\ItemPriorityResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -239,7 +239,7 @@ class ItemPriorityApi
                 case 206:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Feed\ItemPriorityResponse',
+                        '\Ebay\Model\Buy\Feed\ItemPriorityResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -285,7 +285,7 @@ class ItemPriorityApi
      */
     public function getItemPriorityFeedAsyncWithHttpInfo($accept, $x_ebay_c_marketplace_id, $range, $category_id, $date)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Feed\ItemPriorityResponse';
+        $returnType = '\Ebay\Model\Buy\Feed\ItemPriorityResponse';
         $request = $this->getItemPriorityFeedRequest($accept, $x_ebay_c_marketplace_id, $range, $category_id, $date);
 
         return $this->client

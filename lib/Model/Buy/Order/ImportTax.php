@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Order;
+namespace Ebay\Model\Buy\Order;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,7 +60,7 @@ class ImportTax implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'amount' => '\Ebay\Ebay\Model\Buy\Order\Amount',
+        'amount' => '\Ebay\Model\Buy\Order\Amount',
         'import_tax_type' => 'string'
     ];
 
@@ -215,7 +215,7 @@ class ImportTax implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets amount
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Amount|null
+     * @return \Ebay\Model\Buy\Order\Amount|null
      */
     public function getAmount()
     {
@@ -225,7 +225,7 @@ class ImportTax implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets amount
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Amount|null $amount amount
+     * @param \Ebay\Model\Buy\Order\Amount|null $amount amount
      *
      * @return self
      */

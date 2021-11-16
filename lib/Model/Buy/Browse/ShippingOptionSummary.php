@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -63,7 +63,7 @@ class ShippingOptionSummary implements ModelInterface, ArrayAccess, \JsonSeriali
         'guaranteed_delivery' => 'bool',
         'max_estimated_delivery_date' => 'string',
         'min_estimated_delivery_date' => 'string',
-        'shipping_cost' => '\Ebay\Ebay\Model\Buy\Browse\ConvertedAmount',
+        'shipping_cost' => '\Ebay\Model\Buy\Browse\ConvertedAmount',
         'shipping_cost_type' => 'string'
     ];
 
@@ -305,7 +305,7 @@ class ShippingOptionSummary implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets shipping_cost
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null
+     * @return \Ebay\Model\Buy\Browse\ConvertedAmount|null
      */
     public function getShippingCost()
     {
@@ -315,7 +315,7 @@ class ShippingOptionSummary implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets shipping_cost
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null $shipping_cost shipping_cost
+     * @param \Ebay\Model\Buy\Browse\ConvertedAmount|null $shipping_cost shipping_cost
      *
      * @return self
      */

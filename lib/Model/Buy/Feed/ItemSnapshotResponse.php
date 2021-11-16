@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Feed;
+namespace Ebay\Model\Buy\Feed;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,7 +60,7 @@ class ItemSnapshotResponse implements ModelInterface, ArrayAccess, \JsonSerializ
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\Ebay\Ebay\Model\Buy\Feed\ItemSnapshot[]'
+        'items' => '\Ebay\Model\Buy\Feed\ItemSnapshot[]'
     ];
 
     /**
@@ -209,7 +209,7 @@ class ItemSnapshotResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Gets items
      *
-     * @return \Ebay\Ebay\Model\Buy\Feed\ItemSnapshot[]|null
+     * @return \Ebay\Model\Buy\Feed\ItemSnapshot[]|null
      */
     public function getItems()
     {
@@ -219,7 +219,7 @@ class ItemSnapshotResponse implements ModelInterface, ArrayAccess, \JsonSerializ
     /**
      * Sets items
      *
-     * @param \Ebay\Ebay\Model\Buy\Feed\ItemSnapshot[]|null $items The container for the array of items returned by the <b> getItemSnapshotFeed</b> method. <p><b>Note: </b> When the value of the <b> availability</b> column is <code>UNAVAILABLE</code>, only the <b>itemId</b> and <b> availability</b> columns are populated.  </p>
+     * @param \Ebay\Model\Buy\Feed\ItemSnapshot[]|null $items The container for the array of items returned by the <b> getItemSnapshotFeed</b> method. <p><b>Note: </b> When the value of the <b> availability</b> column is <code>UNAVAILABLE</code>, only the <b>itemId</b> and <b> availability</b> columns are populated.  </p>
      *
      * @return self
      */

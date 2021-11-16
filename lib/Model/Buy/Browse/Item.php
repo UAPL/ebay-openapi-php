@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,12 +60,12 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'additional_images' => '\Ebay\Ebay\Model\Buy\Browse\Image[]',
+        'additional_images' => '\Ebay\Model\Buy\Browse\Image[]',
         'adult_only' => 'bool',
         'age_group' => 'string',
-        'authenticity_guarantee' => '\Ebay\Ebay\Model\Buy\Browse\AuthenticityGuaranteeProgram',
-        'authenticity_verification' => '\Ebay\Ebay\Model\Buy\Browse\AuthenticityVerificationProgram',
-        'available_coupons' => '\Ebay\Ebay\Model\Buy\Browse\AvailableCoupon[]',
+        'authenticity_guarantee' => '\Ebay\Model\Buy\Browse\AuthenticityGuaranteeProgram',
+        'authenticity_verification' => '\Ebay\Model\Buy\Browse\AuthenticityVerificationProgram',
+        'available_coupons' => '\Ebay\Model\Buy\Browse\AvailableCoupon[]',
         'bid_count' => 'int',
         'brand' => 'string',
         'buying_options' => 'string[]',
@@ -75,59 +75,59 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
         'condition' => 'string',
         'condition_description' => 'string',
         'condition_id' => 'string',
-        'current_bid_price' => '\Ebay\Ebay\Model\Buy\Browse\ConvertedAmount',
+        'current_bid_price' => '\Ebay\Model\Buy\Browse\ConvertedAmount',
         'description' => 'string',
         'eligible_for_inline_checkout' => 'bool',
         'enabled_for_guest_checkout' => 'bool',
         'energy_efficiency_class' => 'string',
         'epid' => 'string',
-        'estimated_availabilities' => '\Ebay\Ebay\Model\Buy\Browse\EstimatedAvailability[]',
+        'estimated_availabilities' => '\Ebay\Model\Buy\Browse\EstimatedAvailability[]',
         'gender' => 'string',
         'gtin' => 'string',
-        'image' => '\Ebay\Ebay\Model\Buy\Browse\Image',
+        'image' => '\Ebay\Model\Buy\Browse\Image',
         'inferred_epid' => 'string',
         'item_affiliate_web_url' => 'string',
         'item_end_date' => 'string',
         'item_id' => 'string',
-        'item_location' => '\Ebay\Ebay\Model\Buy\Browse\Address',
+        'item_location' => '\Ebay\Model\Buy\Browse\Address',
         'item_web_url' => 'string',
         'legacy_item_id' => 'string',
-        'localized_aspects' => '\Ebay\Ebay\Model\Buy\Browse\TypedNameValue[]',
+        'localized_aspects' => '\Ebay\Model\Buy\Browse\TypedNameValue[]',
         'lot_size' => 'int',
-        'marketing_price' => '\Ebay\Ebay\Model\Buy\Browse\MarketingPrice',
+        'marketing_price' => '\Ebay\Model\Buy\Browse\MarketingPrice',
         'material' => 'string',
-        'minimum_price_to_bid' => '\Ebay\Ebay\Model\Buy\Browse\ConvertedAmount',
+        'minimum_price_to_bid' => '\Ebay\Model\Buy\Browse\ConvertedAmount',
         'mpn' => 'string',
         'pattern' => 'string',
-        'payment_methods' => '\Ebay\Ebay\Model\Buy\Browse\PaymentMethod[]',
-        'price' => '\Ebay\Ebay\Model\Buy\Browse\ConvertedAmount',
+        'payment_methods' => '\Ebay\Model\Buy\Browse\PaymentMethod[]',
+        'price' => '\Ebay\Model\Buy\Browse\ConvertedAmount',
         'price_display_condition' => 'string',
-        'primary_item_group' => '\Ebay\Ebay\Model\Buy\Browse\ItemGroupSummary',
-        'primary_product_review_rating' => '\Ebay\Ebay\Model\Buy\Browse\ReviewRating',
+        'primary_item_group' => '\Ebay\Model\Buy\Browse\ItemGroupSummary',
+        'primary_product_review_rating' => '\Ebay\Model\Buy\Browse\ReviewRating',
         'priority_listing' => 'bool',
-        'product' => '\Ebay\Ebay\Model\Buy\Browse\Product',
+        'product' => '\Ebay\Model\Buy\Browse\Product',
         'product_fiche_web_url' => 'string',
         'qualified_programs' => 'string[]',
         'quantity_limit_per_buyer' => 'int',
         'reserve_price_met' => 'bool',
-        'return_terms' => '\Ebay\Ebay\Model\Buy\Browse\ItemReturnTerms',
-        'seller' => '\Ebay\Ebay\Model\Buy\Browse\SellerDetail',
+        'return_terms' => '\Ebay\Model\Buy\Browse\ItemReturnTerms',
+        'seller' => '\Ebay\Model\Buy\Browse\SellerDetail',
         'seller_item_revision' => 'string',
-        'shipping_options' => '\Ebay\Ebay\Model\Buy\Browse\ShippingOption[]',
-        'ship_to_locations' => '\Ebay\Ebay\Model\Buy\Browse\ShipToLocations',
+        'shipping_options' => '\Ebay\Model\Buy\Browse\ShippingOption[]',
+        'ship_to_locations' => '\Ebay\Model\Buy\Browse\ShipToLocations',
         'short_description' => 'string',
         'size' => 'string',
         'size_system' => 'string',
         'size_type' => 'string',
         'subtitle' => 'string',
-        'taxes' => '\Ebay\Ebay\Model\Buy\Browse\Taxes[]',
+        'taxes' => '\Ebay\Model\Buy\Browse\Taxes[]',
         'title' => 'string',
         'top_rated_buying_experience' => 'bool',
         'tyre_label_image_url' => 'string',
         'unique_bidder_count' => 'int',
-        'unit_price' => '\Ebay\Ebay\Model\Buy\Browse\ConvertedAmount',
+        'unit_price' => '\Ebay\Model\Buy\Browse\ConvertedAmount',
         'unit_pricing_measure' => 'string',
-        'warnings' => '\Ebay\Ebay\Model\Buy\Browse\Error[]',
+        'warnings' => '\Ebay\Model\Buy\Browse\Error[]',
         'watch_count' => 'int'
     ];
 
@@ -617,7 +617,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets additional_images
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Image[]|null
+     * @return \Ebay\Model\Buy\Browse\Image[]|null
      */
     public function getAdditionalImages()
     {
@@ -627,7 +627,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets additional_images
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Image[]|null $additional_images An array of containers with the URLs for the images that are in addition to the primary image.  The primary image is returned in the <b> image.imageUrl</b> field.
+     * @param \Ebay\Model\Buy\Browse\Image[]|null $additional_images An array of containers with the URLs for the images that are in addition to the primary image.  The primary image is returned in the <b> image.imageUrl</b> field.
      *
      * @return self
      */
@@ -689,7 +689,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets authenticity_guarantee
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\AuthenticityGuaranteeProgram|null
+     * @return \Ebay\Model\Buy\Browse\AuthenticityGuaranteeProgram|null
      */
     public function getAuthenticityGuarantee()
     {
@@ -699,7 +699,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets authenticity_guarantee
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\AuthenticityGuaranteeProgram|null $authenticity_guarantee authenticity_guarantee
+     * @param \Ebay\Model\Buy\Browse\AuthenticityGuaranteeProgram|null $authenticity_guarantee authenticity_guarantee
      *
      * @return self
      */
@@ -713,7 +713,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets authenticity_verification
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\AuthenticityVerificationProgram|null
+     * @return \Ebay\Model\Buy\Browse\AuthenticityVerificationProgram|null
      */
     public function getAuthenticityVerification()
     {
@@ -723,7 +723,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets authenticity_verification
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\AuthenticityVerificationProgram|null $authenticity_verification authenticity_verification
+     * @param \Ebay\Model\Buy\Browse\AuthenticityVerificationProgram|null $authenticity_verification authenticity_verification
      *
      * @return self
      */
@@ -737,7 +737,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets available_coupons
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\AvailableCoupon[]|null
+     * @return \Ebay\Model\Buy\Browse\AvailableCoupon[]|null
      */
     public function getAvailableCoupons()
     {
@@ -747,7 +747,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets available_coupons
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\AvailableCoupon[]|null $available_coupons A list of available coupons for the item.
+     * @param \Ebay\Model\Buy\Browse\AvailableCoupon[]|null $available_coupons A list of available coupons for the item.
      *
      * @return self
      */
@@ -977,7 +977,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets current_bid_price
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null
+     * @return \Ebay\Model\Buy\Browse\ConvertedAmount|null
      */
     public function getCurrentBidPrice()
     {
@@ -987,7 +987,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets current_bid_price
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null $current_bid_price current_bid_price
+     * @param \Ebay\Model\Buy\Browse\ConvertedAmount|null $current_bid_price current_bid_price
      *
      * @return self
      */
@@ -1121,7 +1121,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets estimated_availabilities
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\EstimatedAvailability[]|null
+     * @return \Ebay\Model\Buy\Browse\EstimatedAvailability[]|null
      */
     public function getEstimatedAvailabilities()
     {
@@ -1131,7 +1131,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets estimated_availabilities
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\EstimatedAvailability[]|null $estimated_availabilities The estimated number of this item that are available for purchase. Because the quantity of an item can change several times within a second, it is impossible to return the exact quantity. So instead of returning quantity, the estimated availability of the item is returned.
+     * @param \Ebay\Model\Buy\Browse\EstimatedAvailability[]|null $estimated_availabilities The estimated number of this item that are available for purchase. Because the quantity of an item can change several times within a second, it is impossible to return the exact quantity. So instead of returning quantity, the estimated availability of the item is returned.
      *
      * @return self
      */
@@ -1193,7 +1193,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets image
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Image|null
+     * @return \Ebay\Model\Buy\Browse\Image|null
      */
     public function getImage()
     {
@@ -1203,7 +1203,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets image
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Image|null $image image
+     * @param \Ebay\Model\Buy\Browse\Image|null $image image
      *
      * @return self
      */
@@ -1313,7 +1313,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets item_location
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Address|null
+     * @return \Ebay\Model\Buy\Browse\Address|null
      */
     public function getItemLocation()
     {
@@ -1323,7 +1323,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets item_location
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Address|null $item_location item_location
+     * @param \Ebay\Model\Buy\Browse\Address|null $item_location item_location
      *
      * @return self
      */
@@ -1385,7 +1385,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets localized_aspects
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\TypedNameValue[]|null
+     * @return \Ebay\Model\Buy\Browse\TypedNameValue[]|null
      */
     public function getLocalizedAspects()
     {
@@ -1395,7 +1395,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets localized_aspects
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\TypedNameValue[]|null $localized_aspects An array of containers that show the complete list of the aspect name/value pairs that describe the variation of the item.
+     * @param \Ebay\Model\Buy\Browse\TypedNameValue[]|null $localized_aspects An array of containers that show the complete list of the aspect name/value pairs that describe the variation of the item.
      *
      * @return self
      */
@@ -1433,7 +1433,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets marketing_price
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\MarketingPrice|null
+     * @return \Ebay\Model\Buy\Browse\MarketingPrice|null
      */
     public function getMarketingPrice()
     {
@@ -1443,7 +1443,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets marketing_price
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\MarketingPrice|null $marketing_price marketing_price
+     * @param \Ebay\Model\Buy\Browse\MarketingPrice|null $marketing_price marketing_price
      *
      * @return self
      */
@@ -1481,7 +1481,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets minimum_price_to_bid
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null
+     * @return \Ebay\Model\Buy\Browse\ConvertedAmount|null
      */
     public function getMinimumPriceToBid()
     {
@@ -1491,7 +1491,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets minimum_price_to_bid
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null $minimum_price_to_bid minimum_price_to_bid
+     * @param \Ebay\Model\Buy\Browse\ConvertedAmount|null $minimum_price_to_bid minimum_price_to_bid
      *
      * @return self
      */
@@ -1553,7 +1553,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets payment_methods
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\PaymentMethod[]|null
+     * @return \Ebay\Model\Buy\Browse\PaymentMethod[]|null
      */
     public function getPaymentMethods()
     {
@@ -1563,7 +1563,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets payment_methods
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\PaymentMethod[]|null $payment_methods The payment methods for the item, including the payment method types, brands, and instructions for the buyer.
+     * @param \Ebay\Model\Buy\Browse\PaymentMethod[]|null $payment_methods The payment methods for the item, including the payment method types, brands, and instructions for the buyer.
      *
      * @return self
      */
@@ -1577,7 +1577,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets price
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null
+     * @return \Ebay\Model\Buy\Browse\ConvertedAmount|null
      */
     public function getPrice()
     {
@@ -1587,7 +1587,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets price
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null $price price
+     * @param \Ebay\Model\Buy\Browse\ConvertedAmount|null $price price
      *
      * @return self
      */
@@ -1625,7 +1625,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets primary_item_group
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ItemGroupSummary|null
+     * @return \Ebay\Model\Buy\Browse\ItemGroupSummary|null
      */
     public function getPrimaryItemGroup()
     {
@@ -1635,7 +1635,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets primary_item_group
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ItemGroupSummary|null $primary_item_group primary_item_group
+     * @param \Ebay\Model\Buy\Browse\ItemGroupSummary|null $primary_item_group primary_item_group
      *
      * @return self
      */
@@ -1649,7 +1649,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets primary_product_review_rating
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ReviewRating|null
+     * @return \Ebay\Model\Buy\Browse\ReviewRating|null
      */
     public function getPrimaryProductReviewRating()
     {
@@ -1659,7 +1659,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets primary_product_review_rating
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ReviewRating|null $primary_product_review_rating primary_product_review_rating
+     * @param \Ebay\Model\Buy\Browse\ReviewRating|null $primary_product_review_rating primary_product_review_rating
      *
      * @return self
      */
@@ -1697,7 +1697,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets product
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Product|null
+     * @return \Ebay\Model\Buy\Browse\Product|null
      */
     public function getProduct()
     {
@@ -1707,7 +1707,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets product
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Product|null $product product
+     * @param \Ebay\Model\Buy\Browse\Product|null $product product
      *
      * @return self
      */
@@ -1817,7 +1817,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets return_terms
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ItemReturnTerms|null
+     * @return \Ebay\Model\Buy\Browse\ItemReturnTerms|null
      */
     public function getReturnTerms()
     {
@@ -1827,7 +1827,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets return_terms
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ItemReturnTerms|null $return_terms return_terms
+     * @param \Ebay\Model\Buy\Browse\ItemReturnTerms|null $return_terms return_terms
      *
      * @return self
      */
@@ -1841,7 +1841,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets seller
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\SellerDetail|null
+     * @return \Ebay\Model\Buy\Browse\SellerDetail|null
      */
     public function getSeller()
     {
@@ -1851,7 +1851,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets seller
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\SellerDetail|null $seller seller
+     * @param \Ebay\Model\Buy\Browse\SellerDetail|null $seller seller
      *
      * @return self
      */
@@ -1889,7 +1889,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shipping_options
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ShippingOption[]|null
+     * @return \Ebay\Model\Buy\Browse\ShippingOption[]|null
      */
     public function getShippingOptions()
     {
@@ -1899,7 +1899,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shipping_options
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ShippingOption[]|null $shipping_options An array of shipping options containers that have the details about cost, carrier, etc. of one shipping option.
+     * @param \Ebay\Model\Buy\Browse\ShippingOption[]|null $shipping_options An array of shipping options containers that have the details about cost, carrier, etc. of one shipping option.
      *
      * @return self
      */
@@ -1913,7 +1913,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets ship_to_locations
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ShipToLocations|null
+     * @return \Ebay\Model\Buy\Browse\ShipToLocations|null
      */
     public function getShipToLocations()
     {
@@ -1923,7 +1923,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets ship_to_locations
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ShipToLocations|null $ship_to_locations ship_to_locations
+     * @param \Ebay\Model\Buy\Browse\ShipToLocations|null $ship_to_locations ship_to_locations
      *
      * @return self
      */
@@ -2057,7 +2057,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets taxes
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Taxes[]|null
+     * @return \Ebay\Model\Buy\Browse\Taxes[]|null
      */
     public function getTaxes()
     {
@@ -2067,7 +2067,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets taxes
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Taxes[]|null $taxes The container for the tax information for the item.
+     * @param \Ebay\Model\Buy\Browse\Taxes[]|null $taxes The container for the tax information for the item.
      *
      * @return self
      */
@@ -2177,7 +2177,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets unit_price
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null
+     * @return \Ebay\Model\Buy\Browse\ConvertedAmount|null
      */
     public function getUnitPrice()
     {
@@ -2187,7 +2187,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets unit_price
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null $unit_price unit_price
+     * @param \Ebay\Model\Buy\Browse\ConvertedAmount|null $unit_price unit_price
      *
      * @return self
      */
@@ -2225,7 +2225,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets warnings
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Error[]|null
+     * @return \Ebay\Model\Buy\Browse\Error[]|null
      */
     public function getWarnings()
     {
@@ -2235,7 +2235,7 @@ class Item implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets warnings
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Error[]|null $warnings An array of warning messages. These types of errors do not prevent the method from executing but should be checked.
+     * @param \Ebay\Model\Buy\Browse\Error[]|null $warnings An array of warning messages. These types of errors do not prevent the method from executing but should be checked.
      *
      * @return self
      */

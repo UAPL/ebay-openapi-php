@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Commerce\Taxonomy;
+namespace Ebay\Model\Commerce\Taxonomy;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -59,8 +59,8 @@ class CategoryAspect implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'category' => '\Ebay\Ebay\Model\Commerce\Taxonomy\Category',
-        'aspects' => '\Ebay\Ebay\Model\Commerce\Taxonomy\Aspect[]'
+        'category' => '\Ebay\Model\Commerce\Taxonomy\Category',
+        'aspects' => '\Ebay\Model\Commerce\Taxonomy\Aspect[]'
     ];
 
     /**
@@ -214,7 +214,7 @@ class CategoryAspect implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets category
      *
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\Category|null
+     * @return \Ebay\Model\Commerce\Taxonomy\Category|null
      */
     public function getCategory()
     {
@@ -224,7 +224,7 @@ class CategoryAspect implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets category
      *
-     * @param \Ebay\Ebay\Model\Commerce\Taxonomy\Category|null $category category
+     * @param \Ebay\Model\Commerce\Taxonomy\Category|null $category category
      *
      * @return self
      */
@@ -238,7 +238,7 @@ class CategoryAspect implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets aspects
      *
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\Aspect[]|null
+     * @return \Ebay\Model\Commerce\Taxonomy\Aspect[]|null
      */
     public function getAspects()
     {
@@ -248,7 +248,7 @@ class CategoryAspect implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets aspects
      *
-     * @param \Ebay\Ebay\Model\Commerce\Taxonomy\Aspect[]|null $aspects A list of aspect metadata that is used to describe the items in a particular leaf category.
+     * @param \Ebay\Model\Commerce\Taxonomy\Aspect[]|null $aspects A list of aspect metadata that is used to describe the items in a particular leaf category.
      *
      * @return self
      */

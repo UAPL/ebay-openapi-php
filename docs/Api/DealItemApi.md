@@ -10,7 +10,7 @@ Method | HTTP request | Description
 ## `getDealItems()`
 
 ```php
-getDealItems($x_ebay_c_marketplace_id, $category_ids, $commissionable, $delivery_country, $limit, $offset): \Ebay\Ebay\Model\Buy\Deal\DealItemSearchResponse
+getDealItems($x_ebay_c_marketplace_id, $category_ids, $commissionable, $delivery_country, $limit, $offset): \Ebay\Model\Buy\Deal\DealItemSearchResponse
 ```
 
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Buy\Deal\DealItemSearchResponse**](../Model/DealItemSearchResponse.md)
+[**\Ebay\Model\Buy\Deal\DealItemSearchResponse**](../Model/DealItemSearchResponse.md)
 
 ### Authorization
 

@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Order;
+namespace Ebay\Model\Buy\Order;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -67,7 +67,7 @@ class ShippingAddress implements ModelInterface, ArrayAccess, \JsonSerializable
         'county' => 'string',
         'phone_number' => 'string',
         'postal_code' => 'string',
-        'recipient' => '\Ebay\Ebay\Model\Buy\Order\Recipient',
+        'recipient' => '\Ebay\Model\Buy\Order\Recipient',
         'state_or_province' => 'string'
     ];
 
@@ -425,7 +425,7 @@ class ShippingAddress implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets recipient
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\Recipient|null
+     * @return \Ebay\Model\Buy\Order\Recipient|null
      */
     public function getRecipient()
     {
@@ -435,7 +435,7 @@ class ShippingAddress implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets recipient
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\Recipient|null $recipient recipient
+     * @param \Ebay\Model\Buy\Order\Recipient|null $recipient recipient
      *
      * @return self
      */

@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,9 +60,9 @@ class MarketingPrice implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'discount_amount' => '\Ebay\Ebay\Model\Buy\Browse\ConvertedAmount',
+        'discount_amount' => '\Ebay\Model\Buy\Browse\ConvertedAmount',
         'discount_percentage' => 'string',
-        'original_price' => '\Ebay\Ebay\Model\Buy\Browse\ConvertedAmount',
+        'original_price' => '\Ebay\Model\Buy\Browse\ConvertedAmount',
         'price_treatment' => 'string'
     ];
 
@@ -227,7 +227,7 @@ class MarketingPrice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets discount_amount
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null
+     * @return \Ebay\Model\Buy\Browse\ConvertedAmount|null
      */
     public function getDiscountAmount()
     {
@@ -237,7 +237,7 @@ class MarketingPrice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets discount_amount
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null $discount_amount discount_amount
+     * @param \Ebay\Model\Buy\Browse\ConvertedAmount|null $discount_amount discount_amount
      *
      * @return self
      */
@@ -275,7 +275,7 @@ class MarketingPrice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets original_price
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null
+     * @return \Ebay\Model\Buy\Browse\ConvertedAmount|null
      */
     public function getOriginalPrice()
     {
@@ -285,7 +285,7 @@ class MarketingPrice implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets original_price
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null $original_price original_price
+     * @param \Ebay\Model\Buy\Browse\ConvertedAmount|null $original_price original_price
      *
      * @return self
      */

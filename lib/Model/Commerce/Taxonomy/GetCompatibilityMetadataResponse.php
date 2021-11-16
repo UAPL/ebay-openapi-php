@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Commerce\Taxonomy;
+namespace Ebay\Model\Commerce\Taxonomy;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,7 +60,7 @@ class GetCompatibilityMetadataResponse implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'compatibility_properties' => '\Ebay\Ebay\Model\Commerce\Taxonomy\CompatibilityProperty[]'
+        'compatibility_properties' => '\Ebay\Model\Commerce\Taxonomy\CompatibilityProperty[]'
     ];
 
     /**
@@ -209,7 +209,7 @@ class GetCompatibilityMetadataResponse implements ModelInterface, ArrayAccess, \
     /**
      * Gets compatibility_properties
      *
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\CompatibilityProperty[]|null
+     * @return \Ebay\Model\Commerce\Taxonomy\CompatibilityProperty[]|null
      */
     public function getCompatibilityProperties()
     {
@@ -219,7 +219,7 @@ class GetCompatibilityMetadataResponse implements ModelInterface, ArrayAccess, \
     /**
      * Sets compatibility_properties
      *
-     * @param \Ebay\Ebay\Model\Commerce\Taxonomy\CompatibilityProperty[]|null $compatibility_properties This container consists of an array of all compatible vehicle properties applicable to the specified eBay marketplace and eBay category ID.
+     * @param \Ebay\Model\Commerce\Taxonomy\CompatibilityProperty[]|null $compatibility_properties This container consists of an array of all compatible vehicle properties applicable to the specified eBay marketplace and eBay category ID.
      *
      * @return self
      */

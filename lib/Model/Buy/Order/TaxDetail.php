@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Order;
+namespace Ebay\Model\Buy\Order;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -61,7 +61,7 @@ class TaxDetail implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'included_in_price' => 'bool',
-        'tax_jurisdiction' => '\Ebay\Ebay\Model\Buy\Order\TaxJurisdiction',
+        'tax_jurisdiction' => '\Ebay\Model\Buy\Order\TaxJurisdiction',
         'tax_type' => 'string'
     ];
 
@@ -245,7 +245,7 @@ class TaxDetail implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets tax_jurisdiction
      *
-     * @return \Ebay\Ebay\Model\Buy\Order\TaxJurisdiction|null
+     * @return \Ebay\Model\Buy\Order\TaxJurisdiction|null
      */
     public function getTaxJurisdiction()
     {
@@ -255,7 +255,7 @@ class TaxDetail implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets tax_jurisdiction
      *
-     * @param \Ebay\Ebay\Model\Buy\Order\TaxJurisdiction|null $tax_jurisdiction tax_jurisdiction
+     * @param \Ebay\Model\Buy\Order\TaxJurisdiction|null $tax_jurisdiction tax_jurisdiction
      *
      * @return self
      */

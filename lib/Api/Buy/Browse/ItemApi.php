@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Api\Buy\Browse;
+namespace Ebay\Api\Buy\Browse;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -120,11 +120,11 @@ class ItemApi
      *
      * @param  string $item_id The eBay RESTful identifier of an item (such as a part you want to check). This ID is returned by the &lt;b&gt; Browse&lt;/b&gt; and &lt;b&gt; Feed&lt;/b&gt; API methods.  &lt;br /&gt;&lt;br /&gt; &lt;b&gt; RESTful Item ID Format: &lt;/b&gt;&lt;code&gt;v1&lt;/code&gt;|&lt;code&gt;&lt;i&gt;#&lt;/i&gt;&lt;/code&gt;|&lt;code&gt;&lt;i&gt;#&lt;/i&gt;&lt;/code&gt; &lt;br /&gt;For example: &lt;code&gt;v1|2**********2|0&lt;/code&gt; or &lt;code&gt;v1|1**********2|4**********2&lt;/code&gt; &lt;br /&gt;&lt;br /&gt;For more information about item ID for RESTful APIs, see the &lt;a href&#x3D;\&quot;/api-docs/buy/static/api-browse.html#Legacy\&quot;&gt;Legacy API compatibility&lt;/a&gt; section of the &lt;i&gt;Buy APIs Overview&lt;/i&gt;. (required)
      * @param  string $x_ebay_c_marketplace_id The ID of the eBay marketplace you want to use. &lt;b&gt; Note: &lt;/b&gt; This value is case sensitive.&lt;br /&gt;&lt;br /&gt;For example: &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;code&gt;X-EBAY-C-MARKETPLACE-ID &#x3D; EBAY_US&lt;/code&gt;  &lt;br /&gt;&lt;br /&gt; For a list of supported sites see, &lt;a href&#x3D;\&quot;/api-docs/buy/browse/overview.html#API\&quot;&gt;API Restrictions&lt;/a&gt;. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Browse\CompatibilityPayload $compatibility_payload compatibility_payload (optional)
+     * @param  \Ebay\Model\Buy\Browse\CompatibilityPayload $compatibility_payload compatibility_payload (optional)
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Browse\CompatibilityResponse
+     * @return \Ebay\Model\Buy\Browse\CompatibilityResponse
      */
     public function checkCompatibility($item_id, $x_ebay_c_marketplace_id, $compatibility_payload = null)
     {
@@ -137,11 +137,11 @@ class ItemApi
      *
      * @param  string $item_id The eBay RESTful identifier of an item (such as a part you want to check). This ID is returned by the &lt;b&gt; Browse&lt;/b&gt; and &lt;b&gt; Feed&lt;/b&gt; API methods.  &lt;br /&gt;&lt;br /&gt; &lt;b&gt; RESTful Item ID Format: &lt;/b&gt;&lt;code&gt;v1&lt;/code&gt;|&lt;code&gt;&lt;i&gt;#&lt;/i&gt;&lt;/code&gt;|&lt;code&gt;&lt;i&gt;#&lt;/i&gt;&lt;/code&gt; &lt;br /&gt;For example: &lt;code&gt;v1|2**********2|0&lt;/code&gt; or &lt;code&gt;v1|1**********2|4**********2&lt;/code&gt; &lt;br /&gt;&lt;br /&gt;For more information about item ID for RESTful APIs, see the &lt;a href&#x3D;\&quot;/api-docs/buy/static/api-browse.html#Legacy\&quot;&gt;Legacy API compatibility&lt;/a&gt; section of the &lt;i&gt;Buy APIs Overview&lt;/i&gt;. (required)
      * @param  string $x_ebay_c_marketplace_id The ID of the eBay marketplace you want to use. &lt;b&gt; Note: &lt;/b&gt; This value is case sensitive.&lt;br /&gt;&lt;br /&gt;For example: &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;code&gt;X-EBAY-C-MARKETPLACE-ID &#x3D; EBAY_US&lt;/code&gt;  &lt;br /&gt;&lt;br /&gt; For a list of supported sites see, &lt;a href&#x3D;\&quot;/api-docs/buy/browse/overview.html#API\&quot;&gt;API Restrictions&lt;/a&gt;. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Browse\CompatibilityPayload $compatibility_payload (optional)
+     * @param  \Ebay\Model\Buy\Browse\CompatibilityPayload $compatibility_payload (optional)
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Browse\CompatibilityResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Browse\CompatibilityResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function checkCompatibilityWithHttpInfo($item_id, $x_ebay_c_marketplace_id, $compatibility_payload = null)
     {
@@ -184,20 +184,20 @@ class ItemApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Browse\CompatibilityResponse' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Browse\CompatibilityResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Browse\CompatibilityResponse', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Browse\CompatibilityResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Browse\CompatibilityResponse';
+            $returnType = '\Ebay\Model\Buy\Browse\CompatibilityResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -215,7 +215,7 @@ class ItemApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Browse\CompatibilityResponse',
+                        '\Ebay\Model\Buy\Browse\CompatibilityResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -230,7 +230,7 @@ class ItemApi
      *
      * @param  string $item_id The eBay RESTful identifier of an item (such as a part you want to check). This ID is returned by the &lt;b&gt; Browse&lt;/b&gt; and &lt;b&gt; Feed&lt;/b&gt; API methods.  &lt;br /&gt;&lt;br /&gt; &lt;b&gt; RESTful Item ID Format: &lt;/b&gt;&lt;code&gt;v1&lt;/code&gt;|&lt;code&gt;&lt;i&gt;#&lt;/i&gt;&lt;/code&gt;|&lt;code&gt;&lt;i&gt;#&lt;/i&gt;&lt;/code&gt; &lt;br /&gt;For example: &lt;code&gt;v1|2**********2|0&lt;/code&gt; or &lt;code&gt;v1|1**********2|4**********2&lt;/code&gt; &lt;br /&gt;&lt;br /&gt;For more information about item ID for RESTful APIs, see the &lt;a href&#x3D;\&quot;/api-docs/buy/static/api-browse.html#Legacy\&quot;&gt;Legacy API compatibility&lt;/a&gt; section of the &lt;i&gt;Buy APIs Overview&lt;/i&gt;. (required)
      * @param  string $x_ebay_c_marketplace_id The ID of the eBay marketplace you want to use. &lt;b&gt; Note: &lt;/b&gt; This value is case sensitive.&lt;br /&gt;&lt;br /&gt;For example: &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;code&gt;X-EBAY-C-MARKETPLACE-ID &#x3D; EBAY_US&lt;/code&gt;  &lt;br /&gt;&lt;br /&gt; For a list of supported sites see, &lt;a href&#x3D;\&quot;/api-docs/buy/browse/overview.html#API\&quot;&gt;API Restrictions&lt;/a&gt;. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Browse\CompatibilityPayload $compatibility_payload (optional)
+     * @param  \Ebay\Model\Buy\Browse\CompatibilityPayload $compatibility_payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -250,14 +250,14 @@ class ItemApi
      *
      * @param  string $item_id The eBay RESTful identifier of an item (such as a part you want to check). This ID is returned by the &lt;b&gt; Browse&lt;/b&gt; and &lt;b&gt; Feed&lt;/b&gt; API methods.  &lt;br /&gt;&lt;br /&gt; &lt;b&gt; RESTful Item ID Format: &lt;/b&gt;&lt;code&gt;v1&lt;/code&gt;|&lt;code&gt;&lt;i&gt;#&lt;/i&gt;&lt;/code&gt;|&lt;code&gt;&lt;i&gt;#&lt;/i&gt;&lt;/code&gt; &lt;br /&gt;For example: &lt;code&gt;v1|2**********2|0&lt;/code&gt; or &lt;code&gt;v1|1**********2|4**********2&lt;/code&gt; &lt;br /&gt;&lt;br /&gt;For more information about item ID for RESTful APIs, see the &lt;a href&#x3D;\&quot;/api-docs/buy/static/api-browse.html#Legacy\&quot;&gt;Legacy API compatibility&lt;/a&gt; section of the &lt;i&gt;Buy APIs Overview&lt;/i&gt;. (required)
      * @param  string $x_ebay_c_marketplace_id The ID of the eBay marketplace you want to use. &lt;b&gt; Note: &lt;/b&gt; This value is case sensitive.&lt;br /&gt;&lt;br /&gt;For example: &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;code&gt;X-EBAY-C-MARKETPLACE-ID &#x3D; EBAY_US&lt;/code&gt;  &lt;br /&gt;&lt;br /&gt; For a list of supported sites see, &lt;a href&#x3D;\&quot;/api-docs/buy/browse/overview.html#API\&quot;&gt;API Restrictions&lt;/a&gt;. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Browse\CompatibilityPayload $compatibility_payload (optional)
+     * @param  \Ebay\Model\Buy\Browse\CompatibilityPayload $compatibility_payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function checkCompatibilityAsyncWithHttpInfo($item_id, $x_ebay_c_marketplace_id, $compatibility_payload = null)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Browse\CompatibilityResponse';
+        $returnType = '\Ebay\Model\Buy\Browse\CompatibilityResponse';
         $request = $this->checkCompatibilityRequest($item_id, $x_ebay_c_marketplace_id, $compatibility_payload);
 
         return $this->client
@@ -298,7 +298,7 @@ class ItemApi
      *
      * @param  string $item_id The eBay RESTful identifier of an item (such as a part you want to check). This ID is returned by the &lt;b&gt; Browse&lt;/b&gt; and &lt;b&gt; Feed&lt;/b&gt; API methods.  &lt;br /&gt;&lt;br /&gt; &lt;b&gt; RESTful Item ID Format: &lt;/b&gt;&lt;code&gt;v1&lt;/code&gt;|&lt;code&gt;&lt;i&gt;#&lt;/i&gt;&lt;/code&gt;|&lt;code&gt;&lt;i&gt;#&lt;/i&gt;&lt;/code&gt; &lt;br /&gt;For example: &lt;code&gt;v1|2**********2|0&lt;/code&gt; or &lt;code&gt;v1|1**********2|4**********2&lt;/code&gt; &lt;br /&gt;&lt;br /&gt;For more information about item ID for RESTful APIs, see the &lt;a href&#x3D;\&quot;/api-docs/buy/static/api-browse.html#Legacy\&quot;&gt;Legacy API compatibility&lt;/a&gt; section of the &lt;i&gt;Buy APIs Overview&lt;/i&gt;. (required)
      * @param  string $x_ebay_c_marketplace_id The ID of the eBay marketplace you want to use. &lt;b&gt; Note: &lt;/b&gt; This value is case sensitive.&lt;br /&gt;&lt;br /&gt;For example: &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;code&gt;X-EBAY-C-MARKETPLACE-ID &#x3D; EBAY_US&lt;/code&gt;  &lt;br /&gt;&lt;br /&gt; For a list of supported sites see, &lt;a href&#x3D;\&quot;/api-docs/buy/browse/overview.html#API\&quot;&gt;API Restrictions&lt;/a&gt;. (required)
-     * @param  \Ebay\Ebay\Model\Buy\Browse\CompatibilityPayload $compatibility_payload (optional)
+     * @param  \Ebay\Model\Buy\Browse\CompatibilityPayload $compatibility_payload (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -420,7 +420,7 @@ class ItemApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Browse\Item
+     * @return \Ebay\Model\Buy\Browse\Item
      */
     public function getItem($item_id, $fieldgroups = null)
     {
@@ -436,7 +436,7 @@ class ItemApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Browse\Item, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Browse\Item, HTTP status code, HTTP response headers (array of strings)
      */
     public function getItemWithHttpInfo($item_id, $fieldgroups = null)
     {
@@ -479,20 +479,20 @@ class ItemApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Browse\Item' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Browse\Item' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Browse\Item', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Browse\Item', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Browse\Item';
+            $returnType = '\Ebay\Model\Buy\Browse\Item';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -510,7 +510,7 @@ class ItemApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Browse\Item',
+                        '\Ebay\Model\Buy\Browse\Item',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -550,7 +550,7 @@ class ItemApi
      */
     public function getItemAsyncWithHttpInfo($item_id, $fieldgroups = null)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Browse\Item';
+        $returnType = '\Ebay\Model\Buy\Browse\Item';
         $request = $this->getItemRequest($item_id, $fieldgroups);
 
         return $this->client
@@ -709,7 +709,7 @@ class ItemApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Browse\Item
+     * @return \Ebay\Model\Buy\Browse\Item
      */
     public function getItemByLegacyId($legacy_item_id, $fieldgroups = null, $legacy_variation_id = null, $legacy_variation_sku = null)
     {
@@ -727,7 +727,7 @@ class ItemApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Browse\Item, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Browse\Item, HTTP status code, HTTP response headers (array of strings)
      */
     public function getItemByLegacyIdWithHttpInfo($legacy_item_id, $fieldgroups = null, $legacy_variation_id = null, $legacy_variation_sku = null)
     {
@@ -770,20 +770,20 @@ class ItemApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Browse\Item' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Browse\Item' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Browse\Item', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Browse\Item', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Browse\Item';
+            $returnType = '\Ebay\Model\Buy\Browse\Item';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -801,7 +801,7 @@ class ItemApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Browse\Item',
+                        '\Ebay\Model\Buy\Browse\Item',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -845,7 +845,7 @@ class ItemApi
      */
     public function getItemByLegacyIdAsyncWithHttpInfo($legacy_item_id, $fieldgroups = null, $legacy_variation_id = null, $legacy_variation_sku = null)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Browse\Item';
+        $returnType = '\Ebay\Model\Buy\Browse\Item';
         $request = $this->getItemByLegacyIdRequest($legacy_item_id, $fieldgroups, $legacy_variation_id, $legacy_variation_sku);
 
         return $this->client
@@ -1029,7 +1029,7 @@ class ItemApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Browse\Items
+     * @return \Ebay\Model\Buy\Browse\Items
      */
     public function getItems($item_ids = null, $item_group_ids = null)
     {
@@ -1045,7 +1045,7 @@ class ItemApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Browse\Items, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Browse\Items, HTTP status code, HTTP response headers (array of strings)
      */
     public function getItemsWithHttpInfo($item_ids = null, $item_group_ids = null)
     {
@@ -1088,20 +1088,20 @@ class ItemApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Browse\Items' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Browse\Items' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Browse\Items', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Browse\Items', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Browse\Items';
+            $returnType = '\Ebay\Model\Buy\Browse\Items';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1119,7 +1119,7 @@ class ItemApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Browse\Items',
+                        '\Ebay\Model\Buy\Browse\Items',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1159,7 +1159,7 @@ class ItemApi
      */
     public function getItemsAsyncWithHttpInfo($item_ids = null, $item_group_ids = null)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Browse\Items';
+        $returnType = '\Ebay\Model\Buy\Browse\Items';
         $request = $this->getItemsRequest($item_ids, $item_group_ids);
 
         return $this->client
@@ -1312,7 +1312,7 @@ class ItemApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Browse\ItemGroup
+     * @return \Ebay\Model\Buy\Browse\ItemGroup
      */
     public function getItemsByItemGroup($item_group_id)
     {
@@ -1327,7 +1327,7 @@ class ItemApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Browse\ItemGroup, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Browse\ItemGroup, HTTP status code, HTTP response headers (array of strings)
      */
     public function getItemsByItemGroupWithHttpInfo($item_group_id)
     {
@@ -1370,20 +1370,20 @@ class ItemApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Browse\ItemGroup' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Browse\ItemGroup' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Browse\ItemGroup', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Browse\ItemGroup', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Browse\ItemGroup';
+            $returnType = '\Ebay\Model\Buy\Browse\ItemGroup';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1401,7 +1401,7 @@ class ItemApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Browse\ItemGroup',
+                        '\Ebay\Model\Buy\Browse\ItemGroup',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1439,7 +1439,7 @@ class ItemApi
      */
     public function getItemsByItemGroupAsyncWithHttpInfo($item_group_id)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Browse\ItemGroup';
+        $returnType = '\Ebay\Model\Buy\Browse\ItemGroup';
         $request = $this->getItemsByItemGroupRequest($item_group_id);
 
         return $this->client

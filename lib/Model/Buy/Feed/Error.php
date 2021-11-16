@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Feed;
+namespace Ebay\Model\Buy\Feed;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -67,7 +67,7 @@ class Error implements ModelInterface, ArrayAccess, \JsonSerializable
         'long_message' => 'string',
         'message' => 'string',
         'output_ref_ids' => 'string[]',
-        'parameters' => '\Ebay\Ebay\Model\Buy\Feed\ErrorParameter[]',
+        'parameters' => '\Ebay\Model\Buy\Feed\ErrorParameter[]',
         'subdomain' => 'string'
     ];
 
@@ -425,7 +425,7 @@ class Error implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets parameters
      *
-     * @return \Ebay\Ebay\Model\Buy\Feed\ErrorParameter[]|null
+     * @return \Ebay\Model\Buy\Feed\ErrorParameter[]|null
      */
     public function getParameters()
     {
@@ -435,7 +435,7 @@ class Error implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets parameters
      *
-     * @param \Ebay\Ebay\Model\Buy\Feed\ErrorParameter[]|null $parameters An array of name/value pairs that describe details the error condition. These are useful when multiple errors are returned.
+     * @param \Ebay\Model\Buy\Feed\ErrorParameter[]|null $parameters An array of name/value pairs that describe details the error condition. These are useful when multiple errors are returned.
      *
      * @return self
      */

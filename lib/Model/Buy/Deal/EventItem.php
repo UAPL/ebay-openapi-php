@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Deal;
+namespace Ebay\Model\Buy\Deal;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,24 +60,24 @@ class EventItem implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'additional_images' => '\Ebay\Ebay\Model\Buy\Deal\Image[]',
+        'additional_images' => '\Ebay\Model\Buy\Deal\Image[]',
         'category_ancestor_ids' => 'string[]',
         'category_id' => 'string',
         'energy_efficiency_class' => 'string',
         'event_id' => 'string',
-        'image' => '\Ebay\Ebay\Model\Buy\Deal\Image',
+        'image' => '\Ebay\Model\Buy\Deal\Image',
         'item_affiliate_web_url' => 'string',
         'item_group_id' => 'string',
         'item_group_type' => 'string',
         'item_id' => 'string',
         'item_web_url' => 'string',
         'legacy_item_id' => 'string',
-        'marketing_price' => '\Ebay\Ebay\Model\Buy\Deal\MarketingPrice',
-        'price' => '\Ebay\Ebay\Model\Buy\Deal\Amount',
+        'marketing_price' => '\Ebay\Model\Buy\Deal\MarketingPrice',
+        'price' => '\Ebay\Model\Buy\Deal\Amount',
         'qualified_programs' => 'string[]',
-        'shipping_options' => '\Ebay\Ebay\Model\Buy\Deal\ShippingOption[]',
+        'shipping_options' => '\Ebay\Model\Buy\Deal\ShippingOption[]',
         'title' => 'string',
-        'unit_price' => '\Ebay\Ebay\Model\Buy\Deal\Amount',
+        'unit_price' => '\Ebay\Model\Buy\Deal\Amount',
         'unit_pricing_measure' => 'string'
     ];
 
@@ -317,7 +317,7 @@ class EventItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets additional_images
      *
-     * @return \Ebay\Ebay\Model\Buy\Deal\Image[]|null
+     * @return \Ebay\Model\Buy\Deal\Image[]|null
      */
     public function getAdditionalImages()
     {
@@ -327,7 +327,7 @@ class EventItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets additional_images
      *
-     * @param \Ebay\Ebay\Model\Buy\Deal\Image[]|null $additional_images The additional images for the event item.
+     * @param \Ebay\Model\Buy\Deal\Image[]|null $additional_images The additional images for the event item.
      *
      * @return self
      */
@@ -437,7 +437,7 @@ class EventItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets image
      *
-     * @return \Ebay\Ebay\Model\Buy\Deal\Image|null
+     * @return \Ebay\Model\Buy\Deal\Image|null
      */
     public function getImage()
     {
@@ -447,7 +447,7 @@ class EventItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets image
      *
-     * @param \Ebay\Ebay\Model\Buy\Deal\Image|null $image image
+     * @param \Ebay\Model\Buy\Deal\Image|null $image image
      *
      * @return self
      */
@@ -605,7 +605,7 @@ class EventItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets marketing_price
      *
-     * @return \Ebay\Ebay\Model\Buy\Deal\MarketingPrice|null
+     * @return \Ebay\Model\Buy\Deal\MarketingPrice|null
      */
     public function getMarketingPrice()
     {
@@ -615,7 +615,7 @@ class EventItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets marketing_price
      *
-     * @param \Ebay\Ebay\Model\Buy\Deal\MarketingPrice|null $marketing_price marketing_price
+     * @param \Ebay\Model\Buy\Deal\MarketingPrice|null $marketing_price marketing_price
      *
      * @return self
      */
@@ -629,7 +629,7 @@ class EventItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets price
      *
-     * @return \Ebay\Ebay\Model\Buy\Deal\Amount|null
+     * @return \Ebay\Model\Buy\Deal\Amount|null
      */
     public function getPrice()
     {
@@ -639,7 +639,7 @@ class EventItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets price
      *
-     * @param \Ebay\Ebay\Model\Buy\Deal\Amount|null $price price
+     * @param \Ebay\Model\Buy\Deal\Amount|null $price price
      *
      * @return self
      */
@@ -677,7 +677,7 @@ class EventItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shipping_options
      *
-     * @return \Ebay\Ebay\Model\Buy\Deal\ShippingOption[]|null
+     * @return \Ebay\Model\Buy\Deal\ShippingOption[]|null
      */
     public function getShippingOptions()
     {
@@ -687,7 +687,7 @@ class EventItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shipping_options
      *
-     * @param \Ebay\Ebay\Model\Buy\Deal\ShippingOption[]|null $shipping_options The cost required to ship the event item.
+     * @param \Ebay\Model\Buy\Deal\ShippingOption[]|null $shipping_options The cost required to ship the event item.
      *
      * @return self
      */
@@ -725,7 +725,7 @@ class EventItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets unit_price
      *
-     * @return \Ebay\Ebay\Model\Buy\Deal\Amount|null
+     * @return \Ebay\Model\Buy\Deal\Amount|null
      */
     public function getUnitPrice()
     {
@@ -735,7 +735,7 @@ class EventItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets unit_price
      *
-     * @param \Ebay\Ebay\Model\Buy\Deal\Amount|null $unit_price unit_price
+     * @param \Ebay\Model\Buy\Deal\Amount|null $unit_price unit_price
      *
      * @return self
      */

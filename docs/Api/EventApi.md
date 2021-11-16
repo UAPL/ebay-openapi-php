@@ -11,7 +11,7 @@ Method | HTTP request | Description
 ## `getEvent()`
 
 ```php
-getEvent($x_ebay_c_marketplace_id, $event_id): \Ebay\Ebay\Model\Buy\Deal\Event
+getEvent($x_ebay_c_marketplace_id, $event_id): \Ebay\Model\Buy\Deal\Event
 ```
 
 
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Buy\Deal\Event**](../Model/Event.md)
+[**\Ebay\Model\Buy\Deal\Event**](../Model/Event.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 ## `getEvents()`
 
 ```php
-getEvents($x_ebay_c_marketplace_id, $limit, $offset): \Ebay\Ebay\Model\Buy\Deal\EventSearchResponse
+getEvents($x_ebay_c_marketplace_id, $limit, $offset): \Ebay\Model\Buy\Deal\EventSearchResponse
 ```
 
 
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Buy\Deal\EventSearchResponse**](../Model/EventSearchResponse.md)
+[**\Ebay\Model\Buy\Deal\EventSearchResponse**](../Model/EventSearchResponse.md)
 
 ### Authorization
 

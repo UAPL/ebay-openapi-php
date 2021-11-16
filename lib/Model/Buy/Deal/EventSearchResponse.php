@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Deal;
+namespace Ebay\Model\Buy\Deal;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,7 +60,7 @@ class EventSearchResponse implements ModelInterface, ArrayAccess, \JsonSerializa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'events' => '\Ebay\Ebay\Model\Buy\Deal\Event[]',
+        'events' => '\Ebay\Model\Buy\Deal\Event[]',
         'href' => 'string',
         'limit' => 'int',
         'next' => 'string',
@@ -245,7 +245,7 @@ class EventSearchResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Gets events
      *
-     * @return \Ebay\Ebay\Model\Buy\Deal\Event[]|null
+     * @return \Ebay\Model\Buy\Deal\Event[]|null
      */
     public function getEvents()
     {
@@ -255,7 +255,7 @@ class EventSearchResponse implements ModelInterface, ArrayAccess, \JsonSerializa
     /**
      * Sets events
      *
-     * @param \Ebay\Ebay\Model\Buy\Deal\Event[]|null $events A list of results that match the search criteria.
+     * @param \Ebay\Model\Buy\Deal\Event[]|null $events A list of results that match the search criteria.
      *
      * @return self
      */

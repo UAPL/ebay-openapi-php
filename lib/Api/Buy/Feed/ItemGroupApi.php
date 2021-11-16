@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Api\Buy\Feed;
+namespace Ebay\Api\Buy\Feed;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -127,7 +127,7 @@ class ItemGroupApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Feed\ItemGroupResponse|\Ebay\Ebay\Model\Buy\Feed\ItemGroupResponse
+     * @return \Ebay\Model\Buy\Feed\ItemGroupResponse|\Ebay\Model\Buy\Feed\ItemGroupResponse
      */
     public function getItemGroupFeed($accept, $x_ebay_c_marketplace_id, $feed_scope, $category_id, $range = null, $date = null)
     {
@@ -147,7 +147,7 @@ class ItemGroupApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Feed\ItemGroupResponse|\Ebay\Ebay\Model\Buy\Feed\ItemGroupResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Feed\ItemGroupResponse|\Ebay\Model\Buy\Feed\ItemGroupResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getItemGroupFeedWithHttpInfo($accept, $x_ebay_c_marketplace_id, $feed_scope, $category_id, $range = null, $date = null)
     {
@@ -190,32 +190,32 @@ class ItemGroupApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Feed\ItemGroupResponse' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Feed\ItemGroupResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Feed\ItemGroupResponse', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Feed\ItemGroupResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 206:
-                    if ('\Ebay\Ebay\Model\Buy\Feed\ItemGroupResponse' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Feed\ItemGroupResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Feed\ItemGroupResponse', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Feed\ItemGroupResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Feed\ItemGroupResponse';
+            $returnType = '\Ebay\Model\Buy\Feed\ItemGroupResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -233,7 +233,7 @@ class ItemGroupApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Feed\ItemGroupResponse',
+                        '\Ebay\Model\Buy\Feed\ItemGroupResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -241,7 +241,7 @@ class ItemGroupApi
                 case 206:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Feed\ItemGroupResponse',
+                        '\Ebay\Model\Buy\Feed\ItemGroupResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -289,7 +289,7 @@ class ItemGroupApi
      */
     public function getItemGroupFeedAsyncWithHttpInfo($accept, $x_ebay_c_marketplace_id, $feed_scope, $category_id, $range = null, $date = null)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Feed\ItemGroupResponse';
+        $returnType = '\Ebay\Model\Buy\Feed\ItemGroupResponse';
         $request = $this->getItemGroupFeedRequest($accept, $x_ebay_c_marketplace_id, $feed_scope, $category_id, $range, $date);
 
         return $this->client

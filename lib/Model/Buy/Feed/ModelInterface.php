@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  Ebay\Ebay\Model\Buy\Feed
+ * @package  Ebay\Model\Buy\Feed
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,12 +26,12 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Feed;
+namespace Ebay\Model\Buy\Feed;
 
 /**
  * Interface abstracting model access.
  *
- * @package Ebay\Ebay\Model\Buy\Feed
+ * @package Ebay\Model\Buy\Feed
  * @author  OpenAPI Generator team
  */
 interface ModelInterface

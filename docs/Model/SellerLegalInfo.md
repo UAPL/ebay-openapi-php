@@ -12,8 +12,8 @@ Name | Type | Description | Notes
 **name** | **string** | The name of the seller&#39;s business. | [optional]
 **phone** | **string** | The seller&#39;s business phone number. | [optional]
 **registration_number** | **string** | The seller&#39;s registration number. This is information used by some countries. | [optional]
-**seller_provided_legal_address** | [**\Ebay\Ebay\Model\Buy\Browse\LegalAddress**](LegalAddress.md) |  | [optional]
+**seller_provided_legal_address** | [**\Ebay\Model\Buy\Browse\LegalAddress**](LegalAddress.md) |  | [optional]
 **terms_of_service** | **string** | This is a free-form string created by the seller. This is the seller&#39;s terms or condition, which is in addition to the seller&#39;s return policies. | [optional]
-**vat_details** | [**\Ebay\Ebay\Model\Buy\Browse\VatDetail[]**](VatDetail.md) | An array of the seller&#39;s VAT (value added tax) IDs and the issuing country. VAT is a tax added by some European countries. | [optional]
+**vat_details** | [**\Ebay\Model\Buy\Browse\VatDetail[]**](VatDetail.md) | An array of the seller&#39;s VAT (value added tax) IDs and the issuing country. VAT is a tax added by some European countries. | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

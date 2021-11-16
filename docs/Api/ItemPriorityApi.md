@@ -10,7 +10,7 @@ Method | HTTP request | Description
 ## `getItemPriorityFeed()`
 
 ```php
-getItemPriorityFeed($accept, $x_ebay_c_marketplace_id, $range, $category_id, $date): \Ebay\Ebay\Model\Buy\Feed\ItemPriorityResponse
+getItemPriorityFeed($accept, $x_ebay_c_marketplace_id, $range, $category_id, $date): \Ebay\Model\Buy\Feed\ItemPriorityResponse
 ```
 
 
@@ -60,7 +60,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Buy\Feed\ItemPriorityResponse**](../Model/ItemPriorityResponse.md)
+[**\Ebay\Model\Buy\Feed\ItemPriorityResponse**](../Model/ItemPriorityResponse.md)
 
 ### Authorization
 

@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,9 +60,9 @@ class ItemGroup implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'common_descriptions' => '\Ebay\Ebay\Model\Buy\Browse\CommonDescriptions[]',
-        'items' => '\Ebay\Ebay\Model\Buy\Browse\Item[]',
-        'warnings' => '\Ebay\Ebay\Model\Buy\Browse\Error[]'
+        'common_descriptions' => '\Ebay\Model\Buy\Browse\CommonDescriptions[]',
+        'items' => '\Ebay\Model\Buy\Browse\Item[]',
+        'warnings' => '\Ebay\Model\Buy\Browse\Error[]'
     ];
 
     /**
@@ -221,7 +221,7 @@ class ItemGroup implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets common_descriptions
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\CommonDescriptions[]|null
+     * @return \Ebay\Model\Buy\Browse\CommonDescriptions[]|null
      */
     public function getCommonDescriptions()
     {
@@ -231,7 +231,7 @@ class ItemGroup implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets common_descriptions
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\CommonDescriptions[]|null $common_descriptions An array of containers for a description and the item IDs of all the items that have this exact description. Often the item variations within an item group all have the same description. Instead of repeating this description in the item details of each item, a description that is shared by at least one other item is returned in this container. If the description is unique, it is returned in the <b> items.description</b> field.
+     * @param \Ebay\Model\Buy\Browse\CommonDescriptions[]|null $common_descriptions An array of containers for a description and the item IDs of all the items that have this exact description. Often the item variations within an item group all have the same description. Instead of repeating this description in the item details of each item, a description that is shared by at least one other item is returned in this container. If the description is unique, it is returned in the <b> items.description</b> field.
      *
      * @return self
      */
@@ -245,7 +245,7 @@ class ItemGroup implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets items
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Item[]|null
+     * @return \Ebay\Model\Buy\Browse\Item[]|null
      */
     public function getItems()
     {
@@ -255,7 +255,7 @@ class ItemGroup implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets items
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Item[]|null $items An array of containers for all the item variation details, excluding the description.
+     * @param \Ebay\Model\Buy\Browse\Item[]|null $items An array of containers for all the item variation details, excluding the description.
      *
      * @return self
      */
@@ -269,7 +269,7 @@ class ItemGroup implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets warnings
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Error[]|null
+     * @return \Ebay\Model\Buy\Browse\Error[]|null
      */
     public function getWarnings()
     {
@@ -279,7 +279,7 @@ class ItemGroup implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets warnings
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Error[]|null $warnings An array of warning messages. These types of errors do not prevent the method from executing but should be checked.
+     * @param \Ebay\Model\Buy\Browse\Error[]|null $warnings An array of warning messages. These types of errors do not prevent the method from executing but should be checked.
      *
      * @return self
      */

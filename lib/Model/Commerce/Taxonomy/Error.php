@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Commerce\Taxonomy;
+namespace Ebay\Model\Commerce\Taxonomy;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -67,7 +67,7 @@ class Error implements ModelInterface, ArrayAccess, \JsonSerializable
         'long_message' => 'string',
         'message' => 'string',
         'output_ref_ids' => 'string[]',
-        'parameters' => '\Ebay\Ebay\Model\Commerce\Taxonomy\ErrorParameter[]',
+        'parameters' => '\Ebay\Model\Commerce\Taxonomy\ErrorParameter[]',
         'subdomain' => 'string'
     ];
 
@@ -425,7 +425,7 @@ class Error implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets parameters
      *
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\ErrorParameter[]|null
+     * @return \Ebay\Model\Commerce\Taxonomy\ErrorParameter[]|null
      */
     public function getParameters()
     {
@@ -435,7 +435,7 @@ class Error implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets parameters
      *
-     * @param \Ebay\Ebay\Model\Commerce\Taxonomy\ErrorParameter[]|null $parameters An array of name/value pairs that describe details the error condition. These are useful when multiple errors are returned.
+     * @param \Ebay\Model\Commerce\Taxonomy\ErrorParameter[]|null $parameters An array of name/value pairs that describe details the error condition. These are useful when multiple errors are returned.
      *
      * @return self
      */

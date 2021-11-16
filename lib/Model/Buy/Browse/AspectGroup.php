@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -59,7 +59,7 @@ class AspectGroup implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'aspects' => '\Ebay\Ebay\Model\Buy\Browse\Aspect[]',
+        'aspects' => '\Ebay\Model\Buy\Browse\Aspect[]',
         'localized_group_name' => 'string'
     ];
 
@@ -214,7 +214,7 @@ class AspectGroup implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets aspects
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Aspect[]|null
+     * @return \Ebay\Model\Buy\Browse\Aspect[]|null
      */
     public function getAspects()
     {
@@ -224,7 +224,7 @@ class AspectGroup implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets aspects
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Aspect[]|null $aspects An array of the name/value pairs for the aspects of the product. For example: BRAND/Apple
+     * @param \Ebay\Model\Buy\Browse\Aspect[]|null $aspects An array of the name/value pairs for the aspects of the product. For example: BRAND/Apple
      *
      * @return self
      */

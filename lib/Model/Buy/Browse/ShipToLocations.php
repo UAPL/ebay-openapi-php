@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,8 +60,8 @@ class ShipToLocations implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'region_excluded' => '\Ebay\Ebay\Model\Buy\Browse\ShipToRegion[]',
-        'region_included' => '\Ebay\Ebay\Model\Buy\Browse\ShipToRegion[]'
+        'region_excluded' => '\Ebay\Model\Buy\Browse\ShipToRegion[]',
+        'region_included' => '\Ebay\Model\Buy\Browse\ShipToRegion[]'
     ];
 
     /**
@@ -215,7 +215,7 @@ class ShipToLocations implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets region_excluded
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ShipToRegion[]|null
+     * @return \Ebay\Model\Buy\Browse\ShipToRegion[]|null
      */
     public function getRegionExcluded()
     {
@@ -225,7 +225,7 @@ class ShipToLocations implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets region_excluded
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ShipToRegion[]|null $region_excluded An array of containers that express the large geographical regions, countries, state/provinces, or special locations within a country where the seller is not willing to ship to.
+     * @param \Ebay\Model\Buy\Browse\ShipToRegion[]|null $region_excluded An array of containers that express the large geographical regions, countries, state/provinces, or special locations within a country where the seller is not willing to ship to.
      *
      * @return self
      */
@@ -239,7 +239,7 @@ class ShipToLocations implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets region_included
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ShipToRegion[]|null
+     * @return \Ebay\Model\Buy\Browse\ShipToRegion[]|null
      */
     public function getRegionIncluded()
     {
@@ -249,7 +249,7 @@ class ShipToLocations implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets region_included
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ShipToRegion[]|null $region_included An array of containers that express the large geographical regions, countries, or state/provinces within a country where the seller is willing to ship to. Prospective buyers must look at the shipping regions under this container, as well as the shipping regions that are under the <b>regionExcluded</b> to see where the seller is willing to ship items. Sellers can specify that they ship 'Worldwide', but then add several large geographical regions (e.g. Asia, Oceania, Middle East) to the exclusion list, or sellers can specify that they ship to Europe and Africa, but then add several individual countries to the exclusion list.
+     * @param \Ebay\Model\Buy\Browse\ShipToRegion[]|null $region_included An array of containers that express the large geographical regions, countries, or state/provinces within a country where the seller is willing to ship to. Prospective buyers must look at the shipping regions under this container, as well as the shipping regions that are under the <b>regionExcluded</b> to see where the seller is willing to ship items. Sellers can specify that they ship 'Worldwide', but then add several large geographical regions (e.g. Asia, Oceania, Middle East) to the exclusion list, or sellers can specify that they ship to Europe and Africa, but then add several individual countries to the exclusion list.
      *
      * @return self
      */

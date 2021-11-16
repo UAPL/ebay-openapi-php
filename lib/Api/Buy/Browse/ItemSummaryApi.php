@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Api\Buy\Browse;
+namespace Ebay\Api\Buy\Browse;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -134,7 +134,7 @@ class ItemSummaryApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Browse\SearchPagedCollection
+     * @return \Ebay\Model\Buy\Browse\SearchPagedCollection
      */
     public function search($aspect_filter = null, $auto_correct = null, $category_ids = null, $charity_ids = null, $compatibility_filter = null, $epid = null, $fieldgroups = null, $filter = null, $gtin = null, $limit = null, $offset = null, $q = null, $sort = null)
     {
@@ -161,7 +161,7 @@ class ItemSummaryApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Browse\SearchPagedCollection, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Browse\SearchPagedCollection, HTTP status code, HTTP response headers (array of strings)
      */
     public function searchWithHttpInfo($aspect_filter = null, $auto_correct = null, $category_ids = null, $charity_ids = null, $compatibility_filter = null, $epid = null, $fieldgroups = null, $filter = null, $gtin = null, $limit = null, $offset = null, $q = null, $sort = null)
     {
@@ -204,20 +204,20 @@ class ItemSummaryApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Browse\SearchPagedCollection' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Browse\SearchPagedCollection' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Browse\SearchPagedCollection', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Browse\SearchPagedCollection', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Browse\SearchPagedCollection';
+            $returnType = '\Ebay\Model\Buy\Browse\SearchPagedCollection';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -235,7 +235,7 @@ class ItemSummaryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Browse\SearchPagedCollection',
+                        '\Ebay\Model\Buy\Browse\SearchPagedCollection',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -297,7 +297,7 @@ class ItemSummaryApi
      */
     public function searchAsyncWithHttpInfo($aspect_filter = null, $auto_correct = null, $category_ids = null, $charity_ids = null, $compatibility_filter = null, $epid = null, $fieldgroups = null, $filter = null, $gtin = null, $limit = null, $offset = null, $q = null, $sort = null)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Browse\SearchPagedCollection';
+        $returnType = '\Ebay\Model\Buy\Browse\SearchPagedCollection';
         $request = $this->searchRequest($aspect_filter, $auto_correct, $category_ids, $charity_ids, $compatibility_filter, $epid, $fieldgroups, $filter, $gtin, $limit, $offset, $q, $sort);
 
         return $this->client

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**deal_items** | [**\Ebay\Ebay\Model\Buy\Deal\DealItem[]**](DealItem.md) | A list of deal items that match the search criteria. | [optional]
+**deal_items** | [**\Ebay\Model\Buy\Deal\DealItem[]**](DealItem.md) | A list of deal items that match the search criteria. | [optional]
 **href** | **string** | The relative path to the current set of results. | [optional]
 **limit** | **int** | The maximum number of items, from the current result set, returned on a single page. Default: 20 | [optional]
 **next** | **string** | The relative path to the next set of results. | [optional]

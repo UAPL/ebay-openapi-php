@@ -14,7 +14,7 @@ Method | HTTP request | Description
 ## `checkCompatibility()`
 
 ```php
-checkCompatibility($item_id, $x_ebay_c_marketplace_id, $compatibility_payload): \Ebay\Ebay\Model\Buy\Browse\CompatibilityResponse
+checkCompatibility($item_id, $x_ebay_c_marketplace_id, $compatibility_payload): \Ebay\Model\Buy\Browse\CompatibilityResponse
 ```
 
 
@@ -43,7 +43,7 @@ $apiInstance = new Ebay\Api\ItemApi(
 );
 $item_id = 'item_id_example'; // string | The eBay RESTful identifier of an item (such as a part you want to check). This ID is returned by the <b> Browse</b> and <b> Feed</b> API methods.  <br /><br /> <b> RESTful Item ID Format: </b><code>v1</code>|<code><i>#</i></code>|<code><i>#</i></code> <br />For example: <code>v1|2**********2|0</code> or <code>v1|1**********2|4**********2</code> <br /><br />For more information about item ID for RESTful APIs, see the <a href=\"/api-docs/buy/static/api-browse.html#Legacy\">Legacy API compatibility</a> section of the <i>Buy APIs Overview</i>.
 $x_ebay_c_marketplace_id = 'x_ebay_c_marketplace_id_example'; // string | The ID of the eBay marketplace you want to use. <b> Note: </b> This value is case sensitive.<br /><br />For example: <br />&nbsp;&nbsp;<code>X-EBAY-C-MARKETPLACE-ID = EBAY_US</code>  <br /><br /> For a list of supported sites see, <a href=\"/api-docs/buy/browse/overview.html#API\">API Restrictions</a>.
-$compatibility_payload = new \Ebay\Ebay\Model\Buy\Browse\CompatibilityPayload(); // \Ebay\Ebay\Model\Buy\Browse\CompatibilityPayload
+$compatibility_payload = new \Ebay\Model\Buy\Browse\CompatibilityPayload(); // \Ebay\Model\Buy\Browse\CompatibilityPayload
 
 try {
     $result = $apiInstance->checkCompatibility($item_id, $x_ebay_c_marketplace_id, $compatibility_payload);
@@ -59,11 +59,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **item_id** | **string**| The eBay RESTful identifier of an item (such as a part you want to check). This ID is returned by the &lt;b&gt; Browse&lt;/b&gt; and &lt;b&gt; Feed&lt;/b&gt; API methods.  &lt;br /&gt;&lt;br /&gt; &lt;b&gt; RESTful Item ID Format: &lt;/b&gt;&lt;code&gt;v1&lt;/code&gt;|&lt;code&gt;&lt;i&gt;#&lt;/i&gt;&lt;/code&gt;|&lt;code&gt;&lt;i&gt;#&lt;/i&gt;&lt;/code&gt; &lt;br /&gt;For example: &lt;code&gt;v1|2**********2|0&lt;/code&gt; or &lt;code&gt;v1|1**********2|4**********2&lt;/code&gt; &lt;br /&gt;&lt;br /&gt;For more information about item ID for RESTful APIs, see the &lt;a href&#x3D;\&quot;/api-docs/buy/static/api-browse.html#Legacy\&quot;&gt;Legacy API compatibility&lt;/a&gt; section of the &lt;i&gt;Buy APIs Overview&lt;/i&gt;. |
  **x_ebay_c_marketplace_id** | **string**| The ID of the eBay marketplace you want to use. &lt;b&gt; Note: &lt;/b&gt; This value is case sensitive.&lt;br /&gt;&lt;br /&gt;For example: &lt;br /&gt;&amp;nbsp;&amp;nbsp;&lt;code&gt;X-EBAY-C-MARKETPLACE-ID &#x3D; EBAY_US&lt;/code&gt;  &lt;br /&gt;&lt;br /&gt; For a list of supported sites see, &lt;a href&#x3D;\&quot;/api-docs/buy/browse/overview.html#API\&quot;&gt;API Restrictions&lt;/a&gt;. |
- **compatibility_payload** | [**\Ebay\Ebay\Model\Buy\Browse\CompatibilityPayload**](../Model/CompatibilityPayload.md)|  | [optional]
+ **compatibility_payload** | [**\Ebay\Model\Buy\Browse\CompatibilityPayload**](../Model/CompatibilityPayload.md)|  | [optional]
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Buy\Browse\CompatibilityResponse**](../Model/CompatibilityResponse.md)
+[**\Ebay\Model\Buy\Browse\CompatibilityResponse**](../Model/CompatibilityResponse.md)
 
 ### Authorization
 
@@ -81,7 +81,7 @@ Name | Type | Description  | Notes
 ## `getItem()`
 
 ```php
-getItem($item_id, $fieldgroups): \Ebay\Ebay\Model\Buy\Browse\Item
+getItem($item_id, $fieldgroups): \Ebay\Model\Buy\Browse\Item
 ```
 
 
@@ -128,7 +128,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Buy\Browse\Item**](../Model/Item.md)
+[**\Ebay\Model\Buy\Browse\Item**](../Model/Item.md)
 
 ### Authorization
 
@@ -146,7 +146,7 @@ Name | Type | Description  | Notes
 ## `getItemByLegacyId()`
 
 ```php
-getItemByLegacyId($legacy_item_id, $fieldgroups, $legacy_variation_id, $legacy_variation_sku): \Ebay\Ebay\Model\Buy\Browse\Item
+getItemByLegacyId($legacy_item_id, $fieldgroups, $legacy_variation_id, $legacy_variation_sku): \Ebay\Model\Buy\Browse\Item
 ```
 
 
@@ -197,7 +197,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Buy\Browse\Item**](../Model/Item.md)
+[**\Ebay\Model\Buy\Browse\Item**](../Model/Item.md)
 
 ### Authorization
 
@@ -215,7 +215,7 @@ Name | Type | Description  | Notes
 ## `getItems()`
 
 ```php
-getItems($item_ids, $item_group_ids): \Ebay\Ebay\Model\Buy\Browse\Items
+getItems($item_ids, $item_group_ids): \Ebay\Model\Buy\Browse\Items
 ```
 
 
@@ -262,7 +262,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Buy\Browse\Items**](../Model/Items.md)
+[**\Ebay\Model\Buy\Browse\Items**](../Model/Items.md)
 
 ### Authorization
 
@@ -280,7 +280,7 @@ Name | Type | Description  | Notes
 ## `getItemsByItemGroup()`
 
 ```php
-getItemsByItemGroup($item_group_id): \Ebay\Ebay\Model\Buy\Browse\ItemGroup
+getItemsByItemGroup($item_group_id): \Ebay\Model\Buy\Browse\ItemGroup
 ```
 
 
@@ -318,7 +318,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Buy\Browse\ItemGroup**](../Model/ItemGroup.md)
+[**\Ebay\Model\Buy\Browse\ItemGroup**](../Model/ItemGroup.md)
 
 ### Authorization
 

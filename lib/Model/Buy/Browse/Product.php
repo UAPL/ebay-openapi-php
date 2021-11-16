@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,13 +60,13 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'additional_images' => '\Ebay\Ebay\Model\Buy\Browse\Image[]',
-        'additional_product_identities' => '\Ebay\Ebay\Model\Buy\Browse\AdditionalProductIdentity[]',
-        'aspect_groups' => '\Ebay\Ebay\Model\Buy\Browse\AspectGroup[]',
+        'additional_images' => '\Ebay\Model\Buy\Browse\Image[]',
+        'additional_product_identities' => '\Ebay\Model\Buy\Browse\AdditionalProductIdentity[]',
+        'aspect_groups' => '\Ebay\Model\Buy\Browse\AspectGroup[]',
         'brand' => 'string',
         'description' => 'string',
         'gtins' => 'string[]',
-        'image' => '\Ebay\Ebay\Model\Buy\Browse\Image',
+        'image' => '\Ebay\Model\Buy\Browse\Image',
         'mpns' => 'string[]',
         'title' => 'string'
     ];
@@ -257,7 +257,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets additional_images
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Image[]|null
+     * @return \Ebay\Model\Buy\Browse\Image[]|null
      */
     public function getAdditionalImages()
     {
@@ -267,7 +267,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets additional_images
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Image[]|null $additional_images An array of containers with the URLs for the product images that are in addition to the primary image.
+     * @param \Ebay\Model\Buy\Browse\Image[]|null $additional_images An array of containers with the URLs for the product images that are in addition to the primary image.
      *
      * @return self
      */
@@ -281,7 +281,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets additional_product_identities
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\AdditionalProductIdentity[]|null
+     * @return \Ebay\Model\Buy\Browse\AdditionalProductIdentity[]|null
      */
     public function getAdditionalProductIdentities()
     {
@@ -291,7 +291,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets additional_product_identities
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\AdditionalProductIdentity[]|null $additional_product_identities An array of product identifiers associated with the item. This container is returned if the seller has associated the eBay Product Identifier (ePID) with the item and in the request <b> fieldgroups</b> is set to <code>PRODUCT</code>.
+     * @param \Ebay\Model\Buy\Browse\AdditionalProductIdentity[]|null $additional_product_identities An array of product identifiers associated with the item. This container is returned if the seller has associated the eBay Product Identifier (ePID) with the item and in the request <b> fieldgroups</b> is set to <code>PRODUCT</code>.
      *
      * @return self
      */
@@ -305,7 +305,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets aspect_groups
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\AspectGroup[]|null
+     * @return \Ebay\Model\Buy\Browse\AspectGroup[]|null
      */
     public function getAspectGroups()
     {
@@ -315,7 +315,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets aspect_groups
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\AspectGroup[]|null $aspect_groups An array of containers for the product aspects. Each group contains the aspect group name and the aspect name/value pairs.
+     * @param \Ebay\Model\Buy\Browse\AspectGroup[]|null $aspect_groups An array of containers for the product aspects. Each group contains the aspect group name and the aspect name/value pairs.
      *
      * @return self
      */
@@ -401,7 +401,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets image
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Image|null
+     * @return \Ebay\Model\Buy\Browse\Image|null
      */
     public function getImage()
     {
@@ -411,7 +411,7 @@ class Product implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets image
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Image|null $image image
+     * @param \Ebay\Model\Buy\Browse\Image|null $image image
      *
      * @return self
      */

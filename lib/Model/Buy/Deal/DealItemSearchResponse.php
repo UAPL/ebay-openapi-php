@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Deal;
+namespace Ebay\Model\Buy\Deal;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,7 +60,7 @@ class DealItemSearchResponse implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'deal_items' => '\Ebay\Ebay\Model\Buy\Deal\DealItem[]',
+        'deal_items' => '\Ebay\Model\Buy\Deal\DealItem[]',
         'href' => 'string',
         'limit' => 'int',
         'next' => 'string',
@@ -245,7 +245,7 @@ class DealItemSearchResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets deal_items
      *
-     * @return \Ebay\Ebay\Model\Buy\Deal\DealItem[]|null
+     * @return \Ebay\Model\Buy\Deal\DealItem[]|null
      */
     public function getDealItems()
     {
@@ -255,7 +255,7 @@ class DealItemSearchResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets deal_items
      *
-     * @param \Ebay\Ebay\Model\Buy\Deal\DealItem[]|null $deal_items A list of deal items that match the search criteria.
+     * @param \Ebay\Model\Buy\Deal\DealItem[]|null $deal_items A list of deal items that match the search criteria.
      *
      * @return self
      */

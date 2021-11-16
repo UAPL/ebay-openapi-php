@@ -10,7 +10,7 @@ Method | HTTP request | Description
 ## `getItemGroupFeed()`
 
 ```php
-getItemGroupFeed($accept, $x_ebay_c_marketplace_id, $feed_scope, $category_id, $range, $date): \Ebay\Ebay\Model\Buy\Feed\ItemGroupResponse
+getItemGroupFeed($accept, $x_ebay_c_marketplace_id, $feed_scope, $category_id, $range, $date): \Ebay\Model\Buy\Feed\ItemGroupResponse
 ```
 
 
@@ -62,7 +62,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Buy\Feed\ItemGroupResponse**](../Model/ItemGroupResponse.md)
+[**\Ebay\Model\Buy\Feed\ItemGroupResponse**](../Model/ItemGroupResponse.md)
 
 ### Authorization
 

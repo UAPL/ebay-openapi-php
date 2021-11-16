@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**event_items** | [**\Ebay\Ebay\Model\Buy\Deal\EventItem[]**](EventItem.md) | A list of event items that match the search criteria. | [optional]
+**event_items** | [**\Ebay\Model\Buy\Deal\EventItem[]**](EventItem.md) | A list of event items that match the search criteria. | [optional]
 **href** | **string** | The relative path to the current set of results. | [optional]
 **limit** | **int** | The maximum number of items, from the current result set, returned on a single page. Default: 20 | [optional]
 **next** | **string** | The relative path to the next set of results. | [optional]

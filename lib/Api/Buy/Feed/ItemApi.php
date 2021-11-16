@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Api\Buy\Feed;
+namespace Ebay\Api\Buy\Feed;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -127,7 +127,7 @@ class ItemApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Feed\ItemResponse|\Ebay\Ebay\Model\Buy\Feed\ItemResponse
+     * @return \Ebay\Model\Buy\Feed\ItemResponse|\Ebay\Model\Buy\Feed\ItemResponse
      */
     public function getItemFeed($accept, $x_ebay_c_marketplace_id, $range, $feed_scope, $category_id, $date = null)
     {
@@ -147,7 +147,7 @@ class ItemApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Feed\ItemResponse|\Ebay\Ebay\Model\Buy\Feed\ItemResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Feed\ItemResponse|\Ebay\Model\Buy\Feed\ItemResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function getItemFeedWithHttpInfo($accept, $x_ebay_c_marketplace_id, $range, $feed_scope, $category_id, $date = null)
     {
@@ -190,32 +190,32 @@ class ItemApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Feed\ItemResponse' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Feed\ItemResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Feed\ItemResponse', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Feed\ItemResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 206:
-                    if ('\Ebay\Ebay\Model\Buy\Feed\ItemResponse' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Feed\ItemResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Feed\ItemResponse', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Feed\ItemResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Feed\ItemResponse';
+            $returnType = '\Ebay\Model\Buy\Feed\ItemResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -233,7 +233,7 @@ class ItemApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Feed\ItemResponse',
+                        '\Ebay\Model\Buy\Feed\ItemResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -241,7 +241,7 @@ class ItemApi
                 case 206:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Feed\ItemResponse',
+                        '\Ebay\Model\Buy\Feed\ItemResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -289,7 +289,7 @@ class ItemApi
      */
     public function getItemFeedAsyncWithHttpInfo($accept, $x_ebay_c_marketplace_id, $range, $feed_scope, $category_id, $date = null)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Feed\ItemResponse';
+        $returnType = '\Ebay\Model\Buy\Feed\ItemResponse';
         $request = $this->getItemFeedRequest($accept, $x_ebay_c_marketplace_id, $range, $feed_scope, $category_id, $date);
 
         return $this->client

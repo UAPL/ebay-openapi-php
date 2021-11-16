@@ -5,7 +5,7 @@
  * PHP version 7.3
  *
  * @category Class
- * @package  Ebay\Ebay\Model\Commerce\Taxonomy
+ * @package  Ebay\Model\Commerce\Taxonomy
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,12 +26,12 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Commerce\Taxonomy;
+namespace Ebay\Model\Commerce\Taxonomy;
 
 /**
  * Interface abstracting model access.
  *
- * @package Ebay\Ebay\Model\Commerce\Taxonomy
+ * @package Ebay\Model\Commerce\Taxonomy
  * @author  OpenAPI Generator team
  */
 interface ModelInterface

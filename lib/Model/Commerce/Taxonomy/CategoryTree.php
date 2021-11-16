@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Commerce\Taxonomy;
+namespace Ebay\Model\Commerce\Taxonomy;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -63,7 +63,7 @@ class CategoryTree implements ModelInterface, ArrayAccess, \JsonSerializable
         'applicable_marketplace_ids' => 'string[]',
         'category_tree_id' => 'string',
         'category_tree_version' => 'string',
-        'root_category_node' => '\Ebay\Ebay\Model\Commerce\Taxonomy\CategoryTreeNode'
+        'root_category_node' => '\Ebay\Model\Commerce\Taxonomy\CategoryTreeNode'
     ];
 
     /**
@@ -299,7 +299,7 @@ class CategoryTree implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets root_category_node
      *
-     * @return \Ebay\Ebay\Model\Commerce\Taxonomy\CategoryTreeNode|null
+     * @return \Ebay\Model\Commerce\Taxonomy\CategoryTreeNode|null
      */
     public function getRootCategoryNode()
     {
@@ -309,7 +309,7 @@ class CategoryTree implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets root_category_node
      *
-     * @param \Ebay\Ebay\Model\Commerce\Taxonomy\CategoryTreeNode|null $root_category_node root_category_node
+     * @param \Ebay\Model\Commerce\Taxonomy\CategoryTreeNode|null $root_category_node root_category_node
      *
      * @return self
      */

@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,10 +60,10 @@ class ItemGroupSummary implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'item_group_additional_images' => '\Ebay\Ebay\Model\Buy\Browse\Image[]',
+        'item_group_additional_images' => '\Ebay\Model\Buy\Browse\Image[]',
         'item_group_href' => 'string',
         'item_group_id' => 'string',
-        'item_group_image' => '\Ebay\Ebay\Model\Buy\Browse\Image',
+        'item_group_image' => '\Ebay\Model\Buy\Browse\Image',
         'item_group_title' => 'string',
         'item_group_type' => 'string'
     ];
@@ -239,7 +239,7 @@ class ItemGroupSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets item_group_additional_images
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Image[]|null
+     * @return \Ebay\Model\Buy\Browse\Image[]|null
      */
     public function getItemGroupAdditionalImages()
     {
@@ -249,7 +249,7 @@ class ItemGroupSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets item_group_additional_images
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Image[]|null $item_group_additional_images An array of containers with the URLs for images that are in addition to the primary image of the item group.  The primary image is returned in the <b> itemGroupImage</b> field.
+     * @param \Ebay\Model\Buy\Browse\Image[]|null $item_group_additional_images An array of containers with the URLs for images that are in addition to the primary image of the item group.  The primary image is returned in the <b> itemGroupImage</b> field.
      *
      * @return self
      */
@@ -311,7 +311,7 @@ class ItemGroupSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets item_group_image
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Image|null
+     * @return \Ebay\Model\Buy\Browse\Image|null
      */
     public function getItemGroupImage()
     {
@@ -321,7 +321,7 @@ class ItemGroupSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets item_group_image
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Image|null $item_group_image item_group_image
+     * @param \Ebay\Model\Buy\Browse\Image|null $item_group_image item_group_image
      *
      * @return self
      */

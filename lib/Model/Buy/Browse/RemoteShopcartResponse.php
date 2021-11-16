@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,11 +60,11 @@ class RemoteShopcartResponse implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'cart_items' => '\Ebay\Ebay\Model\Buy\Browse\CartItem[]',
-        'cart_subtotal' => '\Ebay\Ebay\Model\Buy\Browse\Amount',
+        'cart_items' => '\Ebay\Model\Buy\Browse\CartItem[]',
+        'cart_subtotal' => '\Ebay\Model\Buy\Browse\Amount',
         'cart_web_url' => 'string',
-        'unavailable_cart_items' => '\Ebay\Ebay\Model\Buy\Browse\CartItem[]',
-        'warnings' => '\Ebay\Ebay\Model\Buy\Browse\Error[]'
+        'unavailable_cart_items' => '\Ebay\Model\Buy\Browse\CartItem[]',
+        'warnings' => '\Ebay\Model\Buy\Browse\Error[]'
     ];
 
     /**
@@ -233,7 +233,7 @@ class RemoteShopcartResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets cart_items
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\CartItem[]|null
+     * @return \Ebay\Model\Buy\Browse\CartItem[]|null
      */
     public function getCartItems()
     {
@@ -243,7 +243,7 @@ class RemoteShopcartResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets cart_items
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\CartItem[]|null $cart_items An array of the items in the member's eBay cart.
+     * @param \Ebay\Model\Buy\Browse\CartItem[]|null $cart_items An array of the items in the member's eBay cart.
      *
      * @return self
      */
@@ -257,7 +257,7 @@ class RemoteShopcartResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets cart_subtotal
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Amount|null
+     * @return \Ebay\Model\Buy\Browse\Amount|null
      */
     public function getCartSubtotal()
     {
@@ -267,7 +267,7 @@ class RemoteShopcartResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets cart_subtotal
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Amount|null $cart_subtotal cart_subtotal
+     * @param \Ebay\Model\Buy\Browse\Amount|null $cart_subtotal cart_subtotal
      *
      * @return self
      */
@@ -305,7 +305,7 @@ class RemoteShopcartResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets unavailable_cart_items
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\CartItem[]|null
+     * @return \Ebay\Model\Buy\Browse\CartItem[]|null
      */
     public function getUnavailableCartItems()
     {
@@ -315,7 +315,7 @@ class RemoteShopcartResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets unavailable_cart_items
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\CartItem[]|null $unavailable_cart_items An array of items in the cart that are unavailable. This can be for a variety of reasons such as, when the listing has ended or the item is out of stock. Because a cart never expires, these items will remain in the cart until they are removed.
+     * @param \Ebay\Model\Buy\Browse\CartItem[]|null $unavailable_cart_items An array of items in the cart that are unavailable. This can be for a variety of reasons such as, when the listing has ended or the item is out of stock. Because a cart never expires, these items will remain in the cart until they are removed.
      *
      * @return self
      */
@@ -329,7 +329,7 @@ class RemoteShopcartResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets warnings
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Error[]|null
+     * @return \Ebay\Model\Buy\Browse\Error[]|null
      */
     public function getWarnings()
     {
@@ -339,7 +339,7 @@ class RemoteShopcartResponse implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets warnings
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Error[]|null $warnings An array of warning messages. These type of errors do not prevent the call from executing but should be checked.
+     * @param \Ebay\Model\Buy\Browse\Error[]|null $warnings An array of warning messages. These type of errors do not prevent the call from executing but should be checked.
      *
      * @return self
      */

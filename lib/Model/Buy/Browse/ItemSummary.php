@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,44 +60,44 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'additional_images' => '\Ebay\Ebay\Model\Buy\Browse\Image[]',
+        'additional_images' => '\Ebay\Model\Buy\Browse\Image[]',
         'adult_only' => 'bool',
         'available_coupons' => 'bool',
         'bid_count' => 'int',
         'buying_options' => 'string[]',
-        'categories' => '\Ebay\Ebay\Model\Buy\Browse\Category[]',
+        'categories' => '\Ebay\Model\Buy\Browse\Category[]',
         'compatibility_match' => 'string',
-        'compatibility_properties' => '\Ebay\Ebay\Model\Buy\Browse\CompatibilityProperty[]',
+        'compatibility_properties' => '\Ebay\Model\Buy\Browse\CompatibilityProperty[]',
         'condition' => 'string',
         'condition_id' => 'string',
-        'current_bid_price' => '\Ebay\Ebay\Model\Buy\Browse\ConvertedAmount',
-        'distance_from_pickup_location' => '\Ebay\Ebay\Model\Buy\Browse\TargetLocation',
+        'current_bid_price' => '\Ebay\Model\Buy\Browse\ConvertedAmount',
+        'distance_from_pickup_location' => '\Ebay\Model\Buy\Browse\TargetLocation',
         'energy_efficiency_class' => 'string',
         'epid' => 'string',
-        'image' => '\Ebay\Ebay\Model\Buy\Browse\Image',
+        'image' => '\Ebay\Model\Buy\Browse\Image',
         'item_affiliate_web_url' => 'string',
         'item_end_date' => 'string',
         'item_group_href' => 'string',
         'item_group_type' => 'string',
         'item_href' => 'string',
         'item_id' => 'string',
-        'item_location' => '\Ebay\Ebay\Model\Buy\Browse\ItemLocationImpl',
+        'item_location' => '\Ebay\Model\Buy\Browse\ItemLocationImpl',
         'item_web_url' => 'string',
         'legacy_item_id' => 'string',
-        'marketing_price' => '\Ebay\Ebay\Model\Buy\Browse\MarketingPrice',
-        'pickup_options' => '\Ebay\Ebay\Model\Buy\Browse\PickupOptionSummary[]',
-        'price' => '\Ebay\Ebay\Model\Buy\Browse\ConvertedAmount',
+        'marketing_price' => '\Ebay\Model\Buy\Browse\MarketingPrice',
+        'pickup_options' => '\Ebay\Model\Buy\Browse\PickupOptionSummary[]',
+        'price' => '\Ebay\Model\Buy\Browse\ConvertedAmount',
         'price_display_condition' => 'string',
         'priority_listing' => 'bool',
         'qualified_programs' => 'string[]',
-        'seller' => '\Ebay\Ebay\Model\Buy\Browse\Seller',
-        'shipping_options' => '\Ebay\Ebay\Model\Buy\Browse\ShippingOptionSummary[]',
+        'seller' => '\Ebay\Model\Buy\Browse\Seller',
+        'shipping_options' => '\Ebay\Model\Buy\Browse\ShippingOptionSummary[]',
         'short_description' => 'string',
-        'thumbnail_images' => '\Ebay\Ebay\Model\Buy\Browse\Image[]',
+        'thumbnail_images' => '\Ebay\Model\Buy\Browse\Image[]',
         'title' => 'string',
         'top_rated_buying_experience' => 'bool',
         'tyre_label_image_url' => 'string',
-        'unit_price' => '\Ebay\Ebay\Model\Buy\Browse\ConvertedAmount',
+        'unit_price' => '\Ebay\Model\Buy\Browse\ConvertedAmount',
         'unit_pricing_measure' => 'string',
         'watch_count' => 'int'
     ];
@@ -443,7 +443,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets additional_images
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Image[]|null
+     * @return \Ebay\Model\Buy\Browse\Image[]|null
      */
     public function getAdditionalImages()
     {
@@ -453,7 +453,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets additional_images
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Image[]|null $additional_images An array of containers with the URLs for the images that are in addition to the primary image.  The primary image is returned in the <b> image.imageUrl</b> field.
+     * @param \Ebay\Model\Buy\Browse\Image[]|null $additional_images An array of containers with the URLs for the images that are in addition to the primary image.  The primary image is returned in the <b> image.imageUrl</b> field.
      *
      * @return self
      */
@@ -563,7 +563,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets categories
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Category[]|null
+     * @return \Ebay\Model\Buy\Browse\Category[]|null
      */
     public function getCategories()
     {
@@ -573,7 +573,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets categories
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Category[]|null $categories This container returns the primary category ID of the item (as well as the secondary category if the item was listed in two categories).
+     * @param \Ebay\Model\Buy\Browse\Category[]|null $categories This container returns the primary category ID of the item (as well as the secondary category if the item was listed in two categories).
      *
      * @return self
      */
@@ -611,7 +611,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets compatibility_properties
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\CompatibilityProperty[]|null
+     * @return \Ebay\Model\Buy\Browse\CompatibilityProperty[]|null
      */
     public function getCompatibilityProperties()
     {
@@ -621,7 +621,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets compatibility_properties
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\CompatibilityProperty[]|null $compatibility_properties This container returns only the product attributes that are compatible with the item. These attributes were specified in the <b>compatibility_filter</b> in the request. This means that if you passed in 5 attributes and only 4 are compatible, only those 4 are returned. If none of the attributes are compatible, this container is not returned.
+     * @param \Ebay\Model\Buy\Browse\CompatibilityProperty[]|null $compatibility_properties This container returns only the product attributes that are compatible with the item. These attributes were specified in the <b>compatibility_filter</b> in the request. This means that if you passed in 5 attributes and only 4 are compatible, only those 4 are returned. If none of the attributes are compatible, this container is not returned.
      *
      * @return self
      */
@@ -683,7 +683,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets current_bid_price
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null
+     * @return \Ebay\Model\Buy\Browse\ConvertedAmount|null
      */
     public function getCurrentBidPrice()
     {
@@ -693,7 +693,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets current_bid_price
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null $current_bid_price current_bid_price
+     * @param \Ebay\Model\Buy\Browse\ConvertedAmount|null $current_bid_price current_bid_price
      *
      * @return self
      */
@@ -707,7 +707,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets distance_from_pickup_location
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\TargetLocation|null
+     * @return \Ebay\Model\Buy\Browse\TargetLocation|null
      */
     public function getDistanceFromPickupLocation()
     {
@@ -717,7 +717,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets distance_from_pickup_location
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\TargetLocation|null $distance_from_pickup_location distance_from_pickup_location
+     * @param \Ebay\Model\Buy\Browse\TargetLocation|null $distance_from_pickup_location distance_from_pickup_location
      *
      * @return self
      */
@@ -779,7 +779,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets image
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Image|null
+     * @return \Ebay\Model\Buy\Browse\Image|null
      */
     public function getImage()
     {
@@ -789,7 +789,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets image
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Image|null $image image
+     * @param \Ebay\Model\Buy\Browse\Image|null $image image
      *
      * @return self
      */
@@ -947,7 +947,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets item_location
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ItemLocationImpl|null
+     * @return \Ebay\Model\Buy\Browse\ItemLocationImpl|null
      */
     public function getItemLocation()
     {
@@ -957,7 +957,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets item_location
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ItemLocationImpl|null $item_location item_location
+     * @param \Ebay\Model\Buy\Browse\ItemLocationImpl|null $item_location item_location
      *
      * @return self
      */
@@ -1019,7 +1019,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets marketing_price
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\MarketingPrice|null
+     * @return \Ebay\Model\Buy\Browse\MarketingPrice|null
      */
     public function getMarketingPrice()
     {
@@ -1029,7 +1029,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets marketing_price
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\MarketingPrice|null $marketing_price marketing_price
+     * @param \Ebay\Model\Buy\Browse\MarketingPrice|null $marketing_price marketing_price
      *
      * @return self
      */
@@ -1043,7 +1043,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets pickup_options
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\PickupOptionSummary[]|null
+     * @return \Ebay\Model\Buy\Browse\PickupOptionSummary[]|null
      */
     public function getPickupOptions()
     {
@@ -1053,7 +1053,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets pickup_options
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\PickupOptionSummary[]|null $pickup_options This container returns the local pickup options available to the buyer. This container is only returned if the user is searching for local pickup items and set the local pickup filters in the method request.
+     * @param \Ebay\Model\Buy\Browse\PickupOptionSummary[]|null $pickup_options This container returns the local pickup options available to the buyer. This container is only returned if the user is searching for local pickup items and set the local pickup filters in the method request.
      *
      * @return self
      */
@@ -1067,7 +1067,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets price
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null
+     * @return \Ebay\Model\Buy\Browse\ConvertedAmount|null
      */
     public function getPrice()
     {
@@ -1077,7 +1077,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets price
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null $price price
+     * @param \Ebay\Model\Buy\Browse\ConvertedAmount|null $price price
      *
      * @return self
      */
@@ -1163,7 +1163,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets seller
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Seller|null
+     * @return \Ebay\Model\Buy\Browse\Seller|null
      */
     public function getSeller()
     {
@@ -1173,7 +1173,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets seller
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Seller|null $seller seller
+     * @param \Ebay\Model\Buy\Browse\Seller|null $seller seller
      *
      * @return self
      */
@@ -1187,7 +1187,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shipping_options
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ShippingOptionSummary[]|null
+     * @return \Ebay\Model\Buy\Browse\ShippingOptionSummary[]|null
      */
     public function getShippingOptions()
     {
@@ -1197,7 +1197,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shipping_options
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ShippingOptionSummary[]|null $shipping_options This container returns the shipping options available to ship the item.
+     * @param \Ebay\Model\Buy\Browse\ShippingOptionSummary[]|null $shipping_options This container returns the shipping options available to ship the item.
      *
      * @return self
      */
@@ -1235,7 +1235,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets thumbnail_images
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Image[]|null
+     * @return \Ebay\Model\Buy\Browse\Image[]|null
      */
     public function getThumbnailImages()
     {
@@ -1245,7 +1245,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets thumbnail_images
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Image[]|null $thumbnail_images An array of thumbnail images for the item.
+     * @param \Ebay\Model\Buy\Browse\Image[]|null $thumbnail_images An array of thumbnail images for the item.
      *
      * @return self
      */
@@ -1331,7 +1331,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets unit_price
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null
+     * @return \Ebay\Model\Buy\Browse\ConvertedAmount|null
      */
     public function getUnitPrice()
     {
@@ -1341,7 +1341,7 @@ class ItemSummary implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets unit_price
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ConvertedAmount|null $unit_price unit_price
+     * @param \Ebay\Model\Buy\Browse\ConvertedAmount|null $unit_price unit_price
      *
      * @return self
      */

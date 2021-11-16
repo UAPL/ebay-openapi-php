@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -61,11 +61,11 @@ class CartItem implements ModelInterface, ArrayAccess, \JsonSerializable
       */
     protected static $openAPITypes = [
         'cart_item_id' => 'string',
-        'cart_item_subtotal' => '\Ebay\Ebay\Model\Buy\Browse\Amount',
-        'image' => '\Ebay\Ebay\Model\Buy\Browse\Image',
+        'cart_item_subtotal' => '\Ebay\Model\Buy\Browse\Amount',
+        'image' => '\Ebay\Model\Buy\Browse\Image',
         'item_id' => 'string',
         'item_web_url' => 'string',
-        'price' => '\Ebay\Ebay\Model\Buy\Browse\Price',
+        'price' => '\Ebay\Model\Buy\Browse\Price',
         'quantity' => 'int',
         'title' => 'string'
     ];
@@ -275,7 +275,7 @@ class CartItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets cart_item_subtotal
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Amount|null
+     * @return \Ebay\Model\Buy\Browse\Amount|null
      */
     public function getCartItemSubtotal()
     {
@@ -285,7 +285,7 @@ class CartItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets cart_item_subtotal
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Amount|null $cart_item_subtotal cart_item_subtotal
+     * @param \Ebay\Model\Buy\Browse\Amount|null $cart_item_subtotal cart_item_subtotal
      *
      * @return self
      */
@@ -299,7 +299,7 @@ class CartItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets image
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Image|null
+     * @return \Ebay\Model\Buy\Browse\Image|null
      */
     public function getImage()
     {
@@ -309,7 +309,7 @@ class CartItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets image
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Image|null $image image
+     * @param \Ebay\Model\Buy\Browse\Image|null $image image
      *
      * @return self
      */
@@ -371,7 +371,7 @@ class CartItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets price
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\Price|null
+     * @return \Ebay\Model\Buy\Browse\Price|null
      */
     public function getPrice()
     {
@@ -381,7 +381,7 @@ class CartItem implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets price
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\Price|null $price price
+     * @param \Ebay\Model\Buy\Browse\Price|null $price price
      *
      * @return self
      */

@@ -17,7 +17,7 @@ Method | HTTP request | Description
 ## `fetchItemAspects()`
 
 ```php
-fetchItemAspects($category_tree_id): \Ebay\Ebay\Model\Commerce\Taxonomy\GetCategoriesAspectResponse
+fetchItemAspects($category_tree_id): \Ebay\Model\Commerce\Taxonomy\GetCategoriesAspectResponse
 ```
 
 Get Aspects for All Leaf Categories in a Marketplace
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Commerce\Taxonomy\GetCategoriesAspectResponse**](../Model/GetCategoriesAspectResponse.md)
+[**\Ebay\Model\Commerce\Taxonomy\GetCategoriesAspectResponse**](../Model/GetCategoriesAspectResponse.md)
 
 ### Authorization
 
@@ -77,7 +77,7 @@ Name | Type | Description  | Notes
 ## `getCategorySubtree()`
 
 ```php
-getCategorySubtree($category_id, $category_tree_id): \Ebay\Ebay\Model\Commerce\Taxonomy\CategorySubtree
+getCategorySubtree($category_id, $category_tree_id): \Ebay\Model\Commerce\Taxonomy\CategorySubtree
 ```
 
 Get a Category Subtree
@@ -121,7 +121,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Commerce\Taxonomy\CategorySubtree**](../Model/CategorySubtree.md)
+[**\Ebay\Model\Commerce\Taxonomy\CategorySubtree**](../Model/CategorySubtree.md)
 
 ### Authorization
 
@@ -139,7 +139,7 @@ Name | Type | Description  | Notes
 ## `getCategorySuggestions()`
 
 ```php
-getCategorySuggestions($category_tree_id, $q): \Ebay\Ebay\Model\Commerce\Taxonomy\CategorySuggestionResponse
+getCategorySuggestions($category_tree_id, $q): \Ebay\Model\Commerce\Taxonomy\CategorySuggestionResponse
 ```
 
 Get Suggested Categories
@@ -183,7 +183,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Commerce\Taxonomy\CategorySuggestionResponse**](../Model/CategorySuggestionResponse.md)
+[**\Ebay\Model\Commerce\Taxonomy\CategorySuggestionResponse**](../Model/CategorySuggestionResponse.md)
 
 ### Authorization
 
@@ -201,7 +201,7 @@ Name | Type | Description  | Notes
 ## `getCategoryTree()`
 
 ```php
-getCategoryTree($category_tree_id): \Ebay\Ebay\Model\Commerce\Taxonomy\CategoryTree
+getCategoryTree($category_tree_id): \Ebay\Model\Commerce\Taxonomy\CategoryTree
 ```
 
 Get a Category Tree
@@ -243,7 +243,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Commerce\Taxonomy\CategoryTree**](../Model/CategoryTree.md)
+[**\Ebay\Model\Commerce\Taxonomy\CategoryTree**](../Model/CategoryTree.md)
 
 ### Authorization
 
@@ -261,7 +261,7 @@ Name | Type | Description  | Notes
 ## `getCompatibilityProperties()`
 
 ```php
-getCompatibilityProperties($category_tree_id, $category_id): \Ebay\Ebay\Model\Commerce\Taxonomy\GetCompatibilityMetadataResponse
+getCompatibilityProperties($category_tree_id, $category_id): \Ebay\Model\Commerce\Taxonomy\GetCompatibilityMetadataResponse
 ```
 
 Get Compatibility Properties
@@ -305,7 +305,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Commerce\Taxonomy\GetCompatibilityMetadataResponse**](../Model/GetCompatibilityMetadataResponse.md)
+[**\Ebay\Model\Commerce\Taxonomy\GetCompatibilityMetadataResponse**](../Model/GetCompatibilityMetadataResponse.md)
 
 ### Authorization
 
@@ -323,7 +323,7 @@ Name | Type | Description  | Notes
 ## `getCompatibilityPropertyValues()`
 
 ```php
-getCompatibilityPropertyValues($category_tree_id, $compatibility_property, $category_id, $filter): \Ebay\Ebay\Model\Commerce\Taxonomy\GetCompatibilityPropertyValuesResponse
+getCompatibilityPropertyValues($category_tree_id, $compatibility_property, $category_id, $filter): \Ebay\Model\Commerce\Taxonomy\GetCompatibilityPropertyValuesResponse
 ```
 
 Get Compatibility Property Values
@@ -371,7 +371,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Commerce\Taxonomy\GetCompatibilityPropertyValuesResponse**](../Model/GetCompatibilityPropertyValuesResponse.md)
+[**\Ebay\Model\Commerce\Taxonomy\GetCompatibilityPropertyValuesResponse**](../Model/GetCompatibilityPropertyValuesResponse.md)
 
 ### Authorization
 
@@ -389,7 +389,7 @@ Name | Type | Description  | Notes
 ## `getDefaultCategoryTreeId()`
 
 ```php
-getDefaultCategoryTreeId($marketplace_id, $accept_language): \Ebay\Ebay\Model\Commerce\Taxonomy\BaseCategoryTree
+getDefaultCategoryTreeId($marketplace_id, $accept_language): \Ebay\Model\Commerce\Taxonomy\BaseCategoryTree
 ```
 
 Get a Default Category Tree ID
@@ -433,7 +433,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Commerce\Taxonomy\BaseCategoryTree**](../Model/BaseCategoryTree.md)
+[**\Ebay\Model\Commerce\Taxonomy\BaseCategoryTree**](../Model/BaseCategoryTree.md)
 
 ### Authorization
 
@@ -451,7 +451,7 @@ Name | Type | Description  | Notes
 ## `getItemAspectsForCategory()`
 
 ```php
-getItemAspectsForCategory($category_id, $category_tree_id): \Ebay\Ebay\Model\Commerce\Taxonomy\AspectMetadata
+getItemAspectsForCategory($category_id, $category_tree_id): \Ebay\Model\Commerce\Taxonomy\AspectMetadata
 ```
 
 
@@ -495,7 +495,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Ebay\Ebay\Model\Commerce\Taxonomy\AspectMetadata**](../Model/AspectMetadata.md)
+[**\Ebay\Model\Commerce\Taxonomy\AspectMetadata**](../Model/AspectMetadata.md)
 
 ### Authorization
 

@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Browse;
+namespace Ebay\Model\Buy\Browse;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -67,7 +67,7 @@ class Error implements ModelInterface, ArrayAccess, \JsonSerializable
         'long_message' => 'string',
         'message' => 'string',
         'output_ref_ids' => 'string[]',
-        'parameters' => '\Ebay\Ebay\Model\Buy\Browse\ErrorParameter[]',
+        'parameters' => '\Ebay\Model\Buy\Browse\ErrorParameter[]',
         'subdomain' => 'string'
     ];
 
@@ -425,7 +425,7 @@ class Error implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets parameters
      *
-     * @return \Ebay\Ebay\Model\Buy\Browse\ErrorParameter[]|null
+     * @return \Ebay\Model\Buy\Browse\ErrorParameter[]|null
      */
     public function getParameters()
     {
@@ -435,7 +435,7 @@ class Error implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets parameters
      *
-     * @param \Ebay\Ebay\Model\Buy\Browse\ErrorParameter[]|null $parameters An array of warning and error messages that return one or more variables contextual information about the error or warning. This is often the field or value that triggered the error or warning.
+     * @param \Ebay\Model\Buy\Browse\ErrorParameter[]|null $parameters An array of warning and error messages that return one or more variables contextual information about the error or warning. This is often the field or value that triggered the error or warning.
      *
      * @return self
      */

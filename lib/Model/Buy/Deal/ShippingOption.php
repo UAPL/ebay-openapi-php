@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Model\Buy\Deal;
+namespace Ebay\Model\Buy\Deal;
 
 use \ArrayAccess;
 use \Ebay\ObjectSerializer;
@@ -60,7 +60,7 @@ class ShippingOption implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'shipping_cost' => '\Ebay\Ebay\Model\Buy\Deal\Amount',
+        'shipping_cost' => '\Ebay\Model\Buy\Deal\Amount',
         'shipping_cost_type' => 'string'
     ];
 
@@ -215,7 +215,7 @@ class ShippingOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets shipping_cost
      *
-     * @return \Ebay\Ebay\Model\Buy\Deal\Amount|null
+     * @return \Ebay\Model\Buy\Deal\Amount|null
      */
     public function getShippingCost()
     {
@@ -225,7 +225,7 @@ class ShippingOption implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets shipping_cost
      *
-     * @param \Ebay\Ebay\Model\Buy\Deal\Amount|null $shipping_cost shipping_cost
+     * @param \Ebay\Model\Buy\Deal\Amount|null $shipping_cost shipping_cost
      *
      * @return self
      */

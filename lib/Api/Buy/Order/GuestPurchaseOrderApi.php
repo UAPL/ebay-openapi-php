@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Ebay\Ebay\Api\Buy\Order;
+namespace Ebay\Api\Buy\Order;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -125,7 +125,7 @@ class GuestPurchaseOrderApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Ebay\Ebay\Model\Buy\Order\GuestPurchaseOrderV2
+     * @return \Ebay\Model\Buy\Order\GuestPurchaseOrderV2
      */
     public function getGuestPurchaseOrder($purchase_order_id)
     {
@@ -143,7 +143,7 @@ class GuestPurchaseOrderApi
      *
      * @throws \Ebay\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Ebay\Ebay\Model\Buy\Order\GuestPurchaseOrderV2, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Ebay\Model\Buy\Order\GuestPurchaseOrderV2, HTTP status code, HTTP response headers (array of strings)
      */
     public function getGuestPurchaseOrderWithHttpInfo($purchase_order_id)
     {
@@ -186,20 +186,20 @@ class GuestPurchaseOrderApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Ebay\Ebay\Model\Buy\Order\GuestPurchaseOrderV2' === '\SplFileObject') {
+                    if ('\Ebay\Model\Buy\Order\GuestPurchaseOrderV2' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Ebay\Ebay\Model\Buy\Order\GuestPurchaseOrderV2', []),
+                        ObjectSerializer::deserialize($content, '\Ebay\Model\Buy\Order\GuestPurchaseOrderV2', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\Ebay\Ebay\Model\Buy\Order\GuestPurchaseOrderV2';
+            $returnType = '\Ebay\Model\Buy\Order\GuestPurchaseOrderV2';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -217,7 +217,7 @@ class GuestPurchaseOrderApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Ebay\Ebay\Model\Buy\Order\GuestPurchaseOrderV2',
+                        '\Ebay\Model\Buy\Order\GuestPurchaseOrderV2',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -261,7 +261,7 @@ class GuestPurchaseOrderApi
      */
     public function getGuestPurchaseOrderAsyncWithHttpInfo($purchase_order_id)
     {
-        $returnType = '\Ebay\Ebay\Model\Buy\Order\GuestPurchaseOrderV2';
+        $returnType = '\Ebay\Model\Buy\Order\GuestPurchaseOrderV2';
         $request = $this->getGuestPurchaseOrderRequest($purchase_order_id);
 
         return $this->client
